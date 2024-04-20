@@ -9,6 +9,9 @@ del diplomski_rad.toc
 
 :: build .pdf
 pdflatex diplomski_rad.tex
+pdflatex diplomski_rad.tex
 bibtex diplomski_rad
 pdflatex diplomski_rad.tex
 pdflatex diplomski_rad.tex
+
+code diplomski_rad.pdf

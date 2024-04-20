@@ -4,6 +4,14 @@
 
 
 \usepackage{blindtext}
+\usepackage{subfiles}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+\renewcommand\lstlistingname{Odsječak koda}
+\renewcommand{\figurename}{Slika}
+\renewcommand{\tablename}{Tablica}
+\renewcommand\bibname{Literatura}
 
 
 %--- PODACI O RADU / THESIS INFORMATION ----------------------------------------
@@ -50,7 +58,7 @@
 
 \begin{zahvale}
   % Ovdje upišite zahvale / Write in the acknowledgment
-  Hvala na čaju...
+  Hvala na rakiji...
 \end{zahvale}
 
 
@@ -66,54 +74,27 @@
 \chapter{Uvod}
 \label{pog:uvod}
 
-Neki od radova koje ćemo citirati su \cite{6248073,6247753,ghiglia_pritt_phase_unwrapping,hartley2003multiple,4250461,123DCatch}.
-Trebaju nam samo radi testiranja kako izgleda referenciranje rada s konferencije, rada iz časopisa, knjige i Internetske stranice.
-
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=0.38\linewidth]{Figures/woohoo.png} 
-  \caption{Moja prva slika}
-  \label{slk:prvaslika}
-\end{figure}
-
-Referenciramo se na sliku \ref{slk:prvaslika} u sredini rečenice, zatim prije zareza \ref{slk:prvaslika}, te zatim na kraju rečenice \ref{slk:prvaslika}.
-Upravo smo testirali radi li naredba \verb|\ref| ispravno u slučaju kada nakon nje slijedi točka.
-
-Sada slijedi jedna jednadžba:
-\begin{equation}
-  \label{jed:prvajednadzba}
-  \int_{-\infty}^{+\infty}f(t)\,dt=F(\omega)
-\end{equation}
-Jednadžba \eqref{jed:prvajednadzba} je moja prva jednadžba koja defnira par $f(t)\ufrek F(\omega)$ ili $F(\omega)\uvrem f(t)$.
-
+\subfile{chepters/uvod}
 
 %-------------------------------------------------------------------------------
-\chapter{Glavni dio}
+\chapter{Bioimpedancija}
 \label{pog:glavni_dio}
 
-\Blindtext
-
-
-%-------------------------------------------------------------------------------
-\chapter{Rezultati i rasprava}
-\label{pog:rezultati_i_rasprava}
-
-\Blindtext
-
+\subfile{chepters/bioimpedancija}
 
 %--- ZAKLJUČAK / CONCLUSION ----------------------------------------------------
 \chapter{Zaključak}
 \label{pog:zakljucak}
 
-\blindtext
+\subfile{chepters/zakljucak}
 
 
 %--- LITERATURA / REFERENCES ---------------------------------------------------
 
 % Literatura se automatski generira iz zadane .bib datoteke / References are automatically generated from the supplied .bib file
 % Upiši ime BibTeX datoteke bez .bib nastavka / Enter the name of the BibTeX file without .bib extension
+\nocite{*}
 \bibliography{literatura}
-
 
 
 %--- SAŽETAK / ABSTRACT --------------------------------------------------------
