@@ -70,6 +70,8 @@
 \RequirePackage{letltxmacro}
 \RequirePackage{etoolbox}
 
+\RequirePackage{listings}
+
 % Koristimo UTF-8 (koji je danas podržan na svim operativnim sustavima)
 % Font Open Sans ćemo koristiti za naslove i naslovnicu, a Stix 2 će
 % biti standardni font cijelog dokumenta.
@@ -462,9 +464,11 @@
 \if@hrvatski
 \captionsetup[table]{labelsep=space,font=small}
 \captionsetup[figure]{labelfont=bf,labelsep=space,font=small}
+\captionsetup[lstlisting]{labelfont=bf,labelsep=space,font=small}
 \else
 \captionsetup[table]{font=small}
 \captionsetup[figure]{labelfont=bf,font=small}
+\captionsetup[lstlisting]{labelfont=bf,font=small}
 \fi
 
 % Brojevi stranica su na vanjskoj margini dolje
@@ -685,6 +689,13 @@
 \renewcommand\theequation{\ifnum \c@chapter>\z@ \thechapter\@\fi \@arabic\c@equation}
 \renewcommand\thefigure{\ifnum \c@chapter>\z@ \thechapter\@\fi \@arabic\c@figure.}
 \renewcommand\thetable{\ifnum \c@chapter>\z@ \thechapter\@\fi \@arabic\c@table.}
+\AtBeginDocument{%
+    \renewcommand\thelstlisting{\arabic{chapter}.\arabic{lstlisting}.}%
+}
+%\renewcommand\thelstlisting{\ifnum \c@chapter>\z@ \thechapter\@\fi \@arabic\c@lstlistingS.}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
 
 \fi
 

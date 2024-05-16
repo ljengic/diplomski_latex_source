@@ -1,4 +1,4 @@
-\documentclass[diplomskirad]{fer}
+\documentclass[diplomskirad, numeric, utf8, times]{fer}
 % Dodaj opciju upload za generiranje konačne verzije koja se učitava na FERWeb
 % Add the option upload to generate the final version which is uploaded to FERWeb
 
@@ -6,13 +6,60 @@
 \usepackage{blindtext}
 \usepackage{subfiles}
 \usepackage{ragged2e}
-\usepackage{listings}
+\usepackage[dvipsnames]{xcolor}
 
-\renewcommand\lstlistingname{Odsječak koda}
+\usepackage{courier}
+\usepackage{booktabs}
+\usepackage{import}
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+
+\usepackage{xcolor}
+\usepackage{listings}
+%\usepackage[nottoc]{tocbibind}
+
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    columns=fixed,
+    basicstyle=\ttfamily,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+    language=C
+}
+
+%\renewcommand\thelstlisting{\ifnum \c@chapter>\z@ \thechapter\@\fi \@arabic\c@lstlisting.}
+
+
+\renewcommand{\lstlistingname}{Odsječak koda}
 \renewcommand{\figurename}{Slika}
 \renewcommand{\tablename}{Tablica}
 \renewcommand\bibname{Literatura}
-
 
 %--- PODACI O RADU / THESIS INFORMATION ----------------------------------------
 
@@ -39,9 +86,7 @@
 
 %-------------------------------------------------------------------------------
 
-
 \begin{document}
-
 
 % Naslovnica se automatski generira / Titlepage is automatically generated
 \maketitle
@@ -77,10 +122,36 @@
 \subfile{chepters/uvod}
 
 %-------------------------------------------------------------------------------
-\chapter{Bioimpedancija}
+\chapter{Analiza sastava ljudskog tijela}
 \label{pog:glavni_dio}
 
 \subfile{chepters/bioimpedancija}
+
+%-------------------------------------------------------------------------------
+\chapter{Metode mjerenja bioimpedancije}
+
+\subfile{chepters/mjerenje_bioimpedancije}
+
+%-------------------------------------------------------------------------------
+\chapter{Razvijeni nosivi sustav za praćenje tjelesnih tekućina}
+
+\subfile{chepters/razvijeni_sustav}
+
+%-------------------------------------------------------------------------------
+\chapter{Programska podrška za razvijeni sustav}
+\label{chap:programska_podrska}
+
+\subfile{chepters/programska_potpora}
+
+%-------------------------------------------------------------------------------
+\chapter{Razvijeno ispitno okruženje}
+
+\subfile{chepters/ispitno_okruzenje}
+
+%-------------------------------------------------------------------------------
+\chapter{Mjerna metoda}
+%-------------------------------------------------------------------------------
+\chapter{Rezultati i diskusija}
 
 %--- ZAKLJUČAK / CONCLUSION ----------------------------------------------------
 \chapter{Zaključak}
@@ -128,9 +199,9 @@
 % Sva poglavlja koja slijede će biti označena slovom i riječi privitak / All following chapters will be denoted with an appendix and a letter
 \backmatter
 
-\chapter{The Code}
+%\chapter{The Code}
 
-\Blindtext
+%\Blindtext
 
 
 \end{document}

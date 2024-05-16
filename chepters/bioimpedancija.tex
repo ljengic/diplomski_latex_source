@@ -54,31 +54,42 @@ Zbog toga se sastav ljudskog tijela procjenjuje iz izmjerene bioimpedancije izme
 Iz bioimpedancije sastav tijela se dobiva putem teorijskih jednadžbi ili tablica koje ovise o parametrima 
 kao što su spol, dobna skupina, težina i visina.
 
-\section{Cole model bioimpedancije}
+\section{Modeliranje bioimpedancije}
 
-- modeliranje impedeancije
+Bioimpedancija predstavlja električni otpor koji se javlja kada kroz biološka tkiva teče električna struja.
+Ovisna je o frekvenciji te se može prikazati formulom:
+\begin{equation}
+    \label{jed:cpe}
+    Z(f) = R_{e}(f) + jI_{m}(f) = |Z(f)|\angle\theta(f) 
+\end{equation}
+gdje je
+\begin{equation}
+    \label{jed:cpe}
+    |Z(f)| = \sqrt{R_{e}^{2} + I_{m}^{2}}
+\end{equation} 
+\begin{equation}
+    \label{jed:cpe}
+    \theta(f) = arctg(\frac{I_{m}}{R_{e}})
+\end{equation} 
 
-- elektricki model stanice
+U slijedećim potpoglavljima dan je pregled korištenog modela za modeliranje bioimpedancije ljudskog tijela.
+
+\subsection{Električki model ljudkog tijela}
+
+Ljudsku stanicu možemo modelirati ekvivalentnom električkom RC mrežom \cite{Lukaski2013} kako je prikazano na slici (referenca na sliku).
+
+-slika ona stanice ide tu
+
+Stanična membrana zbog svojih kapacitivnih svojstava propušta struju visokih frekvencija, dok struje niskih frekvencija blokira. 
+Zbog toga postoji razlika u mjerenoj impedanciji u ovisnosti o frekvenciji uzbudne struje.  
+
+
+\subsection{Matematički model bioimpedancije}
 
 Matematički model kojim se najčešće modelira bioimpedancija ljudskog tijela naziva se Cole model. 
 Razvio ga je britanski fizičar Kenneth Cole 1940-tih godina. 
-Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog cega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}. 
-Orgnialna jednadžba Cole modela glasi: 
-\begin{equation}
-    \label{jed:drugajednadzba}
-    Z(\omega) = R_{\infty}+\frac{R_{0}-R_{\infty}}{1+(j\omega\tau)^{\alpha}} 
-\end{equation} 
+Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog cega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}.
 
-$R_{\infty}$ prestavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ prestavlja otpor na nultoj frekvenciji. 
-Razlika otpora $R_{\infty}-R_{0}$ prestavlja dodatan otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
-$C_{CPE}$ je element s konstantnom fazom koji modelira kapacitivnost stanične membrane. Njegova impedancija iznosi: 
-
-\begin{equation}
-    \label{jed:prvajednadzba}
-    Z_{CPE}(\omega) = \frac{1}{(j\omega)^{\alpha}C}
-\end{equation} 
-
-Konačno, dobivamo električki model koji je prikazan na slici \ref{slk:cole_model}.
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.6\textwidth]{Figures/cole_model.png} 
@@ -86,7 +97,38 @@ Konačno, dobivamo električki model koji je prikazan na slici \ref{slk:cole_mod
     \label{slk:cole_model}
 \end{figure}
 
-- opisati Cole graf
+$R_{\infty}$ prestavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ prestavlja otpor na nultoj frekvenciji. 
+Razlika otpora $R_{\infty}-R_{0}$ prestavlja dodatan otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
+$C_{CPE}$ je element s konstantnom fazom koji modelira kapacitivnost stanične membrane 
+te predstavlja neidealan kondenzator. Njegova impedancija iznosi: 
+\begin{equation}
+    \label{jed:cpe}
+    Z_{CPE}(\omega) = \frac{1}{(j\omega)^{\alpha}C}
+\end{equation} 
+gdje je C kapacitet, a $\alpha$ njegov red. Kada je $\alpha = 0$ element s konstantnom fazom predstavlja idealan otpornik, 
+dok sa $\alpha = 1$ predstavlja idealan kondenzator. 
+Tipične vrijednosti parametra $\alpha$ za biološka tkiva su u intervalu 0.5 $< \alpha <$ 1 \cite{Freeborn2021}.
+
+Ako uvedemo karakterističnu vremensku konstantu $\tau$ kao
+\begin{equation}
+    \label{jed:time_const}
+    \tau = [(R_{0}-R_{\infty})C]^{1/\alpha}
+\end{equation}
+dobivamo orginalnu jednadžbu Cole modela: 
+\begin{equation}
+    \label{jed:cole}
+    Z(\omega) = R_{\infty}+\frac{R_{0}-R_{\infty}}{1+(j\omega\tau)^{\alpha}} 
+\end{equation} 
+Iz jednadžbe \ref{jed:cole} vidljivo je kako su parametri Cole modela bioimpedancije 
+$R_{\infty}$, $R_{0}$, $\alpha$ i $\tau$. 
+Svojstva tkiva opisuju se pomoću ta četiri parametra, a postupak kojim se do njih dolazi opisan je u daljnjem tekstu.
+
+\subsection{Graf bioimpedancije Cole modela}
+Ovo tu je glupo, dvaput spominjes isto!!!
+Rezultati mjerenja bioimpedancije na razilčitim frekvencijama mogu se aproksimirati polukružnicom,  
+što je prikazano na slici \ref{slk:cole_graf}. 
+Graf bioimpedancije Cole modela je polukružnica koja prikazuje omjer negativne reaktancije i otpora tkiva na svim frekvencijama, 
+od $f=0$ do $f=\infty$. Frekvencija raste s desna na lijevo. 
 
 \begin{figure}[htb]
     \centering
@@ -95,53 +137,20 @@ Konačno, dobivamo električki model koji je prikazan na slici \ref{slk:cole_mod
     \label{slk:cole_graf}
 \end{figure}
 
-\section{Metode mjerenja bioimpedancije}
-
-Mjerenje bioimpedancije (engl. \textit{Bioelectrical Impedance Analysis; BIA})  djelimo na 
-analizu jednom frekvencijom (engl. \textit{Single frequency BIA; SF-BIA}) 
-i analizu na više frevencija(engl. \textit{Multi frequency BIA; MF-BIA}). 
-Važna metoda je i bioelektrička spektrografija (engl. \textit{Bioelectrical spectroscopy; BIS}) 
-koja daje rezultate kroz širok raspon frekvencija. 
-
-SF-BIA je najjednostavnija i najbrža metoda jer koristi samo mjerenje impedancije jednom frekvencijom, najčešće 50 kHz. 
-Iz izmjerene bioimpedancije matematičkim izračunima dobivaju se ukupna tjelesna voda, mišićna masa i masa masnog tkiva. 
-Ova metoda ima najmanju preciznost jer se podatci prikupljaju na samo jednoj frekvenciji uzbudne struje.
-
-MF-BIA koristi nekoliko različitih frekvencija čime se postiže veća točnost i mogućnst procjene dodatnih parametara, 
-kao što su količine intracelularne i ekstracelularne vode. To je moguće jer stanična membrana blokira struju na niskim frekvencijama, 
-a propušta ju na višim. 
-
-Bioelektrička spektrografija najpreciznija je metoda mjerenja bioimpedancije. 
-Mjerenja se vrše na širokom rasponu frekvencija, od 1 kHz do 1 MHz.  
-Ovom metodom možemo procijeniti otpor na nultoj i beskonačnoj frekvenciji, parametre iz Cole modela bioimpedancije 
-opisane u prethodnom poglavlju. 
-Mjerenje BIS metodomom zbog mnogo frekvencija traje duže i matematički izračuni su kompliciraniji, 
-ali pruža  detaljniju i precizniju analizu sastava ljudskog tijela
-
-Postupak mjerenja bioimpedancije svih ranije opisanih metoda je puštanje slabe, 
-frekvencijski ovisne izmjenične struje kroz tkivo te mjerenje pada napona. 
-Zatim se impedancija izračunava prema:
+Iz opisanog grafa moguće je dobiti parametre Cole modela\cite{Yang_2013}.
+$R_{\infty}$ i $R_{0}$ jednostavno se isčitavaju kao precjesišta polukružnice i realne osi.
+Vremenska konstanta $\tau$ inverz je karakteristične kružne frekvencije $\omega_{C}$ na kojoj je reaktancija najveća.
+Relacija iz koje se izračunava $\tau$ je:
 \begin{equation}
-    \label{jed:prvajednadzba}
-    Z\angle\theta = \frac{U\angle\theta_{1}}{I\angle\theta_{2}} 
+    \label{jed:cole}
+    f_{C} = \frac{\omega_{C}}{2\pi} = \frac{1}{2\pi\tau} 
 \end{equation} 
-
-Pri mjerenju bioimpedancije razlikujemo dvožično i četverožično spajanje elektroda. 
-Kod dvožičnog mjerenja isti par elektroda služi za pobudnu struju i za mjerenje napona. 
-Zbog toga dolazi do greške u mjerenju napona uzrokovane padom napona na elektrodama. 
-Četverožično mjerenje je preciznije jer se pad napona mjeri direktno na koži i zbog toga će se koristiti u ovom radu \cite{Abasi2022}. 
-
-Važan dio mjernog sustava su i elektrode, koje kroz sučelje koža-elektroda omogućavaju protjecanje struje od mjernog sustava do tkiva. 
-U ovom radu usporediti će se rezultati s dvama različitim vrstama elektroda, tradicionalnim metalnim elektrodama te tekstilnim elektrodama. 
-Tekstilne elektrode izrađene su od tkanina impregniranih provodnim materijalima, najčešće srebrom. 
-Njihova najveća prednost je udobnost i fleksibilnost te mogućnost integracije u odjeću.
-Na taj način pacijenti ih neometano mogu nositi tokom svakodnevnih aktivnosti i dužeg vremenskog perioda. 
-Međutim, metalne elektrode su manje osjetljive na vanjske parametre kao što su temperatura i oznojenje kože što daje pouzdanije rezultate mjerenja. 
-\cite{Meding2021}
-
-Sve opisane metode predstavljaju jednostavan i neizvazivan postupak mjerenja bioimpedancije. 
-Važno je napomenuti kako izmjerena impedancija ovisi o brojim faktorima kao što su položaj tijela, hidracija, temperatura tijela i drugi 
-što treba uzeti u obzir pri obradi rezultata mjerenja.
-
+Parametar $\alpha$ određuje koliko je središte kružnice pomaknuto ispod realne osi. 
+Izračunava se iz kuta između karakteristične frekvencije $f_{C}$ i beskonačne frekvencije $f_{\infty}$. 
+Ako se taj kut definira kao $\theta$, vrijedi sljedeći izraz:
+\begin{equation}
+    \label{jed:cole}
+    \theta = \frac{\pi}{2}\alpha 
+\end{equation} 
 
 \end{document}

@@ -1,0 +1,86 @@
+\documentclass[../diplomski_rad.tex]{subfiles}
+
+\begin{document}
+
+
+\sloppy
+
+\justifying
+
+U ovom poglavlju iznesen je proces razvoja programske potpore za ranije opisani nosivi ugradbeni sustav. 
+Programska potpora za korišteni mikrokontroler STM32WB55VGY razvijena je pomoću operacijskog sustava 
+za ugradbena računala Zephyr.
+
+Za utakanje programske potpore na razvijenu pločicu i testiranje sustava korišten je ST-LINK/V2 programator \cite{stm32programator}. 
+Progamator se na mikrokontroler spaja putem SWD sučelja (engl. \textit{Serial Wire Debug}). 
+Kao razvojno okruženje korišten je Visual Studio Code, a kontrola verzija praćena je sustavom git.
+
+Ovaj integrirani pristup omogućio je efikasno razvijanje i upravljanje programskom podrškom za STM32 mikrokontroler, 
+uz korištenje popularnih alata i tehnologija. 
+U nastavku će se detaljno opisati proces razvoja, implementacija, te testiranja programske potpore, 
+uz naglasak na integraciju sa Zephyr operacijskim sustavom.
+
+\section{Programiranje mrežnog procesora ARM Cortex-M0+}
+
+STMicroelectronics pruža već gotove binarne datoteke koje sadrže kod komunikacijskog stoga. 
+Postoje različite verzije komunikacijskog stoga s obzirom na primjenu te je samo potrebno pronaći odgovarajuću 
+binarnu datoteku i učitati ju na jezgru ARM Cortex-M0+.
+
+Za potrebe ovog projekta odabrana je datoteka \textit{stm32wb5x\_BLE\_HCILayer\_extended\_fw.bin} jer je kompatibilna sa 
+korištenim operacijskim sustavom Zephyr. Datoteka je učitana na procesor pomoću programa STM32CubeProgrammer v2.15.0 
+koji u sebi ima ugrađenu podršku za ažuriranje koda komunikacijskog stoga. 
+
+- referenca na link od st-a gdje se nalaze te binarne datoteke i upute za flashanje
+
+\section{Operacijski sustav za rad u stvarnom vremenu Zephyr}
+
+-sta je zepyhr i tako to
+
+-dts opisati (al to na kraju kad dode hardware)
+
+\section{Opis kontrole pojedinih senzora}
+
+\section{Bluetooth low energy komunikacija}
+
+Bluetooth Low Energy (BLE) je bežični komunikacijski protokol koji se često koristi u 
+nosivim biomedicinskim uređajima zbog svoje energetske učinkovitosti i sposobnosti za prijenos podataka s malom potrošnjom energije.
+Mala potrošnja od velike je važnosti kod nosivih uređaja jer time mogu imati manju bateriju i biti lakši te raditi dulje vremensko razdoblje 
+bez punjenja ili zamjene baterije.
+
+- neka slikica
+
+BLE komunikacija odvija se s pomoću servisa i karakteristika. Servisi u BLE protokolu predstavljaju skupine funkcionalnosti koje 
+uređaj može pružiti ili koristiti. Svaki servis ima jednu ili više karakteristika koje predstavljaju konkretne podatke ili operacije koje 
+se mogu izvršiti.
+
+Razvijeni nosivi sustav konfiguriran je kao Generic ATTribute Profile (GATT) server te pruža jedan servis imena \texttt{BodyFluidMonitoring}. 
+Servis \texttt{BodyFluidMonitoring} sastoji se od dvije karakteristike, \texttt{ReceiveCommand} za primanje naredbi i 
+\texttt{SendData} za slanje izmjerenih podataka ispitnom okruženju.
+
+Razvijeno aplikacijsko programsko sučelje za kontrolu BLE komunikacije sastoji se od dvije funkcije:
+\begin{lstlisting}[label={lst:ble_api},style=CStyle,caption={Programsko sučelje za kontrolu BLE komunikacije},captionpos=b]
+void ble_send_data(void *data_to_send, uint8_t data_len);
+void ble_init(void (*ble_cmd_handler_callback)(uint8_t));
+\end{lstlisting} 
+
+Funkcija \texttt{ble\_init(void (*ble\_cmd\_handler\_callback)(uint8\_t))} inicijalizira BLE periferiju te 
+postavlja pokazivač na funkciju koja se poziva kada  \texttt{ReceiveCommand} karakteristika primi naredbu. 
+Razvijeni sustav podatke ispitnom okruženju šalje funkcijom \texttt{ble\_send\_data(void *data\_to\_send, uint8\_t data\_len)} 
+kojoj se prosljeđuje pokazivač na podatke koji se šalju i duljinu podataka za slanje. 
+Izvršavanjem navedene funkcije ažurira se vrijednost karakteristike \texttt{SendData}.
+
+-slikica ovog
+
+Poruke se šalju u obliku niza znakova u formatu \texttt{vrijeme;senzor;podatci}. Format podataka ovisi o senzoru čiji se podatci šalju te je zbog toga uveden dodatan sloj 
+apstrakcije između aplikacije i BLE komunikacijskog sučelja.
+\begin{lstlisting}[label={lst:ble_send_sensor_data},style=CStyle,caption={Funkcija za slanje rezultata mjerenja sa pojedinog senzora},captionpos=b]
+void ble_api_send_sensor_data(void *data_structure, sensor_t sensor);
+\end{lstlisting} 
+Pri pozivu funkcije za slanje podataka (\ref{lst:ble_send_sensor_data}) kao parametri se zadaju 
+pokazivač na podatke senzora i enumeracijski tip \texttt{sensor\_t} koji određuje o kojem senzoru je riječ.
+Funkcija dalje u ovisnosti o senzoru priprema niz znakova za slanje te poziva ranije opisane funckije BLE komunikacijskog sučelja 
+(\ref{lst:ble_api}).
+
+-primjer poruke? yes, no, maybe, I don't know.. can you repeat the question
+
+\end{document}

@@ -1,21 +1,42 @@
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{\numberline {1.}Uvod}{2}{chapter.1}%
-\contentsline {chapter}{\numberline {2.}Bioimpedancija}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1.}Sastav ljudskog tijela}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2.}Cole model bioimpedancije}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3.}Metode mjerenja bioimpedancije}{6}{section.2.3}%
-\contentsline {chapter}{\numberline {3.}Zaključak}{8}{chapter.3}%
-\contentsline {chapter}{Literatura}{9}{chapter*.5}%
+\contentsline {chapter}{\numberline {1.}Uvod}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2.}Analiza sastava ljudskog tijela}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1.}Sastav ljudskog tijela}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2.}Modeliranje bioimpedancije}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1.}Električki model ljudkog tijela}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2.}Matematički model bioimpedancije}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3.}Graf bioimpedancije Cole modela}{7}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3.}Metode mjerenja bioimpedancije}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1.}Pregled metoda mjerenja bioimpedancije}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2.}Komercijalni uređaji za mjerenje bioimpedancije}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4.}Razvijeni nosivi sustav za praćenje tjelesnih tekućina}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1.}STM32WB5MMG bežični modul}{12}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1.}STM32WB55VGY mikrokontroler}{13}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2.}Korišteni senzori}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1.}ICM-20948}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2.}MAX30009}{15}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3.}AD4950}{16}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5.}Programska podrška za razvijeni sustav}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1.}Programiranje mrežnog procesora ARM Cortex-M0+}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2.}Operacijski sustav za rad u stvarnom vremenu Zephyr}{18}{section.5.2}%
+\contentsline {section}{\numberline {5.3.}Opis kontrole pojedinih senzora}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.4.}Bluetooth low energy komunikacija}{18}{section.5.4}%
+\contentsline {chapter}{\numberline {6.}Razvijeno ispitno okruženje}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1.}Povezivanje s razvijenim uređajem}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2.}Postupak mjerenja}{20}{section.6.2}%
+\contentsline {section}{\numberline {6.3.}Prikaz retultata}{20}{section.6.3}%
+\contentsline {chapter}{\numberline {7.}Mjerna metoda}{21}{chapter.7}%
+\contentsline {chapter}{\numberline {8.}Rezultati i diskusija}{22}{chapter.8}%
+\contentsline {chapter}{\numberline {9.}Zaključak}{23}{chapter.9}%
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{Sa\v {z}etak}{11}{chapter*.6}%
+\contentsline {chapter}{Sa\v {z}etak}{24}{chapter*.10}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{12}{chapter*.7}%
+\contentsline {chapter}{Abstract}{25}{chapter*.11}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{\numberline {A:}The Code}{13}{chapter.1}%

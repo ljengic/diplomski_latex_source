@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  18 APR 2024 16:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  16 MAY 2024 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,13 +37,42 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count196
 )
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\lst@mode=\count197
+\lst@gtempboxa=\box51
+\lst@token=\toks18
+\lst@length=\count198
+\lst@currlwidth=\dimen141
+\lst@column=\count199
+\lst@pos=\count266
+\lst@lostspace=\dimen142
+\lst@width=\dimen143
+\lst@newlines=\count267
+\lst@lineno=\count268
+\lst@maxwidth=\dimen144
+
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count269
+\lst@skipnumbers=\count270
+\lst@framebox=\box52
+)
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/opensans\opensans.sty
 Package: opensans 2019/06/20 Style file for Open Sans.
@@ -75,16 +104,14 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks19
-\XKV@tempa@toks=\toks20
-
-(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex))
-\XKV@depth=\count197
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count271
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\stix2.st
 y
 Package: stix2 2021/01/14 v2.0.2-latex STIX Two fonts support package
-
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 LaTeX Font Info:    Changing ? sub-encoding to TS1/0 on input line 78.
@@ -192,13 +219,13 @@ LaTeX Info: Redefining \not on input line 2141.
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/pdftex\glyphtounicode.
 tex) (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
-\babel@savecnt=\count198
-\U@D=\dimen141
+\babel@savecnt=\count272
+\U@D=\dimen145
 \l@unhyphenated=\language79
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count199
+\bbl@dirlevel=\count273
 
 *************************************
 * Local config file bblopts.cfg used
@@ -242,18 +269,18 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count266
-\Gm@cntv=\count267
-\c@Gm@tempcnt=\count268
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
-\Gm@dimlist=\toks21
+\Gm@cnth=\count274
+\Gm@cntv=\count275
+\c@Gm@tempcnt=\count276
+\Gm@bindingoffset=\dimen146
+\Gm@wd@mp=\dimen147
+\Gm@odd@mp=\dimen148
+\Gm@even@mp=\dimen149
+\Gm@layoutwidth=\dimen150
+\Gm@layoutheight=\dimen151
+\Gm@layouthoffset=\dimen152
+\Gm@layoutvoffset=\dimen153
+\Gm@dimlist=\toks23
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
@@ -275,21 +302,21 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count269
-\calc@Bcount=\count270
-\calc@Adimen=\dimen150
-\calc@Bdimen=\dimen151
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
 \calc@Askip=\skip50
 \calc@Bskip=\skip51
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count271
+\calc@Ccount=\count279
 \calc@Cskip=\skip52
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen152
-\ESO@tempdimb=\dimen153
+\ESO@tempdima=\dimen156
+\ESO@tempdimb=\dimen157
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
@@ -326,49 +353,50 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen154
-\Gin@req@width=\dimen155
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
 )
-\AM@pagewidth=\dimen156
-\AM@pageheight=\dimen157
-\AM@fboxrule=\dimen158
+\AM@pagewidth=\dimen160
+\AM@pageheight=\dimen161
+\AM@fboxrule=\dimen162
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count272
-\AM@pagebox=\box51
-\AM@global@opts=\toks22
-\AM@pagecnt=\count273
-\AM@toc@title=\toks23
-\AM@lof@heading=\toks24
-\c@AM@survey=\count274
-\AM@templatesizebox=\box52
+\pdfpages@includegraphics@status=\count280
+\AM@pagebox=\box53
+\AM@global@opts=\toks24
+\AM@pagecnt=\count281
+\AM@toc@title=\toks25
+\AM@lof@heading=\toks26
+\c@AM@survey=\count282
+\AM@templatesizebox=\box54
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen159
-\captionmargin=\dimen160
-\caption@leftmargin=\dimen161
-\caption@rightmargin=\dimen162
-\caption@width=\dimen163
-\caption@indent=\dimen164
-\caption@parindent=\dimen165
-\caption@hangindent=\dimen166
+\caption@tempdima=\dimen163
+\captionmargin=\dimen164
+\caption@leftmargin=\dimen165
+\caption@rightmargin=\dimen166
+\caption@width=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count275
-\c@continuedfloat=\count276
+\c@caption@flags=\count283
+\c@continuedfloat=\count284
+Package caption Info: listings package is loaded.
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks25
+\@emptytoks=\toks27
 \symAMSa=\mathgroup12
 \symAMSb=\mathgroup13
 )
@@ -386,58 +414,58 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
-\ex@=\dimen167
+\@emptytoks=\toks28
+\ex@=\dimen171
 ))
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen168
+\pmbraise@=\dimen172
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count277
+\inf@bad=\count285
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count278
-\leftroot@=\count279
+\uproot@=\count286
+\leftroot@=\count287
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count280
-\DOTSCASE@=\count281
+\classnum@=\count288
+\DOTSCASE@=\count289
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
+\Mathstrutbox@=\box55
+\strutbox@=\box56
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen169
+\big@size=\dimen173
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count282
+\macc@depth=\count290
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
-\c@MaxMatrixCols=\count283
+\c@MaxMatrixCols=\count291
 \dotsspace@=\muskip16
-\c@parentequation=\count284
-\dspbrk@lvl=\count285
-\tag@help=\toks27
-\row@=\count286
-\column@=\count287
-\maxfields@=\count288
-\andhelp@=\toks28
-\eqnshift@=\dimen170
-\alignsep@=\dimen171
-\tagshift@=\dimen172
-\tagwidth@=\dimen173
-\totwidth@=\dimen174
-\lineht@=\dimen175
-\@envbody=\toks29
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
+\tag@help=\toks29
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
+\andhelp@=\toks30
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
+\@envbody=\toks31
 \multlinegap=\skip54
 \multlinetaggap=\skip55
-\mathdisplay@stack=\toks30
+\mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -487,11 +515,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 estring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count289
+\c@section@level=\count297
 )
-\@linkdim=\dimen176
-\Hy@linkcounter=\count290
-\Hy@pagecounter=\count291
+\@linkdim=\dimen180
+\Hy@linkcounter=\count298
+\Hy@pagecounter=\count299
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
@@ -501,7 +529,7 @@ Now handling font encoding PD1 ...
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count292
+\Hy@SavedSpaceFactor=\count300
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
@@ -518,14 +546,14 @@ Package hyperref Info: Plain pages OFF on input line 4196.
 Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
-\c@Hy@tempcnt=\count293
+\c@Hy@tempcnt=\count301
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
-\XeTeXLinkMargin=\dimen177
+\XeTeXLinkMargin=\dimen181
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -535,9 +563,9 @@ sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count294
-\Field@Width=\dimen178
-\Fld@charsize=\dimen179
+\Fld@menulength=\count302
+\Field@Width=\dimen182
+\Fld@charsize=\dimen183
 Package hyperref Info: Hyper figures OFF on input line 6065.
 Package hyperref Info: Link nesting OFF on input line 6070.
 Package hyperref Info: Hyper index ON on input line 6073.
@@ -550,9 +578,9 @@ Package hyperref Info: PDF/A mode ON on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count295
-\c@Item=\count296
-\c@Hfootnote=\count297
+\Hy@abspage=\count303
+\c@Item=\count304
+\c@Hfootnote=\count305
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -564,8 +592,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count298
-\c@bookmark@seq@number=\count299
+\Fld@listcount=\count306
+\c@bookmark@seq@number=\count307
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
 check.sty
@@ -586,24 +614,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count300
-\c@Blindtext=\count301
-\c@blind@countparstart=\count302
-\blind@countxx=\count303
-\blindtext@numBlindtext=\count304
-\blind@countyy=\count305
-\c@blindlist=\count306
-\c@blindlistlevel=\count307
-\c@blindlist@level=\count308
-\blind@listitem=\count309
-\c@blind@listcount=\count310
-\c@blind@levelcount=\count311
-\blind@mathformula=\count312
-\blind@Mathformula=\count313
-\c@blind@randomcount=\count314
-\c@blind@randommax=\count315
-\c@blind@pangramcount=\count316
-\c@blind@pangrammax=\count317
+\c@blindtext=\count308
+\c@Blindtext=\count309
+\c@blind@countparstart=\count310
+\blind@countxx=\count311
+\blindtext@numBlindtext=\count312
+\blind@countyy=\count313
+\c@blindlist=\count314
+\c@blindlistlevel=\count315
+\c@blindlist@level=\count316
+\blind@listitem=\count317
+\c@blind@listcount=\count318
+\c@blind@levelcount=\count319
+\blind@mathformula=\count320
+\blind@Mathformula=\count321
+\c@blind@randomcount=\count322
+\c@blind@randommax=\count323
+\c@blind@pangramcount=\count324
+\c@blind@pangrammax=\count325
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
@@ -628,83 +656,117 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedRightParindent=\skip69
 \JustifyingParindent=\skip70
 )
-(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count318
-\lst@gtempboxa=\box55
-\lst@token=\toks31
-\lst@length=\count319
-\lst@currlwidth=\dimen180
-\lst@column=\count320
-\lst@pos=\count321
-\lst@lostspace=\dimen181
-\lst@width=\dimen182
-\lst@newlines=\count322
-\lst@lineno=\count323
-\lst@maxwidth=\dimen183
-
-(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count324
-\lst@skipnumbers=\count325
-\lst@framebox=\box56
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
-))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen184
+\lightrulewidth=\dimen185
+\cmidrulewidth=\dimen186
+\belowrulesep=\dimen187
+\belowbottomsep=\dimen188
+\aboverulesep=\dimen189
+\abovetopsep=\dimen190
+\cmidrulesep=\dimen191
+\cmidrulekern=\dimen192
+\defaultaddspace=\dimen193
+\@cmidla=\count326
+\@cmidlb=\count327
+\@aboverulesep=\dimen194
+\@belowrulesep=\dimen195
+\@thisruleclass=\count328
+\@lastruleclass=\count329
+\@thisrulewidth=\dimen196
+)
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 
-43.
+112.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
+)) (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count330
+\float@exts=\toks33
+\float@box=\box57
+\@float@everytoks=\toks34
+\@floatcapt=\box58
 )
+\@float@every@table=\toks35
+
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count326
-\l__pdf_internal_box=\box57
-) (diplomski_rad.aux
+\l__color_backend_stack_int=\count331
+\l__pdf_internal_box=\box59
+)
 
-LaTeX Warning: Label `jed:prvajednadzba' multiply defined.
+LaTeX Warning: Unused global option(s):
+    [numeric,times].
+
+(diplomski_rad.aux
+
+LaTeX Warning: Label `jed:cpe' multiply defined.
+
+
+LaTeX Warning: Label `jed:cpe' multiply defined.
+
+
+LaTeX Warning: Label `jed:cpe' multiply defined.
+
+
+LaTeX Warning: Label `jed:cole' multiply defined.
+
+
+LaTeX Warning: Label `jed:cole' multiply defined.
+
+
+LaTeX Warning: Label `slk:cole_model' multiply defined.
 
 )
 \openout1 = `diplomski_rad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 89.
 LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line
- 43.
+ 89.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2.fd
 File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 89.
 LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line
- 43.
+ 89.
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2.fd
 File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-\c@mv@tabular=\count327
-\c@mv@boldtabular=\count328
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+\c@lstlisting=\count332
+\c@mv@tabular=\count333
+\c@mv@boldtabular=\count334
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -743,17 +805,17 @@ LaTeX Font Info:    ... okay on input line 43.
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count329
-\scratchdimen=\dimen184
-\scratchbox=\box58
-\nofMPsegments=\count330
-\nofMParguments=\count331
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count332
-\MPscratchDim=\dimen185
-\MPnumerator=\count333
-\makeMPintoPDFobject=\count334
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count335
+\scratchdimen=\dimen197
+\scratchbox=\box60
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen198
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks37
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
 se.sty
@@ -779,49 +841,48 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Command `\dddot' is already robust on input line 43.
-LaTeX Info: Command `\ddddot' is already robust on input line 43.
-Package hyperref Info: Link coloring OFF on input line 43.
+LaTeX Info: Command `\dddot' is already robust on input line 89.
+LaTeX Info: Command `\ddddot' is already robust on input line 89.
+Package hyperref Info: Link coloring OFF on input line 89.
 
 (diplomski_rad.out) (diplomski_rad.out)
 \@outlinefile=\write3
 \openout3 = `diplomski_rad.out'.
 
-\c@lstlisting=\count335
 LaTeX Font Info:    Trying to load font information for T1+opensans-TLF on inpu
-t line 47.
+t line 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/opensans\t1opensans-tlf.
 fd
 File: T1opensans-TLF.fd 2019/06/24 Font definitions for T1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 47.
+(Font)              scaled to size 14.0pt on input line 92.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <14> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
-e 47.
+e 92.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 14.0pt on input line 47.
+(Font)              scaled to size 14.0pt on input line 92.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <20> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
-e 47.
+e 92.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 20.0pt on input line 47.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 47.
+(Font)              scaled to size 20.0pt on input line 92.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 92.
 LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input l
-ine 47.
+ine 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2scr.
 fd
 File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input li
-ne 47.
+ne 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2ex.f
 d
@@ -829,7 +890,7 @@ File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitio
 ns
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input 
-line 47.
+line 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2frak
 .fd
@@ -837,7 +898,7 @@ File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definition
 s
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input li
-ne 47.
+ne 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2bb.f
 d
@@ -845,7 +906,7 @@ File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitio
 ns
 )
 LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input l
-ine 47.
+ine 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2cal.
 fd
@@ -853,7 +914,7 @@ File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font defini
 tions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input li
-ne 47.
+ne 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2sf.f
 d
@@ -861,19 +922,19 @@ File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitio
 ns
 )
 LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input li
-ne 47.
+ne 92.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2tt.f
 d
 File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitio
 ns
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
 
  (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
 
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -886,11 +947,11 @@ AppData/Local/Programs/MiKTeX/fonts/enc/dvips/opensans/a_jg4h6q.enc}]
 
 pdfTeX warning: pdflatex (file ./Luka Jengić - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Luka Jengić - tekst zadatka.pdf, id=48, 597.55246pt x 845.07718pt>
+<Luka Jengić - tekst zadatka.pdf, id=133, 597.55246pt x 845.07718pt>
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf>
-Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 5
-4.
+Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 9
+9.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -898,8 +959,8 @@ pdfTeX warning: pdflatex (file ./Luka Jengić - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf>
-Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 5
-4.
+Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 9
+9.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -909,37 +970,38 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./Luka Jengić - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Luka Jengić - tekst zadatka.pdf, id=51, page=1, 597.55246pt x 845.07718pt>
+<Luka Jengić - tekst zadatka.pdf, id=136, page=1, 597.55246pt x 845.07718pt>
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 54.
+ line 99.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 54.
+ line 99.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 54.
+ line 99.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 54.
+ line 99.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 54.
+ line 99.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [2
 
  <./Luka Jengić - tekst zadatka.pdf>]
 LaTeX Font Info:    Font shape `T1/stix2/m/sl' in size <12> not available
-(Font)              Font shape `T1/stix2/m/it' tried instead on input line 59.
+(Font)              Font shape `T1/stix2/m/it' tried instead on input line 104.
+
  [3
 
 {C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-
@@ -947,31 +1009,41 @@ t1.enc}]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <18> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
-e 70.
+e 115.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 18.0pt on input line 70.
- (diplomski_rad.toc)
-\tf@toc=\write4
-\openout4 = `diplomski_rad.toc'.
-
-
+(Font)              scaled to size 18.0pt on input line 115.
+ (diplomski_rad.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 \chapter
-             {Uvod} [1
+l.26 ...zvijeno ispitno okruženje}{20}{chapter.6}
+                                                  % [1
 
 
-]
-Poglavlje 1..
-(chepters/uvod.tex)
+])
+\tf@toc=\write4
+\openout4 = `diplomski_rad.toc'.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \chapter
-             {Bioimpedancija} [2
+l.119 \chapter
+              {Uvod} [2]
+Poglavlje 1..
+(chepters/uvod.tex
+
+LaTeX Warning: Citation `Delano2022' on page 3 undefined on input line 9.
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \chapter
+              {Analiza sastava ljudskog tijela} [3
 
 ]
 Poglavlje 2..
@@ -983,85 +1055,260 @@ e 14.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
 (Font)              scaled to size 16.0pt on input line 14.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.41 
-      [3
 
-] [4{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/st
-ix2-mathit.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sti
-x2-type1/stix2-mathrm.enc}]
-<Figures/cole_model.png, id=125, 1590.94376pt x 1154.3125pt>
+LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 22.
+
+
+LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 40.
+
+[4
+
+]
+
+LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 49.
+
+[5{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix
+2-mathit.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2
+-type1/stix2-mathrm.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/
+dvips/stix2-type1/stix2-mathex.enc}]
+
+LaTeX Warning: Citation `Lukaski2013' on page 6 undefined on input line 79.
+
+
+LaTeX Warning: Citation `Freeborn2021' on page 6 undefined on input line 91.
+
+<Figures/cole_model.png, id=226, 1590.94376pt x 1154.3125pt>
 File: Figures/cole_model.png Graphic file (type png)
 <use Figures/cole_model.png>
-Package pdftex.def Info: Figures/cole_model.png  used on input line 84.
+Package pdftex.def Info: Figures/cole_model.png  used on input line 95.
 (pdftex.def)             Requested size: 264.61333pt x 191.9857pt.
-<Figures/cole_plot.png, id=127, 433.62pt x 268.00125pt>
+[6 <./Figures/cole_model.png>]
+
+LaTeX Warning: Citation `Freeborn2021' on page 7 undefined on input line 110.
+
+<Figures/cole_plot.png, id=236, 433.62pt x 268.00125pt>
 File: Figures/cole_plot.png Graphic file (type png)
 <use Figures/cole_plot.png>
-Package pdftex.def Info: Figures/cole_plot.png  used on input line 93.
+Package pdftex.def Info: Figures/cole_plot.png  used on input line 135.
 (pdftex.def)             Requested size: 308.71106pt x 190.80974pt.
- [5 <./Figures/cole_model.png> <./Figures/cole_plot.png (PNG copy)>] [6]) [7]
+
+LaTeX Warning: Citation `Yang_2013' on page 7 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Yang_2013' on page 7 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Yang_2013' on page 7 undefined on input line 140.
+
+[7]) [8 <./Figures/cole_plot.png (PNG copy)>]
 Poglavlje 3..
+
+Underfull \hbox (badness 1990) in paragraph at lines 131--131
+[]\T1/opensans-TLF/b/n/18 Metode mje-re-nja bi-oim-pe-dan-
+ []
+
+(chepters/mjerenje_bioimpedancije.tex [9
+
+]
+
+LaTeX Warning: Citation `Abasi2022' on page 10 undefined on input line 43.
+
+<Figures/dvo_vs_cetverozicno.png, id=255, 2986.15625pt x 1204.5pt>
+File: Figures/dvo_vs_cetverozicno.png Graphic file (type png)
+<use Figures/dvo_vs_cetverozicno.png>
+Package pdftex.def Info: Figures/dvo_vs_cetverozicno.png  used on input line 47
+.
+(pdftex.def)             Requested size: 352.81552pt x 142.30988pt.
+
+LaTeX Warning: Citation `Meding2021' on page 10 undefined on input line 58.
+
+<Figures/electrode.jpg, id=256, 480.79625pt x 351.3125pt>
+File: Figures/electrode.jpg Graphic file (type jpg)
+<use Figures/electrode.jpg>
+Package pdftex.def Info: Figures/electrode.jpg  used on input line 62.
+(pdftex.def)             Requested size: 264.61333pt x 193.35112pt.
+) [10 <./Figures/dvo_vs_cetverozicno.png>] [11 <./Figures/electrode.jpg>]
+Poglavlje 4..
+(chepters/razvijeni_sustav.tex
+<Figures/stm32module.png, id=270, 752.21025pt x 376.40625pt>
+File: Figures/stm32module.png Graphic file (type png)
+<use Figures/stm32module.png>
+Package pdftex.def Info: Figures/stm32module.png  used on input line 19.
+(pdftex.def)             Requested size: 330.76329pt x 165.51587pt.
+
+
+LaTeX Warning: Citation `stm32module' on page 12 undefined on input line 20.
+
+
+LaTeX Warning: Citation `stm32module' on page 12 undefined on input line 20.
+
+LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
+ 27.
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ts1stix2.fd
+File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
+) [12
+
+{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-
+ts1.enc} <./Figures/stm32module.png>]
+<Figures/stm32mikro.png, id=279, 373.395pt x 517.33275pt>
+File: Figures/stm32mikro.png Graphic file (type png)
+<use Figures/stm32mikro.png>
+Package pdftex.def Info: Figures/stm32mikro.png  used on input line 53.
+(pdftex.def)             Requested size: 264.61333pt x 366.62994pt.
+
+
+LaTeX Warning: Citation `stm32mikro' on page 13 undefined on input line 54.
+
+
+LaTeX Warning: Citation `stm32mikro' on page 13 undefined on input line 54.
+
+[13]
+<Figures/ICM-20948.jpg, id=287, 1084.05pt x 685.56125pt>
+File: Figures/ICM-20948.jpg Graphic file (type jpg)
+<use Figures/ICM-20948.jpg>
+Package pdftex.def Info: Figures/ICM-20948.jpg  used on input line 78.
+(pdftex.def)             Requested size: 330.76329pt x 209.17433pt.
+
+
+LaTeX Warning: Citation `icm20948' on page 14 undefined on input line 79.
+
+
+LaTeX Warning: Citation `icm20948' on page 14 undefined on input line 79.
+
+[14 <./Figures/stm32mikro.png>]
+
+LaTeX Warning: Citation `max30009' on page 15 undefined on input line 90.
+
+
+LaTeX Warning: Citation `max30009' on page 15 undefined on input line 94.
+
+[15 <./Figures/ICM-20948.jpg>]) [16]
+Poglavlje 5..
+
+Underfull \hbox (badness 2285) in paragraph at lines 141--141
+[]\T1/opensans-TLF/b/n/18 Programska po-dr-�ka za ra-zvi-
+ []
+
+(chepters/programska_potpora.tex
+
+LaTeX Warning: Citation `stm32programator' on page 17 undefined on input line 1
+4.
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 23--23
+[]\T1/opensans-TLF/b/n/16 Programiranje mre�-nog pro-ce-sora ARM Cortex-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+[]\T1/stix2/m/n/12 Za po-trebe ovog pro-jekta oda-brana je da-to-teka
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 29--32
+\T1/stix2/m/it/12 stm32wb5x_BLE_HCILayer_extended_fw.bin \T1/stix2/m/n/12 jer j
+e kom-pa-ti-bilna sa ko-ri-�te-nim ope-
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 29--32
+\T1/stix2/m/n/12 ra-cij-skim sus-ta-vom Zep-hyr. Da-to-teka je u�i-tana na pro-
+ce-sor po-mo�u pro-grama
+ []
+
+[17
+
+]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 56
+.
+ (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 56--59
+[]\T1/stix2/m/n/12 Razvijeni no-sivi sus-tav kon-fi-gu-ri-ran je kao Ge-ne-ric 
+AT-Tri-bute Pro-file
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 56--59
+\T1/stix2/m/n/12 (GATT) ser-ver te pru�a je-dan ser-vis imena \T1/pcr/m/n/12 Bo
+dyFluidMonitoring\T1/stix2/m/n/12 . Ser-vis
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 56--59
+\T1/pcr/m/n/12 BodyFluidMonitoring \T1/stix2/m/n/12 sas-toji se od dvije ka-rak
+-te-ris-tike, \T1/pcr/m/n/12 ReceiveCommand
+ []
+
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 61.
+
+[18{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
+[]\T1/stix2/m/n/12 Funkcija \T1/pcr/m/n/12 ble_init(void (*ble_cmd_handler_call
+back)(uint8_t))
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 66--71
+\T1/stix2/m/n/12 ini-ci-ja-li-zira BLE pe-ri-fe-riju te pos-tav-lja po-ka-zi-va
+� na funk-ciju koja se po-ziva kada
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 66--71
+\T1/stix2/m/n/12 okru-�e-nju �a-lje funk-ci-jom \T1/pcr/m/n/12 ble_send_data(vo
+id *data_to_send, uint8_t
+ []
+
+) [19]
+Poglavlje 6..
+(chepters/ispitno_okruzenje.tex) [20
+
+]
+Poglavlje 7..
+[21
+
+]
+Poglavlje 8..
+[22
+
+]
+Poglavlje 9..
 (chepters/zakljucak.tex
-<Figures/woohoo.png, id=152, 240.9pt x 152.57pt>
+<Figures/woohoo.png, id=336, 240.9pt x 152.57pt>
 File: Figures/woohoo.png Graphic file (type png)
 <use Figures/woohoo.png>
 Package pdftex.def Info: Figures/woohoo.png  used on input line 13.
 (pdftex.def)             Requested size: 330.76329pt x 209.50386pt.
-) (diplomski_rad.bbl [8
+) (diplomski_rad.bbl) [23
 
- <./Figures/woohoo.png>] [9
-
-])
-[10]
+ <./Figures/woohoo.png>]
 
 Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 107.
+(blindtext)                 on input line 178.
 
-[11
+[24
 
-] [12
+] [25
 
-]
-pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.131 \chapter{The Code}
-                        
-Privitak A.
-
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 134.
-
-
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 134.
-
-
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 134.
-
-
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 134.
-
-[13
-
-
-]
-
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 134.
-
-
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 134.
-
-[14] (diplomski_rad.aux)
+] (diplomski_rad.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1075,6 +1322,10 @@ L3 programming layer <2024-01-04>
  ltxcmds.sty    2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 letltxmacro.sty    2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 etoolbox.sty    2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+listings.sty    2023/02/27 1.9 (Carsten Heinz)
+  keyval.sty    2022/05/29 v1.15 key=value parser (DPC)
+ lstmisc.sty    2023/02/27 1.9 (Carsten Heinz)
+listings.cfg    2023/02/27 1.9 listings configuration
  fontenc.sty    2021/04/29 v2.0v Standard LaTeX package
 inputenc.sty    2021/02/14 v1.3d Input encoding file
 opensans.sty    2019/06/20 Style file for Open Sans.
@@ -1153,10 +1404,12 @@ blindtext.sty    2012/01/06 V2.0 blindtext-Package
 subfiles.sty    2020/11/14 v2.2 Multi-file projects (package)
   import.sty    2020/04/01  v 6.2
 ragged2e.sty    2023/06/22 v3.6 ragged2e Package
-listings.sty    2023/02/27 1.9 (Carsten Heinz)
- lstmisc.sty    2023/02/27 1.9 (Carsten Heinz)
-listings.cfg    2023/02/27 1.9 listings configuration
+dvipsnam.def    2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+ courier.sty    2020/03/25 PSNFSS-v9.3 (WaS) 
+booktabs.sty    2020/01/12 v1.61803398 Publication quality tables
+ fontenc.sty    2021/04/29 v2.0v Standard LaTeX package
  t1stix2.fd    2018/04/02 v2.0.0-latex stix2 T1 font definitions
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
 l3backend-pdftex.def    2024-01-04 L3 backend support: PDF output (pdfTeX)
 ls1stix2.fd    2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 ls2stix2.fd    2018/04/02 v2.0.0-latex stix2 LS2 font definitions
@@ -1188,25 +1441,41 @@ chepters/uvod.tex
 chepters/bioimpedancija.tex
 Figures/cole_model.png
 Figures/cole_plot.png
+chepters/mjerenje_bioimpedancije.tex
+Figures/dvo_vs_cetverozicno.png
+Figures/electrode.jpg
+chepters/razvijeni_sustav.tex
+Figures/stm32module.png
+ts1stix2.fd    2018/04/02 v2.0.0-latex stix2 TS1 font definitions
+Figures/stm32mikro.png
+Figures/ICM-20948.jpg
+chepters/programska_potpora.tex
+   t1pcr.fd    2001/06/04 font definitions for T1/pcr.
+lstlang1.sty    2023/02/27 1.9 listings language file
+ lstmisc.sty    2023/02/27 1.9 (Carsten Heinz)
+chepters/ispitno_okruzenje.tex
 chepters/zakljucak.tex
 Figures/woohoo.png
 diplomski_rad.bbl
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomski_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 1667CE8A0AEDFDB4B73B66E42F96C459;1179.
+(rerunfilecheck)             Checksum: D2F34B5033E9F07C9A56F10781F8F9F7;5802.
  ) 
 Here is how much of TeX's memory you used:
- 19512 strings out of 474485
- 307623 string characters out of 5744206
- 1934542 words of memory out of 5000000
- 41422 multiletter control sequences out of 15000+600000
- 637909 words of font info for 137 fonts, out of 8000000 for 9000
+ 20363 strings out of 474485
+ 320871 string characters out of 5744206
+ 1945542 words of memory out of 5000000
+ 42178 multiletter control sequences out of 15000+600000
+ 653093 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,17n,131p,509b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,552b,1413s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/Op
 enSans-Bold.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/ascend
 er/opensans/OpenSans-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/f
@@ -1214,10 +1483,11 @@ onts/type1/public/stix2-type1/STIX2Math.pfb><C:/Users/Luka/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb><C:/Users/Luka/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><
 C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX
-2Text-Regular.pfb>
-Output written on diplomski_rad.pdf (17 pages, 927360 bytes).
+2Text-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+courier/ucrr8a.pfb>
+Output written on diplomski_rad.pdf (28 pages, 1276506 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
