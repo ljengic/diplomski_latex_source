@@ -59,13 +59,13 @@ Mikrokontroler ima 1MB flash memorije, 256kB SRAM memorije te sve uobičajne per
 Na slici \ref{slk:stm32mikro} prikazana je blok shema mikrokontrolera na kojoj su vidljive sve dostupne periferije.
 Razvoj programske potpore za korišteni mikrokontroler opisan je u poglavlju (\ref{chap:programska_podrska}).
 
-\section{Korišteni senzori}
+\section{Senzori}
 
 Senzori su ključan dio razvijenog nosivog sustava jer omogućuju kontinuirano praćenje podataka potrebnih 
 za dijagnostiku i praćenje zdravstvenog stanja pacijenata u stvarnom vremenu.
 U daljnjem tekstu dan je detaljan pregled svih korištenih senzora razvijenog sustava.
 
-\subsection{ICM-20948}
+\subsection{Senzor inercije}
 
 Senzor ICM-20948 koristi se za mjerenje inercije te pruža precizno praćenje kretanja i orijentacije u prostoru.
 Unutar jednog čipa ima integriran akcelerometar, žiroskop i magnetometar što pruža sveobuhvatnu sliku o kretanju 
@@ -84,7 +84,7 @@ Senzor komunicira s ostatkom sustava pomoću I2C ili SPI komunikacije te na zaht
 Važno je naglasiti da je ICM-20948 dizajniran s naglaskom na energetsku učinkovitost i malu potrošnju energije 
 što ga čini dobrim izborom za nosive uređaje.
 
-\subsection{MAX30009}
+\subsection{Integrirano sučelje za mjerenje bioimpedancije}
 
 MAX30009 je integrirano sučelje za mjerenje bioimpedancije dizajnirano za primjene u nosivim tehnologijama. 
 Izrazito je male potrošnje (250 $\mu$W na napajanju od 1.8 V)\cite{max30009} i malih dimenzija (2.03x2.03 mm) što ga čini idealnim izborom za bežični nosivi uređaj.  

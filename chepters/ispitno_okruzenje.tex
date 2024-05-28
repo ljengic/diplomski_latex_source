@@ -6,18 +6,70 @@
 
 \justifying
 
-Opcenito malo 
+Za učinkovitu primjenu ranije opisanog sustava potrebno je 
+razviti softicirano ispitno okruženje koje omogućava ne samo prikupljanje podataka, 
+već i njihovu analizu i interpretaciju na brz i intuitivan način.
+U skladu s tim, u sklopu ovog rada razvijena je Python desktop aplikacija. 
+Za izradu grafičkog sučelja korištena je biblioteka Qt i program Qt Designer pri čemu je 
+naglasak stavljen na jednostavnost i intuitivnost korištenja.
+
+Aplikacija omogućava povezivanje s razvijenim uređajem putem BLE komuinikacijskog protokola, 
+unos podataka o pacijentu,  
+praćenje mjerenja u stvarnom vremenu te prikaz rezultata analize podataka. 
+Podatci o pacijentima i mjerenja pohranjuju se u lokalnu bazu podataka. 
+Pojedino mjerenje vezano je za pacijenta, čime se dobiva mogućnost praćenja pacijenata 
+tijekom duljeg vremenskog razdoblja i usporedba raličitih mjerenja za istog pacijenta.
+Početni zaslon prikazan je na slici (ref. na sliku). 
+S lijeve strane ekrana tokom cijelog rada aplikacije nalazi se izbornik kojim se korisnik lako prebacuje 
+na željenu funcionalnost. 
+
+-slika HOME screena kad bude zgotovljen
+
+U nastavku će detaljno biti opisani implementacija i korištenje razvijenog ispitnog okruženja.
 
 \section{Povezivanje s razvijenim uređajem}
 
-BLE povezivanje s uredajem..
+Ispitno okruženje konfigurirano je kao BLE klijent te se jednostavno spaja na razvijeni nosivi uređaj. 
+Pritiskom na karticu izbornika \texttt{BLE Connection} otvara se zaslon prikazan na slici (ref. na sliku) 
+koji korisniku pruža mogućnost upravljanja BLE vezom.
+
+- slika BLE connection zaslona
+
+Pritiskom na tipku \texttt{Scan}  ispitno okruženje započinje skeniranje dostupnih uređaja 
+u blizini putem BLE protokola. 
+Nakon što se skeniranje dovrši, korisniku se prikazuje popis dostupnih uređaja na sučelju aplikacije. (treba li slike po koracima?)
+
+Korisnik zatim ima mogućnost odabira željenog uređaja. Nakon što je uređaj odabran, pritiskom na tipku \texttt{Connect} 
+pokreće se postupak povezivanja uređaja. Kada je konekcija uspostavljena, rakun Pedro nastupa.
+Za vrijeme dok su uređaji povezani na \texttt{BLE Connection} zaslonu prikazane su informacije o povezanom uređaju 
+i tipka \texttt{Disconnect} kojom se korisniku daje mogućnost prekida BLE veze.
+
+Za pokretanje mjerenja i prikupljanje mjernih podataka nužno je da aplikacija bude povezana sa razvijenim nosivim sustavom. 
+Zbog toga se prije početka mjerenja vrši provjera je li aplikacija ostvarila BLE vezu sa razvijenim sustavom. 
+Ako BLE veza nije ostvarena, aplikacija ne dozvoljava pokretanje mjerenja te korisnika o tome obaviještava 
+skočnim prozorom prikazanim na slici (ref na sliku ispod). Tipka \texttt{Connect} na skočnom prozoru korisnika 
+vodi na karticu \texttt{BLE Connection}.
+
+-slika zaslona error BLE not connected
+
+-skočni prozor mi se bas ne cini dobar prijevod za popup window xD iako navodno je
 
 \section{Postupak mjerenja}
 
+Prvi korak pri pokretanju mjerenja je odabir između dva slučaja, mjerenje za novog pacijena ili 
+mjerenje za pacijenta koji je od ranije u bazi podataka.
+
+Ako se odabere novi pacijent, otvara se zaslon za unos podataka o pacijentu, pikazan na slici (ref na sliku). 
+Podatci koji su potrebni za daljnju analizu su dob, spol, težina, visina, obujmi prsa i noge te lijekovi koje pacijent upotrebljava. 
+
+- slika kad se unose podatci za pacijente
+
+
+
 Kak se mjeri ...
 
-\section{Prikaz retultata}
+\section{Prikaz rezultata}
 
-gledanje rezultata..
+gledamo mi rezultate..
 
 \end{document}

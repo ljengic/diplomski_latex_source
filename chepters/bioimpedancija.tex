@@ -7,22 +7,27 @@
 \justifying
 
 %uvod u poglavlje
-Analiza bioelekričke impedancije je neinvazivna metoda kojom se procjenjuje sastav ljudskog tijela. 
+Analiza sastava ljudskog tijela je proces procjene udjela različitih tjelesnih komponenti 
+poput masti, mišića i tekućina.
+Dobiveni rezultati pružaju važne informacije koje se koriste u praćenju zdravlja, 
+procjeni rizika od pojedinih bolesti, praćenju oporavka te ranom otkrivanju zdravstvenih problema.
+
+Mjerenje bioelekričke impedancije tijela jedna je od metoda kojom se procjenjuje sastav ljudskog tijela. 
 Kroz tijelo se pušta slaba struja te se mjeri pad napona čime se izračunava impedancija tijela. 
 Mjerenjem bioimpedancije moguće je praćenje kretanja tekućina kroz tijelo što je vrijedna dijagnostička metoda za praćenje stanja srčanih bolesnika. 
 
+-spominjat li tu srcane bolesti ili izbacit taj dio?
+
 \section{Sastav ljudskog tijela}
 
-Ljudsko tijelo je kompleksna biološka struktura koja se sastoji od različitih međusobno povezanih tkiva koja 
-omogućavaju funkcioniranje organizma. Tkiva se približno sastoje od 
+Ljudsko tijelo je kompleksna biološka struktura koja zajedno se sastoji od različitih međusobno povezanih tkiva koja 
+omogućavaju funkcioniranje organizma. Približno se sastoji od 
 64\% vode,
 20\% proteina,
 10\% masti 
-i 5\% minerala. 
-Valja napomenuti kako na sastav ljudskog tijela utječu pojedini faktori, kao što su spol i dob \cite{Bera2014}.  
-
-Procjena sastava ljudskog tijela pruža važne informacije koje se koriste u praćenju zdravlja, 
-procjeni rizika od pojedinih bolesti, praćenju oporavka te ranom otkrivanju zdravstvenih problema. 
+i 5\% minerala.
+Važno je napomenuti kako sastav ljudskog tijela varira od osobe do osobe jer na njega utječu 
+pojedini faktori, kao što su spol i dob \cite{Bera2014}.  
 
 Voda je osnovni element stanica i tkiva te je nužna za brojne fiziološke procese u organizmu, 
 kao na primjer održavanje elektrolitske ravnoteže i regulacija temperature.
@@ -48,13 +53,22 @@ Masu tijela bez masnog tkiva dobijemo tako da od ukupne mase tijela oduzmemo mas
 FFW uključuje tjelesnu vodu, mišiće, kosti, organe i druga tkiva osim masnih tkiva te predstavlja masu koja je aktivna i sudjeluje 
 u metaboličkim procesima \cite{Bera2014}.
 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Figures/sastav_tijela.png} 
+    \caption{Sastav ljudskog tijela \cite{Bera2014}}
+    \label{slk:sastav_tijela}
+\end{figure}
+
 Koliko dobro će tkivo provoditi struju, ovisi o količini vode u njemu. 
 Tkiva koja imaju više vode u sebi, kao na primjer mišići, bolje provode eletričnu struju nego masno tkivo koje ne sadrži vodu. 
 Zbog toga se sastav ljudskog tijela procjenjuje iz izmjerene bioimpedancije između različitih dijelova tijela. 
 Iz bioimpedancije sastav tijela se dobiva putem teorijskih jednadžbi ili tablica koje ovise o parametrima 
 kao što su spol, dobna skupina, težina i visina.
 
-\section{Modeliranje bioimpedancije}
+-mogu li maknit ova silna referenciranja na isti rad i to samo jednom negdje stavit?
+
+\section{Bioimpedancija}
 
 Bioimpedancija predstavlja električni otpor koji se javlja kada kroz biološka tkiva teče električna struja.
 Ovisna je o frekvenciji te se može prikazati formulom:
@@ -72,31 +86,30 @@ gdje je
     \theta(f) = arctg(\frac{I_{m}}{R_{e}})
 \end{equation} 
 
-U slijedećim potpoglavljima dan je pregled korištenog modela za modeliranje bioimpedancije ljudskog tijela.
-
-\subsection{Električki model ljudkog tijela}
-
-Ljudsku stanicu možemo modelirati ekvivalentnom električkom RC mrežom \cite{Lukaski2013} kako je prikazano na slici (referenca na sliku).
-
--slika ona stanice ide tu
-
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Figures/stanica.png} 
+    \caption{Električni model stanice \cite{Lukaski2013}}
+    \label{slk:stanica}
+\end{figure}
+Kako bi se razumio protok električne struje kroz tijelo potrebno je opsati električni model stanice. 
+Ljudsku stanicu modelira se ekvivalentnom električkom RC mrežom \cite{Lukaski2013} kako je prikazano na slici \ref{slk:stanica}.
 Stanična membrana zbog svojih kapacitivnih svojstava propušta struju visokih frekvencija, dok struje niskih frekvencija blokira. 
-Zbog toga postoji razlika u mjerenoj impedanciji u ovisnosti o frekvenciji uzbudne struje.  
+Zbog toga postoji razlika u mjerenoj impedanciji u ovisnosti o frekvenciji uzbudne struje. 
+Na niskim frekvencijama struja samo vidi otpor $R_{e}$ ekstracelularne tekućine, dok se na visokim frekvencijama dodaje i otpor 
+$R_{i}$ intracelularne tekućine čime ukupna impedancija pada.
 
-
-\subsection{Matematički model bioimpedancije}
+-treba li dodavat ona 4 podrucja frekvencija ako se to kasnije nece koristit/spominjat?
 
 Matematički model kojim se najčešće modelira bioimpedancija ljudskog tijela naziva se Cole model. 
 Razvio ga je britanski fizičar Kenneth Cole 1940-tih godina. 
 Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog cega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}.
-
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.6\textwidth]{Figures/cole_model.png} 
     \caption{Cole model bioimpedancije}
     \label{slk:cole_model}
 \end{figure}
-
 $R_{\infty}$ prestavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ prestavlja otpor na nultoj frekvenciji. 
 Razlika otpora $R_{\infty}-R_{0}$ prestavlja dodatan otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
 $C_{CPE}$ je element s konstantnom fazom koji modelira kapacitivnost stanične membrane 
@@ -108,7 +121,6 @@ te predstavlja neidealan kondenzator. Njegova impedancija iznosi:
 gdje je C kapacitet, a $\alpha$ njegov red. Kada je $\alpha = 0$ element s konstantnom fazom predstavlja idealan otpornik, 
 dok sa $\alpha = 1$ predstavlja idealan kondenzator. 
 Tipične vrijednosti parametra $\alpha$ za biološka tkiva su u intervalu 0.5 $< \alpha <$ 1 \cite{Freeborn2021}.
-
 Ako uvedemo karakterističnu vremensku konstantu $\tau$ kao
 \begin{equation}
     \label{jed:time_const}
@@ -121,22 +133,18 @@ dobivamo orginalnu jednadžbu Cole modela:
 \end{equation} 
 Iz jednadžbe \ref{jed:cole} vidljivo je kako su parametri Cole modela bioimpedancije 
 $R_{\infty}$, $R_{0}$, $\alpha$ i $\tau$. 
-Svojstva tkiva opisuju se pomoću ta četiri parametra, a postupak kojim se do njih dolazi opisan je u daljnjem tekstu.
+Svojstva tkiva opisuju se pomoću navedenih parametra, a postupak kojim se do njih dolazi opisan je u daljnjem tekstu.
 
-\subsection{Graf bioimpedancije Cole modela}
-Ovo tu je glupo, dvaput spominjes isto!!!
 Rezultati mjerenja bioimpedancije na razilčitim frekvencijama mogu se aproksimirati polukružnicom,  
 što je prikazano na slici \ref{slk:cole_graf}. 
-Graf bioimpedancije Cole modela je polukružnica koja prikazuje omjer negativne reaktancije i otpora tkiva na svim frekvencijama, 
+Graf prikazuje omjer negativne reaktancije i otpora tkiva na svim frekvencijama, 
 od $f=0$ do $f=\infty$. Frekvencija raste s desna na lijevo. 
-
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.7\textwidth]{Figures/cole_plot.png} 
     \caption{Graf bioimpedancije Cole modela \cite{Yang_2013}}
     \label{slk:cole_graf}
 \end{figure}
-
 Iz opisanog grafa moguće je dobiti parametre Cole modela\cite{Yang_2013}.
 $R_{\infty}$ i $R_{0}$ jednostavno se isčitavaju kao precjesišta polukružnice i realne osi.
 Vremenska konstanta $\tau$ inverz je karakteristične kružne frekvencije $\omega_{C}$ na kojoj je reaktancija najveća.
