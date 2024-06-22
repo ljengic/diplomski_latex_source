@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2024-06-21T17:30:38.679Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="xrVNkcurTwlQlZCx9ldc" version="24.6.1" type="device">
+  <diagram name="Page-1" id="LINKz1JwdtSpK36PXOOd">
+    <mxGraphModel dx="1194" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="420" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-3" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 19.9253px; text-align: start; white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;BodyFluidMonitoring&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-7" value="&lt;h1 style=&quot;margin-top: 0px; font-size: 22px;&quot;&gt;BodyFluidMonitoring Service&lt;/h1&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;Service for body fluid measurment&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" y="110" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-9" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="210" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-10" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;ReceiveCommand Characteristic&lt;/span&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;Used for receiving command from test environment&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="220" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="360" width="340" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EldcwN1Um2N9qSZZrwmQ-12" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;SendData Characteristic&lt;/span&gt;&lt;/h1&gt;&lt;p style=&quot;font-size: 14px;&quot;&gt;Used for sending bioz data to test environment&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="370" width="350" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
