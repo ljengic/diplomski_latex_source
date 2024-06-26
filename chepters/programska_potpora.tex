@@ -7,66 +7,131 @@
 
 \justifying
 
-U ovom poglavlju iznesen je proces razvoja programske potpore za ranije opisani nosivi ugradbeni sustav. 
+U ovom poglavlju opisan je proces razvoja programske potpore za ranije opisani nosivi ugradbeni sustav. 
 Programska potpora za korišteni mikrokontroler STM32WB55VGY razvijena je pomoću operacijskog sustava 
 za ugradbena računala Zephyr.
 
-Za utakanje programske potpore na razvijenu pločicu i testiranje sustava korišten je ST-LINK/V2 programator \cite{stm32programator}. 
+Za učitavanje programske potpore na razvijenu pločicu i testiranje sustava korišten je ST-LINK/V2 programator \cite{stm32programator}. 
 Progamator se na mikrokontroler spaja putem SWD sučelja (engl. \textit{Serial Wire Debug}). 
 Kao razvojno okruženje korišten je Visual Studio Code, a kontrola verzija praćena je sustavom git.
 
-Ovaj integrirani pristup omogućio je efikasno razvijanje i upravljanje programskom podrškom za STM32 mikrokontroler, 
-uz korištenje popularnih alata i tehnologija. 
+Ovaj integrirani pristup omogućio je efikasno razvijanje i upravljanje programskom podrškom za STM32 mikrokontroler. 
 U nastavku će se detaljno opisati proces razvoja, implementacija, te testiranja programske potpore, 
 uz naglasak na integraciju sa Zephyr operacijskim sustavom.
 
 \section{Programiranje mrežnog procesora ARM Cortex-M0+}
 
 STMicroelectronics pruža već gotove binarne datoteke \cite{kodovi_M0} koje sadrže kod komunikacijskog stoga. 
-Postoje različite verzije komunikacijskog stoga s obzirom na primjenu te je samo potrebno pronaći odgovarajuću 
+Postoje različite verzije komunikacijskog stoga s obzirom na primjenu te je potrebno pronaći odgovarajuću 
 binarnu datoteku i učitati ju na jezgru ARM Cortex-M0+.
 
 Za potrebe ovog projekta odabrana je datoteka \textit{stm32wb5x\_BLE\_HCILayer\_extended\_fw.bin} jer je kompatibilna sa 
 korištenim operacijskim sustavom Zephyr. Datoteka je učitana na procesor pomoću programa STM32CubeProgrammer v2.15.0 
 koji u sebi ima ugrađenu podršku za ažuriranje koda komunikacijskog stoga. 
 
+
+
 \section{Operacijski sustav za rad u stvarnom vremenu Zephyr}
 
-Operacijski sustav Zephyr predstavlja sofisticiranu platformu optimiziranu za ugradbena računala, 
-pružajući niz prednosti koje ga čine idealnim izborom za širok spektar aplikacija. 
-Njegova modularna arhitektura omogućuje prilagodbu specifičnim potrebama svakog uređaja, 
-dok istovremeno osigurava visoku razinu pouzdanosti i performansi.
+Zephyr je operacijski sustav otvorenog koda (engl. \textit{open-source operating system}) specijaliziran za ugradbene sustave 
+i IoT (engl. \textit{Internet of Things}) uređaje.
+Glavne karakteristike Zephyra uključuju podršku za različite arhitekture procesora, 
+nisku potrošnju energije, brzo pokretanje, podršku za različite komunikacijske protokole kao što su 
+Bluetooth, Wi-Fi, LoRaWAN, MQTT, te fleksibilnost u prilagodbi prema specifičnim zahtjevima aplikacija.
 
-Glavna prednost Zephyra u odnosu na druge operacijske sustave za rad u stvarnom vremenu je njegova prilagodljivost 
-na razlčite arhitekture mikrokonrolera. 
-Drugim rječima, isti kod, uz minimalnu promjenu konfiguracijkih datoteka, možemo koristit na potpuno 
-različitim porodicama mikrokontrolera. Iz tog razloga se prilikom razvoja ugradbenog uređaja programska potpora može razvijati 
-i dok sklopovlje još nije dostupno.
-Također, u sklopu Zepyhr-a već su uključeni brojni upravljački programi za često korištene periferijalne 
-uređaje i senzore. Iz svega navedeno vidljivo je kako korištenje operacijskog sustava Zephyr u konačnici 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/zephyr.png} 
+    \caption{Arhitektura operacijskog sustava Zephyr \cite{zephyr}}
+    \label{slk:zephyr}
+\end{figure}
+
+Glavna prednost Zephyra u odnosu na druge operacijske sustave za rad u stvarnom vremenu je njegova 
+modularnost i prilagodljivost na različite arhitekture mikrokontrolera. 
+Drugim riječima, isti kod, uz minimalnu promjenu konfiguracijskih datoteka, možemo koristit na potpuno 
+različitim porodicama mikrokontrolera. Iz tog razloga se prilikom razvoja ugradbenog uređaja programska 
+potpora može razvijati i dok sklopovlje još nije dostupno.
+Također, u sklopu Zepyhr-a već su uključeni brojni upravljački programi za često korištene periferalne 
+uređaje i senzore. 
+Iz svega navedeno vidljivo je kako korištenje operacijskog sustava Zephyr u konačnici 
 znatno ubrzava razvoj uređaja.
 
-Glavne dvije datoteke za konfiguraciju Zephyr projekta su \texttt{.conf} te \texttt{.dts} datoteke. 
-\texttt{.dts} datoteka (engl. \textit{dts, device tree structure}) datoteka je koja opisuje sklopovlje koje se programira. 
-U njoj se specifiraju pinovi na koje su spojene korištene periferije mikrokontrolera. 
-Prilikom promjene sklopovlja samo je potrebno promjeniti ovu datoteku. U \texttt{.conf} datoteci specificiraju se 
-konfiguracijske konstante i uključuje programska potpora za različite periferije.
+Konfiguracija u Zephyr operacijskom sustavu igra ključnu ulogu u prilagodbi ponašanja i funkcionalnosti 
+softverskog sustava prema specifičnim potrebama projekta.
+Dvije najvažnije datoteke za konfiguraciju Zephyr projekta su \texttt{.conf} te \texttt{.dts} datoteke. 
+Važno je naglasiti kako se konfiguracijske datoteke za vrijeme kompajliranja obrađuju i pretvaraju u 
+\texttt{\#define} direktive u C kodu. 
+
+DTS (engl. \textit{Device Tree Structure}) je tekstualna datoteka koja
+omogućuje opisivanje i konfiguriranje hardverskih svojstava ugradbenog sustava.
+Opisuju strukturu i karakteristike hardverskih komponenti poput procesora, 
+memorijskih regija, perifernih uređaja, pinout konfiguracija te takta sustava.
+Datoteka je pisana u obliku čvorova, gdje svaki čvor predstavlja određenu periferiju. 
+Čvorovi imaju parametre pomoću kojih se konfiguriraju korištene periferije.  
+Pojedine periferije uključuje se u projekt postavljanjem parametra \texttt{status} na vrijednost \texttt{okay}.
+Kroz DTS datoteku Zephyr prepoznaje i uključuje upravljačke programe za konkretno sklopovlje. 
+Također, olakšana je migracija projekata na različite platforme jer se konfiguracija može jednostavno 
+prilagoditi putem DTS datoteka bez potrebe za izmjenom izvornog koda aplikacije.
+Primjer konfiguracije senzora MAX30009 u DTS prikazan je u nastavku teksta, u odsječku koda \ref{lst:dts_max30009}. 
+
+U \texttt{.conf} datoteci specificiraju se 
+konfiguracijske konstante i uključuju se upravljački programi za periferne uređaje. 
+Sve naredbe u \texttt{.conf} datoteci započinju prefiksom \texttt{CONFIG}. 
+Uključivanje ili isključivanje pojedinih značajki radi se postavljanjem na vrijednosti \texttt{y} ili \texttt{n}.
+Konfiguracijska datoteka korištena u ovom projektu prikazana je u odsječku koda \ref{lst:conf}.
+\begin{lstlisting}[label={lst:conf},style=CStyle,caption={Konfiguracijska datoteka razvijenog sustava},captionpos=b]
+CONFIG_BT=y
+CONFIG_BT_HCI=y
+CONFIG_BT_CTLR=n
+CONFIG_BT_PERIPHERAL=y
+CONFIG_BT_DEVICE_NAME="Fluid Track"
+
+CONFIG_GPIO=y
+CONFIG_SPI=y
+CONFIG_LOG=y
+CONFIG_FPU=y
+\end{lstlisting} 
 
 \section{Opis upravljačkog programa za MAX30009}
 
-Integrirano sučelje za mjerenje bioimpedancije MAX30009 s mikrokontrolerom komunicira SPI protokolom. 
-Radi lakšeg pisanja upravljačkog programa te njegove portabilnosti na druge sustave za sve spi funkcije 
+Integrirano sučelje za mjerenje bioimpedancije MAX30009 s mikrokontrolerom komunicira SPI 
+(engl. \textit{Serial Peripheral Interface, SPI}) protokolom. 
+SPI protokol je sinkroni serijski komunikacijski protokol koji omogućava brzu razmjernu podataka između 
+mikrokonrolera i perifernih uređaja poput senzora i memorija. 
+Podržava istovremeno primanje i slanje podataka uz veliku 
+brzinu komunikacije koja doseže nekoliko megabitova u sekundi.
+Prvi korak pisanja upravljačkog programa uključivanje je SPI periferije u DTS datoteci:  
+\begin{lstlisting}[label={lst:dts_max30009},style=CStyle,caption={Definiranje MAX30009 senzora u DTS-u},captionpos=b]
+&spi2 {
+    pinctrl-0 = <&spi2_miso_pb14 &spi2_mosi_pb15 
+                    &spi2_nss_pb12 &spi2_sck_pb13>;
+    pinctrl-names = "default";
+    status = "okay";
+
+    gendev: gendev@0 {
+            compatible = "vnd,spi-device";
+            reg = <0>;
+            spi-max-frequency = <1600000>;
+            label = "GenDev";
+    };	
+};
+\end{lstlisting} 
+
+Radi lakšeg pisanja upravljačkog programa te njegove portabilnosti na druge sustave za sve SPI funkcije 
 napisane su funkcije omotača (engl. \textit{wrapper function}). 
+Funckije omotača su funkcije koje služe kao dodatan sloj apstrakcije između aplikacijskog koda i nižih slojeva koda. 
+Njihovim korištenjem postignuta je neovisnost aplikacijskog koda o konkretnom sučelju 
+SPI funkcija. 
 Nalaze se u datoteci \texttt{max30009\_spi\_api.c} te sadrže 
 potporu za čitanje i pisanje registra te promjenu pojedine skupine bitova unutar jednog bajta. 
 
-\begin{lstlisting}[label={lst:api_api},style=CStyle,caption={Funkcije omotača spi komunikacije},captionpos=b]
+\begin{lstlisting}[label={lst:api_api},style=CStyle,caption={Funkcije omotača SPI komunikacije},captionpos=b]
 int max30009_spi_read_reg(uint8_t reg);
 int max30009_spi_write_reg(uint8_t reg, uint8_t val);
 int max30009_spi_change_reg(uint8_t reg, uint8_t val, uint8_t first_bit, uint8_t num_of_bits);
 \end{lstlisting} 
 
-Na početku rada inicijalizira se spi periferija te se sustav resetira postavljanjem svih registara na tvornički definirano početno stanje. 
+Na početku rada inicijalizira se SPI periferija te se sustav resetira postavljanjem svih registara na tvornički definirano početno stanje. 
 Zatim se odabire izvor takta i način rada. Kao način rada odabrana je uzbuda sinusnom strujom 
 čija je efektivna vrijednost postaljena je na 64  $\mu$A. 
 Zadnji korak inicijalizacije sustava je uključivanje mjernog kanala za mjerenje bioimpedancije.
@@ -80,12 +145,12 @@ Zadnji korak inicijalizacije sustava je uključivanje mjernog kanala za mjerenje
 
 Na slici \ref{slk:max_30009_clock} prikazan je vremenski podsustav MAX30009 integriranog sučelja za mjerenje bioimppedancije.
 Kao početni takt sustava odabran je interni oscilator frekvencije 32.768 kHz. Taj se takt dalje vodi na umnoživač frekvencije 
-(engl. \textit{PLL, phase-lock loop}) iz kojeg se dobivaju frekvencije između 14 i 28 MHz, u ovisnosti o konstanti MDIV. 
-Nakon toga se konstantama KDIV, NDIV, 
-BIOZ\_ADC\_OSR i BIOZ\_DAC\_OSR postavljaju frekvencija uzbudne struje i frekvencija uzorkovanja \cite{max30009_datasheet}.   
+(engl. \textit{PLL, phase-lock loop}) iz kojeg se dobivaju frekvencije između 14 i 28 MHz, u ovisnosti o konstanti \textit{MDIV}. 
+Nakon toga se konstantama \textit{KDIV}, \textit{NDIV}, 
+\textit{BIOZ\_ADC\_OSR} i \textit{BIOZ\_DAC\_OSR} postavljaju frekvencija uzbudne struje i frekvencija uzorkovanja \cite{max30009_datasheet}.   
 
 Pošto je glavna karakteristika sustava mjerenje bioimpedancije na različitim frekvencijama, upravljački program mora 
-omogučavati brzu i laganu promjenu frekvencije uzbudne struje. Zbog toga je stvoren enumeracijki tip podataka koji 
+omogućavati brzu i laganu promjenu frekvencije uzbudne struje. Zbog toga je stvoren enumeracijki tip podataka koji 
 sadrži popis svih korištenih frekvenija i omogućava pisanje generičkih funckija neovisnih o konkretnoj frekvenciji: 
 \begin{lstlisting}[label={lst:enumeracija_frekvencija},style=CStyle,caption={Enumeracijski tip podataka za odabir frekvencije rada},captionpos=b]
 typedef enum
@@ -101,7 +166,7 @@ typedef enum
 
 Kako bi se promjenila frekvencija sustava potrebno je podesiti ranije spomenute konstante. 
 Konstante su upisane u flash memoriju sustava u obliku polja vrijednosti točnim redosljedom kao 
-u enumeracijskom tipu podataka za popis korištenih frekvencija što omogučava jednostavnu funkciju 
+u enumeracijskom tipu podataka za popis korištenih frekvencija što omogućava jednostavnu funkciju 
 za promjenu frekvencije prikazanu u odsječku koda \ref{lst:promjena_frekvencije}. 
 
 \begin{lstlisting}[label={lst:promjena_frekvencije},style=CStyle,caption={Funkcija za promjenu frekvenciju sustava},captionpos=b]
@@ -121,15 +186,15 @@ void max30009_change_freq(max30009_freq_t freq)
 }
 \end{lstlisting}
 
-Kalibracija sustava pokreče se na početku rada te traje nekoliko sekundi.
+Kalibracija sustava pokreće se na početku rada te traje nekoliko sekundi.
 Za kalibraciju sustava koristi se vanjski precizni otpornik (napisi tu tocne specifikacije). 
-Prije početka kalibracije sustav je potrebno konfigurirati na način da na mjerni kanal budu spojeni 
+Prije početka kalibracije sustav je potrebno konfigurirati na način da se na mjerni kanal povežu 
 vanjski kalibracijski pinovi na koji je spojen kalibracijski otpornik. 
 Kalibracija se provodi zasebno na svakoj frekvenciji rada sustava, te se kalibracijske konstante pohranjuju 
 u memoriju sustava i kasnije koriste za korekciju rezultata mjerenja. 
 
 Za kontrolu MAX30009 senzora stvorena je zasebna dretva. Na početku rada sustava vrši se početna inicijalizacija te 
-kalibracija sustava. Nakon toga sustav je spreman za kontinuirano mjerenje. Mjerenje se pokreče i zaustavlja iz 
+kalibracija sustava. Nakon toga sustav je spreman za kontinuirano mjerenje. Mjerenje se pokreće i zaustavlja iz 
 glavnog programa dvjema funkcijama koje prekidaju i ponovno pokreču dretvu:
 \begin{lstlisting}[label={lst:max30009_kontrola},style=CStyle,caption={Funkcije za početak i prekid mjerenja},captionpos=b]
 void max30009_start_measuring();
@@ -141,7 +206,9 @@ Radi toga nakon svake promjene frekvencije prva 3 očitanja su ignorirana i kao 
 Izmjerni podatak ispravlja se u ovisnosti o kalibracijskim konstantama te se nakon toga šalje ispitnom okruženju BLE protokolom. 
 Točan format slanja podataka bit će opisan u daljenjem tekstu.
 
-- kak su podaci upisani i kak se dode do impedancije? to radije u onaj uvodni dio o senzoru ubacit
+- neki diagram toka bi bio bas zgodan tu!
+
+\section{Opis upravljačkog programa za ISM330DHCX}
 
 \section{Bluetooth low energy komunikacija}
 

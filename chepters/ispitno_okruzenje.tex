@@ -7,11 +7,12 @@
 \justifying
 
 Za učinkovitu primjenu ranije opisanog sustava potrebno je 
-razviti softicirano ispitno okruženje koje omogućava ne samo prikupljanje podataka, 
+razviti ispitno okruženje koje omogućava ne samo prikupljanje podataka, 
 već i njihovu analizu i interpretaciju na brz i intuitivan način.
 U skladu s tim, u sklopu ovog rada razvijena je Python desktop aplikacija. 
 Za izradu grafičkog sučelja korištena je biblioteka Qt i program Qt Designer pri čemu je 
 naglasak stavljen na jednostavnost i intuitivnost korištenja.
+Sve ikone korištene u aplikaciji besplatno su preuzete sa Icons8 web stranice \cite{ikone}.
 
 \begin{figure}[htb]
     \centering
@@ -28,7 +29,7 @@ Pojedino mjerenje vezano je za pacijenta, čime se dobiva mogućnost praćenja p
 tijekom duljeg vremenskog razdoblja i usporedba raličitih mjerenja za istog pacijenta.
 Početni zaslon prikazan je na slici \ref{slk:home}. 
 S lijeve strane ekrana tokom cijelog rada aplikacije nalazi se izbornik kojim se korisnik lako prebacuje 
-na željenu funcionalnost. 
+na željenu funcionalnost.  
 
 U nastavku će detaljno biti opisani implementacija i korištenje razvijenog ispitnog okruženja.
 
@@ -51,7 +52,8 @@ u blizini putem BLE protokola.
 Nakon što se skeniranje dovrši, korisniku se prikazuje popis dostupnih uređaja na sučelju aplikacije.
 
 Korisnik zatim ima mogućnost odabira željenog uređaja. Nakon što je uređaj odabran, pritiskom na tipku \texttt{Connect} 
-pokreće se postupak povezivanja uređaja. Kada je konekcija uspostavljena, rakun Pedro nastupa.
+pokreće se postupak povezivanja uređaja. 
+Aplikacija obaviještava korisnika o rezultatu pokušaja povezivanja te ako su uređaji uspješno povezani moguće je pokrenuti mjerenje.  
 Za vrijeme dok su uređaji povezani na \texttt{BLE Connection} zaslonu prikazane su informacije o povezanom uređaju 
 i tipka \texttt{Disconnect} kojom se korisniku daje mogućnost prekida BLE veze.
 
@@ -66,6 +68,18 @@ vodi na karticu \texttt{BLE Connection}.
     \includegraphics[width=0.4\textwidth]{Figures/ble_not_connected.png} 
     \caption{Obavijest da periferni uređaj nije povezan}
     \label{slk:ble_not_connected}
+\end{figure}
+
+Radi lakše kontrole BLE veze na statusnu traku u gornji desni dio zaslona dodan je bluetooth simbol, 
+što je prikazano na slici \ref{slk:ble_status}. 
+Ako je simbol zelen, razvijeni sustav povezan je s ispitnim okruženjem dok u slučaju crvenog simbola veza nije uspostavljena. 
+Ovim pristupom korisniku se omogućava da u svakom trenutku korištenja aplikacije jednostavno može provjeriti status BLE veze. 
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Figures/ble_status.png} 
+    \caption{Simbol u gorenjem desnom uglu koji opisuju status BLE veze \cite{ikone}}
+    \label{slk:ble_status}
 \end{figure}
 
 \section{Postupak mjerenja}
@@ -84,8 +98,9 @@ Ako se odabere novi pacijent, otvara se zaslon za unos podataka o pacijentu, pik
 Podatci koji su potrebni za daljnju analizu su dob, spol, težina, visina, obujmi prsa i noge te lijekovi koje pacijent upotrebljava. 
 Nakon što korisnik popuni podatke pritiskom na tipku \texttt{Complete} pokreće se provjera ispravnosti unesenih podataka. 
 Ukoliko neki od podataka nedostaju ili su u nepravilnom formatu, aplikacija obaviještava korisnika skočnim prozorom s 
-porukom koji točno podataka nije ispravan. Ako su podatci ispravni, otvara se prozor (ref) kojim se pokreče mjerenje i na kojem 
-se mogu u stvarnom vremenu pratiti rezultati mjerenja.  
+porukom koji točno podataka nije ispravan. 
+Ako mjerenje vršimo za pacijenta čiji su podatci od ranije u bazi podataka otvara se isti zaslon ali sa popunjenim podatcima 
+koje korisnik po potrebi može promjeniti.  
 
 \begin{figure}[htb]
     \centering
@@ -94,10 +109,23 @@ se mogu u stvarnom vremenu pratiti rezultati mjerenja.
     \label{slk:invalid_data}
 \end{figure}
 
-Kak se mjeri ...
+Kada su svi podatci ispravni, otvara se prozor (ref) kojim se pokreče mjerenje i na kojem 
+se mogu u stvarnom vremenu pratiti rezultati mjerenja. 
+Mjerenje se pokreče pritiskom na tipku \texttt{Start} čime se razvijenom sustavu šalje naredba \texttt{BLE\_CMD\_START}. 
+Sustav tada kontinuirano šalje podatke o izmjerenoj bioimpedanciji ispitnom okruženju. 
+Ispitno okruženje iz primjenih podataka izračunava volumene tijelesnih tekućina i u stvarnom vremenu ih osvježava na grafu. 
+Mjerenje se prekida pritiskom na tipku \texttt{Stop}.
+
+- zaslon za mjerenje gdje se live plota graf
 
 \section{Prikaz rezultata}
 
 gledamo mi rezultate..
+
+- skocni prozor za odabir pacijenta
+
+- izbor mjernja prozor
+
+- prozor s rezultatima
 
 \end{document}

@@ -149,9 +149,14 @@
 \subfile{chepters/ispitno_okruzenje}
 
 %-------------------------------------------------------------------------------
-\chapter{Mjerna metoda}
+\chapter{Laboratorijska mjerenje}
+
+\subfile{chepters/laboratorijska_mjerenja}
+
 %-------------------------------------------------------------------------------
 \chapter{Rezultati i diskusija}
+
+\subfile{chepters/rezultati}
 
 %--- ZAKLJUČAK / CONCLUSION ----------------------------------------------------
 \chapter{Zaključak}
@@ -172,25 +177,48 @@
 
 % Sažetak na hrvatskom
 \begin{sazetak}
-  Unesite sažetak na hrvatskom.
 
-  \blindtext
+Ovaj rad istražuje različite mjerne metode i senzorske sustave namijenjene 
+praćenju tekućine u nogama i određivanju mase mišića listova.
+U sklopu rada razvijen je nosivi sustav temeljen na MAX30009 integriranom sučelju za mjerenje bioimpedancije. 
+Razvijena je programska potpora za rad u stvarnom vremenu temeljena na operacijskom sustavu Zephyr. 
+Implementirana je funkcionalnost za prikupljanje i obradu podataka sa senzora te je razvijen 
+protokol za bežičnu komunikaciju s drugim sustavima putem Bluetooth Low Energy komunikacijskog protokola.
+Dodatno, razvijeno je ispitno okruženje za testiranje sustava u stvarnim uvjetima korištenja, 
+što je omogućilo provođenje laboratorijskih mjerenja, ispitivanje značajki razvijenog programskog sustava 
+te vizualizaciju dobivenih rezultata. 
+Velika važnost stavljena je na korisničko iskustvo, osiguravajući da je sustav intuitivan i 
+jednostavan za korištenje krajnjim korisnicima.
+Laboratorijska mjerenja provedena su s tekstilnim i gel elektrodama te je razvijeni sustav uspoređen 
+s referentnim sustavom za mjerenje bioimpedancije SFB7 ImpediMed.
+
 \end{sazetak}
 
 \begin{kljucnerijeci}
-  prva ključna riječ; druga ključna riječ; treća ključna riječ
+nosivi sustavi, sastav ljudskog tijela, bioimpedancija, MAX30009, Bluetooth Low Energy, Zephyr 
 \end{kljucnerijeci}
 
 
 % Abstract in English
 \begin{abstract}
-  Enter the abstract in English.
-  
-  \blindtext 
+This paper explores various measurement methods and sensor systems designed for monitoring fluid 
+in the legs and determining calf muscle mass. 
+As part of the study, a wearable system based on the MAX30009 integrated bioimpedance 
+measurement interface was developed. 
+Real-time software support was implemented using the Zephyr operating system, 
+enabling data collection and processing from the sensors. 
+A protocol for wireless communication using Bluetooth Low Energy 
+was also developed to interface with other systems.
+Additionally, a test environment was created to evaluate the system under real-world conditions, 
+facilitating laboratory measurements, testing of software features, 
+and visualization of results. Emphasis was placed on user experience, 
+ensuring the system is intuitive and user-friendly. 
+Laboratory measurements were conducted using textile and gel electrodes, 
+and the developed system was compared with the reference bioimpedance measurement system, SFB7 ImpediMed.
 \end{abstract}
 
 \begin{keywords}
-  the first keyword; the second keyword; the third keyword
+wearable devices, body composition, bioimpedance, MAX30009, Bluetooth Low Energy, Zephyr 
 \end{keywords}
 
 

@@ -12,15 +12,15 @@ poput masti, mišića i tekućina.
 Dobiveni rezultati pružaju važne informacije koje se koriste u praćenju zdravlja, 
 procjeni rizika od pojedinih bolesti, praćenju oporavka te ranom otkrivanju zdravstvenih problema.
 
-Mjerenje bioelekričke impedancije tijela jedna je od metoda kojom se procjenjuje sastav ljudskog tijela. 
-Kroz tijelo se pušta slaba struja te se mjeri pad napona čime se izračunava impedancija tijela. 
-Mjerenjem bioimpedancije moguće je praćenje kretanja tekućina kroz tijelo što je vrijedna dijagnostička metoda za praćenje stanja srčanih bolesnika. 
-
--spominjat li tu srcane bolesti ili izbacit taj dio?
+Mjerenje bioimpedancije tijela jedna je od metoda kojom se procjenjuje sastav ljudskog tijela. 
+Kroz tijelo se pušta slaba struja, reda veličine mikroampera, te se mjeri pad napona čime se izračunava impedancija tijela. 
+Mjerenjem bioimpedancije moguće je praćenje distribucije tekućina u tijelu. 
+Praćenje distribucije tekućine kroz tijelo je vrijedna dijagnostička metoda 
+za praćenje razvoja srčanih bolesti [REF].
 
 \section{Sastav ljudskog tijela}
 
-Ljudsko tijelo je kompleksna biološka struktura koja zajedno se sastoji od različitih međusobno povezanih tkiva koja 
+Ljudsko tijelo je kompleksna biološka struktura koja se sastoji od različitih međusobno povezanih tkiva koja 
 omogućavaju funkcioniranje organizma. Približno se sastoji od 
 64\% vode,
 20\% proteina,
@@ -29,6 +29,14 @@ i 5\% minerala.
 Važno je napomenuti kako sastav ljudskog tijela varira od osobe do osobe jer na njega utječu 
 pojedini faktori, kao što su spol i dob \cite{Bera2014}.  
 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figures/sastav_tijela_2.png} 
+    \caption{Udio vode, proteina, masti i minerala u ljudskom tijelu \cite{Bera2014}}
+    \label{slk:sastav_tijela}
+\end{figure}
+
+Sastav ljudskog tijela prikazan je na slici \ref{slk:sastav_tijela}.
 Voda je osnovni element stanica i tkiva te je nužna za brojne fiziološke procese u organizmu, 
 kao na primjer održavanje elektrolitske ravnoteže i regulacija temperature.
 Ukupnu vodu u tijelu (engl. \textit{Total Body Water; TBW}) 
@@ -37,11 +45,12 @@ Važni parametri pri analizi ljudskog tijela su i masa tijela bez masnog tkiva (
 te masa masnog tkiva (engl. \textit{Fat Mass; FM}) \cite{Bera2014}.
 
 Ekstracelularna voda je količina vode koja se nalazi izvan stanica te čini 30-40\% ukupne vode. Uključuje krv, limfu, tekućinu u 
-zglobovima i međustaničnom prostru. Ima važnu ulogu u transportu kisika i hranjivih tvari do stanica te odvođenju otpadnih 
+zglobovima i međustaničnom prostoru. Ima važnu ulogu u transportu kisika i hranjivih tvari do stanica te odvođenju otpadnih 
 tvari iz organizma \cite{Bera2014}.
 
-Intracelularna voda je voda koja se nalazi unutar stanica. Ona čini 60-70\% ukupne vode u tijelu. 
-Ključna je za mnoge biološke procese unutar stanica, kao na primjer održavanje ravnoteže elektrolita. 
+Intracelularna voda je voda koja se nalazi unutar citoplazme stanica, predstavljajući ključnu 
+komponentu u održavanju stanične homeostaze i omogućavajući različite biokemijske reakcije 
+koje su neophodne za životne procese.
 Održavanje ravnoteže između ekstracelularne i intracelularne vode ključno je za normalno funkcioniranje organizma \cite{Bera2014}.
 
 Masno tkivo je također važno za funkcioniranje organizma jer pruža energetsku rezervu, toplinsku izolaciju te štiti unutarnje organe. 
@@ -66,99 +75,8 @@ Zbog toga se sastav ljudskog tijela procjenjuje iz izmjerene bioimpedancije izme
 Iz bioimpedancije sastav tijela se dobiva putem teorijskih jednadžbi ili tablica koje ovise o parametrima 
 kao što su spol, dobna skupina, težina i visina.
 
--mogu li maknit ova silna referenciranja na isti rad i to samo jednom negdje stavit?
+\section{Praćenje distribucije tekućine u nogama}
 
-\section{Bioimpedancija}
-
-Bioimpedancija predstavlja električni otpor koji se javlja kada kroz biološka tkiva teče električna struja.
-Ovisna je o frekvenciji te se može prikazati formulom:
-\begin{equation}
-    \label{jed:cpe}
-    Z(f) = R_{e}(f) + jI_{m}(f) = |Z(f)|\angle\theta(f) 
-\end{equation}
-gdje je
-\begin{equation}
-    \label{jed:cpe}
-    |Z(f)| = \sqrt{R_{e}^{2} + I_{m}^{2}}
-\end{equation} 
-\begin{equation}
-    \label{jed:cpe}
-    \theta(f) = arctg(\frac{I_{m}}{R_{e}})
-\end{equation} 
-
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{Figures/stanica.png} 
-    \caption{Električni model stanice \cite{Lukaski2013}}
-    \label{slk:stanica}
-\end{figure}
-Kako bi se razumio protok električne struje kroz tijelo potrebno je opsati električni model stanice. 
-Ljudsku stanicu modelira se ekvivalentnom električkom RC mrežom \cite{Lukaski2013} kako je prikazano na slici \ref{slk:stanica}.
-Stanična membrana zbog svojih kapacitivnih svojstava propušta struju visokih frekvencija, dok struje niskih frekvencija blokira. 
-Zbog toga postoji razlika u mjerenoj impedanciji u ovisnosti o frekvenciji uzbudne struje. 
-Na niskim frekvencijama struja samo vidi otpor $R_{e}$ ekstracelularne tekućine, dok se na visokim frekvencijama dodaje i otpor 
-$R_{i}$ intracelularne tekućine čime ukupna impedancija pada.
-
--treba li dodavat ona 4 podrucja frekvencija ako se to kasnije nece koristit/spominjat?
-
-Matematički model kojim se najčešće modelira bioimpedancija ljudskog tijela naziva se Cole model. 
-Razvio ga je britanski fizičar Kenneth Cole 1940-tih godina. 
-Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog cega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}.
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{Figures/cole_model.png} 
-    \caption{Cole model bioimpedancije}
-    \label{slk:cole_model}
-\end{figure}
-$R_{\infty}$ prestavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ prestavlja otpor na nultoj frekvenciji. 
-Razlika otpora $R_{\infty}-R_{0}$ prestavlja dodatan otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
-$C_{CPE}$ je element s konstantnom fazom koji modelira kapacitivnost stanične membrane 
-te predstavlja neidealan kondenzator. Njegova impedancija iznosi: 
-\begin{equation}
-    \label{jed:cpe}
-    Z_{CPE}(\omega) = \frac{1}{(j\omega)^{\alpha}C}
-\end{equation} 
-gdje je C kapacitet, a $\alpha$ njegov red. Kada je $\alpha = 0$ element s konstantnom fazom predstavlja idealan otpornik, 
-dok sa $\alpha = 1$ predstavlja idealan kondenzator. 
-Tipične vrijednosti parametra $\alpha$ za biološka tkiva su u intervalu 0.5 $< \alpha <$ 1 \cite{Freeborn2021}.
-Ako uvedemo karakterističnu vremensku konstantu $\tau$ kao
-\begin{equation}
-    \label{jed:time_const}
-    \tau = [(R_{0}-R_{\infty})C]^{1/\alpha}
-\end{equation}
-dobivamo orginalnu jednadžbu Cole modela: 
-\begin{equation}
-    \label{jed:cole}
-    Z(\omega) = R_{\infty}+\frac{R_{0}-R_{\infty}}{1+(j\omega\tau)^{\alpha}} 
-\end{equation} 
-Iz jednadžbe \ref{jed:cole} vidljivo je kako su parametri Cole modela bioimpedancije 
-$R_{\infty}$, $R_{0}$, $\alpha$ i $\tau$. 
-Svojstva tkiva opisuju se pomoću navedenih parametra, a postupak kojim se do njih dolazi opisan je u daljnjem tekstu.
-
-Rezultati mjerenja bioimpedancije na razilčitim frekvencijama mogu se aproksimirati polukružnicom,  
-što je prikazano na slici \ref{slk:cole_graf}. 
-Graf prikazuje omjer negativne reaktancije i otpora tkiva na svim frekvencijama, 
-od $f=0$ do $f=\infty$. Frekvencija raste s desna na lijevo. 
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.7\textwidth]{Figures/cole_plot.png} 
-    \caption{Graf bioimpedancije Cole modela \cite{Yang_2013}}
-    \label{slk:cole_graf}
-\end{figure}
-Iz opisanog grafa moguće je dobiti parametre Cole modela\cite{Yang_2013}.
-$R_{\infty}$ i $R_{0}$ jednostavno se isčitavaju kao precjesišta polukružnice i realne osi.
-Vremenska konstanta $\tau$ inverz je karakteristične kružne frekvencije $\omega_{C}$ na kojoj je reaktancija najveća.
-Relacija iz koje se izračunava $\tau$ je:
-\begin{equation}
-    \label{jed:cole}
-    f_{C} = \frac{\omega_{C}}{2\pi} = \frac{1}{2\pi\tau} 
-\end{equation} 
-Parametar $\alpha$ određuje koliko je središte kružnice pomaknuto ispod realne osi. 
-Izračunava se iz kuta između karakteristične frekvencije $f_{C}$ i beskonačne frekvencije $f_{\infty}$. 
-Ako se taj kut definira kao $\theta$, vrijedi sljedeći izraz:
-\begin{equation}
-    \label{jed:cole}
-    \theta = \frac{\pi}{2}\alpha 
-\end{equation} 
+\section{Određivanje mase listova}
 
 \end{document}

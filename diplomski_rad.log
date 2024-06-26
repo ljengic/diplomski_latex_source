@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  22 JUN 2024 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  26 JUN 2024 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -711,6 +711,9 @@ LaTeX Warning: Unused global option(s):
 
 (diplomski_rad.aux
 
+LaTeX Warning: Label `slk:sastav_tijela' multiply defined.
+
+
 LaTeX Warning: Label `jed:cpe' multiply defined.
 
 
@@ -727,6 +730,12 @@ LaTeX Warning: Label `jed:cole' multiply defined.
 
 
 LaTeX Warning: Label `slk:cole_model' multiply defined.
+
+
+LaTeX Warning: Label `jed:cpe' multiply defined.
+
+
+LaTeX Warning: Label `jed:cpe' multiply defined.
 
 
 LaTeX Warning: Label `slk:max_30009_clock' multiply defined.
@@ -950,7 +959,7 @@ AppData/Local/Programs/MiKTeX/fonts/enc/dvips/opensans/a_jg4h6q.enc}]
 
 pdfTeX warning: pdflatex (file ./Luka JengiÄ‡ - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Luka JengiÄ‡ - tekst zadatka.pdf, id=121, 597.55246pt x 845.07718pt>
+<Luka JengiÄ‡ - tekst zadatka.pdf, id=145, 597.55246pt x 845.07718pt>
 File: Luka JengiÄ‡ - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka JengiÄ‡ - tekst zadatka.pdf>
 Package pdftex.def Info: Luka JengiÄ‡ - tekst zadatka.pdf  used on input line 9
@@ -973,7 +982,7 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./Luka JengiÄ‡ - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Luka JengiÄ‡ - tekst zadatka.pdf, id=124, page=1, 597.55246pt x 845.07718pt>
+<Luka JengiÄ‡ - tekst zadatka.pdf, id=148, page=1, 597.55246pt x 845.07718pt>
 File: Luka JengiÄ‡ - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka JengiÄ‡ - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka JengiÄ‡ - tekst zadatka.pdf , page1 used on input
@@ -1020,7 +1029,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...mberline {7.}Mjerna metoda}{30}{chapter.7}
+l.27 ... {6.2.}Postupak mjerenja}{32}{section.6.2}
                                                   % [1
 
 
@@ -1036,11 +1045,7 @@ been already used, duplicate ignored
 l.119 \chapter
               {Uvod} [2]
 Poglavlje 1..
-(chepters/uvod.tex
-
-LaTeX Warning: Citation `Delano2022' on page 3 undefined on input line 9.
-
-)
+(chepters/uvod.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1057,169 +1062,114 @@ e
 e 21.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
 (Font)              scaled to size 16.0pt on input line 21.
-
-
-LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 37.
-
-
-LaTeX Warning: Citation `Bera2014' on page 4 undefined on input line 41.
-
-[4
+<Figures/sastav_tijela_2.png, id=229, 493.24275pt x 486.618pt>
+File: Figures/sastav_tijela_2.png Graphic file (type png)
+<use Figures/sastav_tijela_2.png>
+Package pdftex.def Info: Figures/sastav_tijela_2.png  used on input line 34.
+(pdftex.def)             Requested size: 220.50887pt x 217.54301pt.
+ [4
 
 ]
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 45.
-
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 50.
-
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 54.
-
-<Figures/sastav_tijela.png, id=201, 681.747pt x 470.9595pt>
+<Figures/sastav_tijela.png, id=246, 681.747pt x 470.9595pt>
 File: Figures/sastav_tijela.png Graphic file (type png)
 <use Figures/sastav_tijela.png>
-Package pdftex.def Info: Figures/sastav_tijela.png  used on input line 58.
+Package pdftex.def Info: Figures/sastav_tijela.png  used on input line 67.
 (pdftex.def)             Requested size: 374.86775pt x 258.97102pt.
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 59.
-
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 59.
-
-[5 <./Figures/sastav_tijela.png>]
-<Figures/stanica.png, id=209, 525.162pt x 395.67825pt>
-File: Figures/stanica.png Graphic file (type png)
-<use Figures/stanica.png>
-Package pdftex.def Info: Figures/stanica.png  used on input line 91.
-(pdftex.def)             Requested size: 264.61333pt x 199.36613pt.
-
-
-LaTeX Warning: Citation `Lukaski2013' on page 6 undefined on input line 92.
-
-
-LaTeX Warning: Citation `Lukaski2013' on page 6 undefined on input line 92.
-
-
-LaTeX Warning: Citation `Lukaski2013' on page 6 undefined on input line 96.
-
-[6{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix
-2-mathit.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2
--type1/stix2-mathrm.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/
-dvips/stix2-type1/stix2-mathex.enc} <./Figures/stanica.png>]
-
-LaTeX Warning: Citation `Freeborn2021' on page 7 undefined on input line 106.
-
-<Figures/cole_model.png, id=223, 1590.94376pt x 1154.3125pt>
-File: Figures/cole_model.png Graphic file (type png)
-<use Figures/cole_model.png>
-Package pdftex.def Info: Figures/cole_model.png  used on input line 109.
-(pdftex.def)             Requested size: 264.61333pt x 191.9857pt.
-
-LaTeX Warning: Citation `Freeborn2021' on page 7 undefined on input line 123.
-
-[7 <./Figures/cole_model.png>]
-<Figures/cole_plot.png, id=233, 433.62pt x 268.00125pt>
-File: Figures/cole_plot.png Graphic file (type png)
-<use Figures/cole_plot.png>
-Package pdftex.def Info: Figures/cole_plot.png  used on input line 144.
-(pdftex.def)             Requested size: 308.71106pt x 190.80974pt.
-
-
-LaTeX Warning: Citation `Yang_2013' on page 8 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Yang_2013' on page 8 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Yang_2013' on page 8 undefined on input line 148.
-
-[8 <./Figures/cole_plot.png (PNG copy)>]) [9]
+ [5 <./Figures/sastav_tijela_2.png>]) [6 <./Figures/sastav_tijela.png>]
 Poglavlje 3..
 
 Underfull \hbox (badness 1990) in paragraph at lines 131--131
 []\T1/opensans-TLF/b/n/18 Metode mje-re-nja bi-oim-pe-dan-
  []
 
-(chepters/mjerenje_bioimpedancije.tex [10
+(chepters/mjerenje_bioimpedancije.tex
+<Figures/stanica.png, id=260, 525.162pt x 395.67825pt>
+File: Figures/stanica.png Graphic file (type png)
+<use Figures/stanica.png>
+Package pdftex.def Info: Figures/stanica.png  used on input line 29.
+(pdftex.def)             Requested size: 264.61333pt x 199.36613pt.
+ [7
 
-]
-
-LaTeX Warning: Citation `Abasi2022' on page 11 undefined on input line 43.
-
-<Figures/dvo_vs_cetverozicno.png, id=252, 2986.15625pt x 1204.5pt>
+{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-
+mathit.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-t
+ype1/stix2-mathrm.enc}{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dv
+ips/stix2-type1/stix2-mathex.enc} <./Figures/stanica.png>]
+<Figures/cole_model.png, id=279, 1590.94376pt x 1154.3125pt>
+File: Figures/cole_model.png Graphic file (type png)
+<use Figures/cole_model.png>
+Package pdftex.def Info: Figures/cole_model.png  used on input line 50.
+(pdftex.def)             Requested size: 264.61333pt x 191.9857pt.
+ [8 <./Figures/cole_model.png>]
+<Figures/cole_plot.png, id=291, 433.62pt x 268.00125pt>
+File: Figures/cole_plot.png Graphic file (type png)
+<use Figures/cole_plot.png>
+Package pdftex.def Info: Figures/cole_plot.png  used on input line 85.
+(pdftex.def)             Requested size: 308.71106pt x 190.80974pt.
+ [9 <./Figures/cole_plot.png (PNG copy)>] [10]
+<Figures/dvo_vs_cetverozicno.png, id=311, 2986.15625pt x 1204.5pt>
 File: Figures/dvo_vs_cetverozicno.png Graphic file (type png)
 <use Figures/dvo_vs_cetverozicno.png>
-Package pdftex.def Info: Figures/dvo_vs_cetverozicno.png  used on input line 47
-.
+Package pdftex.def Info: Figures/dvo_vs_cetverozicno.png  used on input line 14
+2.
 (pdftex.def)             Requested size: 352.81552pt x 142.30988pt.
-
-LaTeX Warning: Citation `Meding2021' on page 11 undefined on input line 58.
-
-<Figures/electrode.jpg, id=253, 480.79625pt x 351.3125pt>
+<Figures/electrode.jpg, id=313, 480.79625pt x 351.3125pt>
 File: Figures/electrode.jpg Graphic file (type jpg)
 <use Figures/electrode.jpg>
-Package pdftex.def Info: Figures/electrode.jpg  used on input line 62.
+Package pdftex.def Info: Figures/electrode.jpg  used on input line 157.
 (pdftex.def)             Requested size: 264.61333pt x 193.35112pt.
 ) [11 <./Figures/dvo_vs_cetverozicno.png>] [12 <./Figures/electrode.jpg>]
 Poglavlje 4..
 (chepters/razvijeni_sustav.tex
-<Figures/stm32module.png, id=266, 752.21025pt x 376.40625pt>
+<Figures/stm32module.png, id=328, 752.21025pt x 376.40625pt>
 File: Figures/stm32module.png Graphic file (type png)
 <use Figures/stm32module.png>
 Package pdftex.def Info: Figures/stm32module.png  used on input line 19.
 (pdftex.def)             Requested size: 330.76329pt x 165.51587pt.
-
-
-LaTeX Warning: Citation `stm32module' on page 13 undefined on input line 20.
-
-
-LaTeX Warning: Citation `stm32module' on page 13 undefined on input line 20.
-
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
- 27.
+ 28.
+
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 ) [13
 
 {C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-
 ts1.enc} <./Figures/stm32module.png>]
-<Figures/stm32mikro.png, id=275, 373.395pt x 517.33275pt>
+<Figures/modul.png, id=342, 602.25pt x 437.635pt>
+File: Figures/modul.png Graphic file (type png)
+<use Figures/modul.png>
+Package pdftex.def Info: Figures/modul.png  used on input line 40.
+(pdftex.def)             Requested size: 330.76329pt x 240.3661pt.
+ [14 <./Figures/modul.png>]
+<Figures/stm32mikro.png, id=351, 373.395pt x 517.33275pt>
 File: Figures/stm32mikro.png Graphic file (type png)
 <use Figures/stm32mikro.png>
-Package pdftex.def Info: Figures/stm32mikro.png  used on input line 53.
+Package pdftex.def Info: Figures/stm32mikro.png  used on input line 59.
 (pdftex.def)             Requested size: 264.61333pt x 366.62994pt.
-
-
-LaTeX Warning: Citation `stm32mikro' on page 14 undefined on input line 54.
-
-
-LaTeX Warning: Citation `stm32mikro' on page 14 undefined on input line 54.
-
-[14]
-<Figures/ICM-20948.jpg, id=283, 1084.05pt x 685.56125pt>
+ [15 <./Figures/stm32mikro.png>]
+<Figures/max30009_bioz.png, id=365, 581.7735pt x 391.4625pt>
+File: Figures/max30009_bioz.png Graphic file (type png)
+<use Figures/max30009_bioz.png>
+Package pdftex.def Info: Figures/max30009_bioz.png  used on input line 90.
+(pdftex.def)             Requested size: 441.01773pt x 296.76195pt.
+ [16 <./Figures/max30009_bioz.png>]
+<Figures/max30009_receive.png, id=379, 582.978pt x 208.3785pt>
+File: Figures/max30009_receive.png Graphic file (type png)
+<use Figures/max30009_receive.png>
+Package pdftex.def Info: Figures/max30009_receive.png  used on input line 106.
+(pdftex.def)             Requested size: 441.01773pt x 157.63799pt.
+ [17 <./Figures/max30009_receive.png>]
+<Figures/max30009_demodulator.png, id=391, 584.78474pt x 134.30174pt>
+File: Figures/max30009_demodulator.png Graphic file (type png)
+<use Figures/max30009_demodulator.png>
+Package pdftex.def Info: Figures/max30009_demodulator.png  used on input line 1
+32.
+(pdftex.def)             Requested size: 441.01773pt x 101.28345pt.
+<Figures/ICM-20948.jpg, id=394, 1084.05pt x 685.56125pt>
 File: Figures/ICM-20948.jpg Graphic file (type jpg)
 <use Figures/ICM-20948.jpg>
-Package pdftex.def Info: Figures/ICM-20948.jpg  used on input line 78.
+Package pdftex.def Info: Figures/ICM-20948.jpg  used on input line 158.
 (pdftex.def)             Requested size: 330.76329pt x 209.17433pt.
-
-
-LaTeX Warning: Citation `icm20948' on page 15 undefined on input line 79.
-
-
-LaTeX Warning: Citation `icm20948' on page 15 undefined on input line 79.
-
-[15 <./Figures/stm32mikro.png>]
-
-LaTeX Warning: Citation `max30009' on page 16 undefined on input line 90.
-
-
-LaTeX Warning: Citation `max30009' on page 16 undefined on input line 94.
-
-[16 <./Figures/ICM-20948.jpg>]) [17]
+) [18 <./Figures/max30009_demodulator.png>] [19 <./Figures/ICM-20948.jpg>]
 Poglavlje 5..
 
 Underfull \hbox (badness 2285) in paragraph at lines 141--141
@@ -1227,41 +1177,40 @@ Underfull \hbox (badness 2285) in paragraph at lines 141--141
  []
 
 (chepters/programska_potpora.tex
-
-LaTeX Warning: Citation `stm32programator' on page 18 undefined on input line 1
-4.
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 23--23
+Underfull \hbox (badness 1642) in paragraph at lines 22--22
 []\T1/opensans-TLF/b/n/16 Programiranje mreº-nog pro-ce-sora ARM Cortex-
  []
 
 
-LaTeX Warning: Citation `kodovi_M0' on page 18 undefined on input line 25.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
 []\T1/stix2/m/n/12 Za po-trebe ovog pro-jekta oda-brana je da-to-teka
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 29--32
+Underfull \hbox (badness 1924) in paragraph at lines 28--31
 \T1/stix2/m/it/12 stm32wb5x_BLE_HCILayer_extended_fw.bin \T1/stix2/m/n/12 jer j
 e kom-pa-ti-bilna sa ko-ri-²te-nim ope-
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 29--32
+Underfull \hbox (badness 2142) in paragraph at lines 28--31
 \T1/stix2/m/n/12 ra-cij-skim sus-ta-vom Zep-hyr. Da-to-teka je u£i-tana na pro-
 ce-sor po-mo¢u pro-grama
  []
 
-[18
+[20
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 49
+<Figures/zephyr.png, id=416, 1155.31625pt x 1064.97874pt>
+File: Figures/zephyr.png Graphic file (type png)
+<use Figures/zephyr.png>
+Package pdftex.def Info: Figures/zephyr.png  used on input line 44.
+(pdftex.def)             Requested size: 330.76329pt x 304.88712pt.
+ [21 <./Figures/zephyr.png>]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 61
 .
- (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -1271,139 +1220,131 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 63.
+nput line 82.
 
-[19{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-<Figures/max30009_clock.png, id=310, 749.80125pt x 459.21562pt>
+[22{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+[23]
+<Figures/max30009_clock.png, id=462, 749.80125pt x 459.21562pt>
 File: Figures/max30009_clock.png Graphic file (type png)
 <use Figures/max30009_clock.png>
-Package pdftex.def Info: Figures/max30009_clock.png  used on input line 76.
+Package pdftex.def Info: Figures/max30009_clock.png  used on input line 141.
 (pdftex.def)             Requested size: 441.01773pt x 270.10103pt.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 77.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 77.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 85.
-
-[20 <./Figures/max30009_clock.png>] [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 159--162
+ [24 <./Figures/max30009_clock.png>] [25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 226--229
 []\T1/stix2/m/n/12 Razvijeni no-sivi sus-tav kon-fi-gu-ri-ran je kao Ge-ne-ric 
 AT-Tri-bute Pro-file
  []
 
 
-Underfull \hbox (badness 4752) in paragraph at lines 159--162
+Underfull \hbox (badness 4752) in paragraph at lines 226--229
 \T1/stix2/m/n/12 (GATT) ser-ver te pruºa je-dan ser-vis imena \T1/pcr/m/n/12 Bo
 dyFluidMonitoring\T1/stix2/m/n/12 . Ser-vis
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 159--162
+Underfull \hbox (badness 6094) in paragraph at lines 226--229
 \T1/pcr/m/n/12 BodyFluidMonitoring \T1/stix2/m/n/12 sas-toji se od dvije ka-rak
 -te-ris-tike, \T1/pcr/m/n/12 ReceiveCommand
  []
 
-<Figures/ble_service.png, id=359, 2112.89375pt x 2213.26875pt>
+<Figures/ble_service.png, id=515, 2112.89375pt x 2213.26875pt>
 File: Figures/ble_service.png Graphic file (type png)
 <use Figures/ble_service.png>
-Package pdftex.def Info: Figures/ble_service.png  used on input line 165.
+Package pdftex.def Info: Figures/ble_service.png  used on input line 232.
 (pdftex.def)             Requested size: 220.50887pt x 230.96478pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
+[27 <./Figures/ble_service.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 []\T1/stix2/m/n/12 Funkcija \T1/pcr/m/n/12 ble_init(void (*ble_cmd_handler_call
 back)(uint8_t))
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 176--179
+Underfull \hbox (badness 1163) in paragraph at lines 243--246
 \T1/stix2/m/n/12 ini-ci-ja-li-zira BLE pe-ri-fe-riju te pos-tav-lja po-ka-zi-va
 £ na funk-ciju koja se po-ziva kada
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 176--179
+Underfull \hbox (badness 1077) in paragraph at lines 243--246
 \T1/pcr/m/n/12 ReceiveCommand \T1/stix2/m/n/12 ka-rak-te-ris-tika primi na-redb
 u. Na-redbe su ko-di-rane kao ci-jeli
  []
 
-[23 <./Figures/ble_service.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 []\T1/stix2/m/n/12 Razvijeni sus-tav po-datke is-pit-nom okru-ºe-nju ²a-lje fun
 k-ci-jom
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 \T1/pcr/m/n/12 ble_send_data(void *data_to_send, uint8_t data_len) \T1/stix2/m/
 n/12 ko-joj se
  []
 
-[24]) [25]
+[28]) [29]
 Poglavlje 6..
 (chepters/ispitno_okruzenje.tex
-<Figures/home.png, id=392, 996.72375pt x 666.23906pt>
+<Figures/home.png, id=550, 996.72375pt x 666.23906pt>
 File: Figures/home.png Graphic file (type png)
 <use Figures/home.png>
-Package pdftex.def Info: Figures/home.png  used on input line 18.
+Package pdftex.def Info: Figures/home.png  used on input line 19.
 (pdftex.def)             Requested size: 441.01773pt x 294.7828pt.
- [26
+ [30
 
  <./Figures/home.png>]
-<Figures/ble.png, id=401, 997.47656pt x 666.23906pt>
+<Figures/ble.png, id=560, 997.47656pt x 666.23906pt>
 File: Figures/ble.png Graphic file (type png)
 <use Figures/ble.png>
-Package pdftex.def Info: Figures/ble.png  used on input line 43.
+Package pdftex.def Info: Figures/ble.png  used on input line 44.
 (pdftex.def)             Requested size: 441.01773pt x 294.55916pt.
- [27 <./Figures/ble.png>]
-<Figures/ble_not_connected.png, id=409, 191.9672pt x 177.66376pt>
+ [31 <./Figures/ble.png>]
+<Figures/ble_not_connected.png, id=568, 191.9672pt x 177.66376pt>
 File: Figures/ble_not_connected.png Graphic file (type png)
 <use Figures/ble_not_connected.png>
-Package pdftex.def Info: Figures/ble_not_connected.png  used on input line 66.
+Package pdftex.def Info: Figures/ble_not_connected.png  used on input line 68.
 (pdftex.def)             Requested size: 176.40439pt x 163.271pt.
-<Figures/patient.png, id=410, 996.72375pt x 666.99188pt>
+<Figures/ble_status.png, id=570, 1365.1pt x 1450.41875pt>
+File: Figures/ble_status.png Graphic file (type png)
+<use Figures/ble_status.png>
+Package pdftex.def Info: Figures/ble_status.png  used on input line 80.
+(pdftex.def)             Requested size: 176.40439pt x 187.41022pt.
+<Figures/patient.png, id=573, 996.72375pt x 666.99188pt>
 File: Figures/patient.png Graphic file (type png)
 <use Figures/patient.png>
-Package pdftex.def Info: Figures/patient.png  used on input line 78.
+Package pdftex.def Info: Figures/patient.png  used on input line 92.
 (pdftex.def)             Requested size: 441.01773pt x 295.1159pt.
-<Figures/invalid_data.png, id=412, 198.7425pt x 161.10187pt>
+ [32 <./Figures/ble_not_connected.png>]
+<Figures/invalid_data.png, id=582, 198.7425pt x 161.10187pt>
 File: Figures/invalid_data.png Graphic file (type png)
 <use Figures/invalid_data.png>
-Package pdftex.def Info: Figures/invalid_data.png  used on input line 92.
+Package pdftex.def Info: Figures/invalid_data.png  used on input line 107.
 (pdftex.def)             Requested size: 176.40439pt x 142.99918pt.
- [28 <./Figures/ble_not_connected.png>]) [29 <./Figures/patient.png> <./Figures
-/invalid_data.png>]
+ [33 <./Figures/ble_status.png>])
+[34 <./Figures/patient.png> <./Figures/invalid_data.png>]
 Poglavlje 7..
-[30
+(chepters/laboratorijska_mjerenja.tex) [35
 
 ]
 Poglavlje 8..
-[31
+(chepters/rezultati.tex) [36
 
 ]
 Poglavlje 9..
 (chepters/zakljucak.tex
-<Figures/woohoo.png, id=436, 240.9pt x 152.57pt>
+<Figures/woohoo.png, id=605, 240.9pt x 152.57pt>
 File: Figures/woohoo.png Graphic file (type png)
 <use Figures/woohoo.png>
 Package pdftex.def Info: Figures/woohoo.png  used on input line 13.
 (pdftex.def)             Requested size: 330.76329pt x 209.50386pt.
-) (diplomski_rad.bbl) [32
+) (diplomski_rad.bbl [37
 
  <./Figures/woohoo.png>]
+[38
 
-Package blindtext Warning: croatian not defined, using English instead.
-(blindtext)                 on input line 178.
+] [39]) [40] [41
 
-[33
-
-] [34
+] [42
 
 ] (diplomski_rad.aux)
  ***********
@@ -1536,19 +1477,25 @@ Luka JengiÄ‡ - tekst zadatka.pdf    Graphic file (type pdf)
 Luka JengiÄ‡ - tekst zadatka.pdf    Graphic file (type pdf)
 chepters/uvod.tex
 chepters/bioimpedancija.tex
+Figures/sastav_tijela_2.png
 Figures/sastav_tijela.png
+chepters/mjerenje_bioimpedancije.tex
 Figures/stanica.png
 Figures/cole_model.png
 Figures/cole_plot.png
-chepters/mjerenje_bioimpedancije.tex
 Figures/dvo_vs_cetverozicno.png
 Figures/electrode.jpg
 chepters/razvijeni_sustav.tex
 Figures/stm32module.png
 ts1stix2.fd    2018/04/02 v2.0.0-latex stix2 TS1 font definitions
+Figures/modul.png
 Figures/stm32mikro.png
+Figures/max30009_bioz.png
+Figures/max30009_receive.png
+Figures/max30009_demodulator.png
 Figures/ICM-20948.jpg
 chepters/programska_potpora.tex
+Figures/zephyr.png
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
 lstlang1.sty    2023/02/27 1.9 listings language file
  lstmisc.sty    2023/02/27 1.9 (Carsten Heinz)
@@ -1558,30 +1505,30 @@ chepters/ispitno_okruzenje.tex
 Figures/home.png
 Figures/ble.png
 Figures/ble_not_connected.png
+Figures/ble_status.png
 Figures/patient.png
 Figures/invalid_data.png
+chepters/laboratorijska_mjerenja.tex
+chepters/rezultati.tex
 chepters/zakljucak.tex
 Figures/woohoo.png
 diplomski_rad.bbl
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomski_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 65905228D334247CA0E7AB166FF976B1;5324.
+(rerunfilecheck)             Checksum: 2CF6B4D770EB4CFE976F81AA25566BF3;6605.
  ) 
 Here is how much of TeX's memory you used:
- 20590 strings out of 474485
- 325161 string characters out of 5744206
- 2027542 words of memory out of 5000000
- 42337 multiletter control sequences out of 15000+600000
- 653093 words of font info for 142 fonts, out of 8000000 for 9000
+ 20845 strings out of 474485
+ 330253 string characters out of 5744206
+ 2020542 words of memory out of 5000000
+ 42512 multiletter control sequences out of 15000+600000
+ 653458 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,17n,131p,538b,2291s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,544b,2323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/Op
 enSans-Bold.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/ascend
 er/opensans/OpenSans-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/f
@@ -1591,9 +1538,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><
 C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX
 2Text-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 courier/ucrr8a.pfb>
-Output written on diplomski_rad.pdf (37 pages, 2029521 bytes).
+Output written on diplomski_rad.pdf (45 pages, 2758839 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 205 named destinations out of 1000 (max. 500000)
+ 413 words of extra memory for PDF output out of 10000 (max. 10000000)
 
