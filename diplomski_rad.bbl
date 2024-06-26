@@ -24,6 +24,15 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Bera2014}
+\BIBentryALTinterwordspacing
+\BIBentryALTinterwordspacing
+T.~K. Bera, ``Bioelectrical impedance methods for noninvasive health
+  monitoring: A review'', \emph{Journal of Medical Engineering}, sv. 2014, str.
+  381251, Jun 2014. \url{https://doi.org/10.1155/2014/381251}
+\BIBentrySTDinterwordspacing
+\BIBentrySTDinterwordspacing
+
 \bibitem{Delano2022}
 \BIBentryALTinterwordspacing
 \BIBentryALTinterwordspacing
@@ -31,15 +40,6 @@ M.~Delano, V.~Ganapati, R.~Kamal, B.~Le, J.~Le, i R.~Mendoza, ``Evaluating
   research grade bioimpedance hardware using textile electrodes for long-term
   fluid status monitoring'', \emph{Frontiers in Electronics}, sv.~2, 2022.
   \url{https://doi.org/10.3389/felec.2021.762442}
-\BIBentrySTDinterwordspacing
-\BIBentrySTDinterwordspacing
-
-\bibitem{Bera2014}
-\BIBentryALTinterwordspacing
-\BIBentryALTinterwordspacing
-T.~K. Bera, ``Bioelectrical impedance methods for noninvasive health
-  monitoring: A review'', \emph{Journal of Medical Engineering}, sv. 2014, str.
-  381251, Jun 2014. \url{https://doi.org/10.1155/2014/381251}
 \BIBentrySTDinterwordspacing
 \BIBentrySTDinterwordspacing
 
@@ -88,6 +88,12 @@ J.~Meding, K.~Tuvshinbayar, C.~Döpke, i F.~Tamoue, ``Textile electrodes for
   bioimpedance measuring'', \emph{Communications in Development and Assembling
   of Textile Products}, sv.~2, str. 49--60, 06 2021.
   \url{https://doi.org/10.25367/cdatp.2021.2.p49-60}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sfb7}
+\BIBentryALTinterwordspacing
+``Sfb7'', ImpediMed Inc., pristupljeno 24.05.2024. [Mre\v zno]. Adresa:
+  \url{https://www.impedimed.com/products/research-devices/sfb7/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{stm32module}

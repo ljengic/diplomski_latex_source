@@ -77,6 +77,39 @@ kao što su spol, dobna skupina, težina i visina.
 
 \section{Praćenje distribucije tekućine u nogama}
 
+U ovom radu, naglasak je stavljen na praćenje distribucije tekućine u potkoljenici. 
+Sastav potkoljenice može se dobiti mjerenjem njezine bioimpedancije te zatim korištenjem teorijskih jednadžbi. 
+Prvi korak je određivanja volumena potkoljenice. 
+Potkoljenica je aproksimirana cilindrom te se njezin volumen određuje pomoću jednadžbe \ref{jed:volmen_noge}, 
+pri čemu je \textit{L} razmak izmešu naponskih elektroda, a \textit{O} opseg potkoljenice.
+
+\begin{equation}
+    \label{jed:volmen_noge}
+    \mathrm{V}=L A=L \frac{O^2}{4 \pi}
+\end{equation} 
+
+Sljedeći korak je mjerenje bioimpedancije, postavljanjem elektroda na način prikazan na slici (UMETNI SLIKU). 
+Vrijdnost koje su potrebne za daljnje izračune su $R_{0}$ i $R_{\infty}$.
+$R_{0}$ i $R_{\infty}$ predstavljaju otpor tkiva na nultoj i beskonačnoj frekvenciji te će detaljno biti opisani u poglavlju \ref{chap:bioz}.
+
+Za izračunavanje volumena TBW, ECW i ICW u potkoljenici korištene su formule opisane u \cite{Delano2022}:
+
+\begin{equation}
+    \label{jed:ecw_noge}
+    ECW=\frac{1}{1000} *\left(\frac{\rho_e L^2 \sqrt{V}}{R_0}\right)^{\frac{2}{3}}
+\end{equation} 
+\begin{equation}
+    \label{jed:tbw_noge}
+    TBW=\frac{1}{1000} *\left(\frac{\rho_{\infty} L^2 \sqrt{V}}{R_{\infty}}\right)^{\frac{2}{3}}
+\end{equation} 
+\begin{equation}
+    \label{jed:icw_noge}
+    ICW=TBW-ECW 
+\end{equation} 
+
+pri čemu je $\rho_{e}$ efektivna otpornost ekstracelularne tekućine iznosa 273,9 $\Omega$cm, a 
+$\rho_{\infty}$ efektivna otpornost ukupne tjelesne tekućine iznosa 937,2 $\Omega$cm.
+
 \section{Određivanje mase listova}
 
 \end{document}

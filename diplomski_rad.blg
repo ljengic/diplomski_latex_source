@@ -12,45 +12,45 @@ Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: literatura.bib
 Warning--empty journal in Freeborn2021
-You've used 18 entries,
+You've used 19 entries,
             4225 wiz_defined-function locations,
-            959 strings with 11228 characters,
-and the built_in function-call counts, 9626 in all, are:
-= -- 820
-> -- 148
+            964 strings with 11331 characters,
+and the built_in function-call counts, 9990 in all, are:
+= -- 849
+> -- 149
 < -- 42
-+ -- 82
++ -- 83
 - -- 27
-* -- 430
-:= -- 1631
-add.period$ -- 44
-call.type$ -- 18
-change.case$ -- 22
+* -- 444
+:= -- 1694
+add.period$ -- 46
+call.type$ -- 19
+change.case$ -- 24
 chr.to.int$ -- 72
-cite$ -- 19
-duplicate$ -- 746
-empty$ -- 784
+cite$ -- 20
+duplicate$ -- 777
+empty$ -- 822
 format.name$ -- 33
-if$ -- 2247
+if$ -- 2333
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 147
-newline$ -- 113
+int.to.str$ -- 19
+missing$ -- 154
+newline$ -- 118
 num.names$ -- 8
-pop$ -- 314
+pop$ -- 336
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 772
+skip$ -- 801
 stack$ -- 0
-substring$ -- 220
-swap$ -- 562
+substring$ -- 223
+swap$ -- 578
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 19
 warning$ -- 1
 while$ -- 22
-width$ -- 20
-write$ -- 227
+width$ -- 21
+write$ -- 237
 (There was 1 warning)
