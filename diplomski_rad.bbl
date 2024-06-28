@@ -24,6 +24,21 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Chen2023}
+\BIBentryALTinterwordspacing
+\BIBentryALTinterwordspacing
+C.~Chen, S.~Ding, i J.~Wang, ``Digital health for aging populations'',
+  \emph{Nature Medicine}, sv.~29, br.~7, str. 1623--1630, Jul 2023.
+  \url{https://doi.org/10.1038/s41591-023-02391-8}
+\BIBentrySTDinterwordspacing
+\BIBentrySTDinterwordspacing
+
+\bibitem{Abassi2022}
+Z.~Abassi, E.~E. Khoury, T.~Karram, i D.~Aronson,
+  ``\BIBforeignlanguage{en}{Edema formation in congestive heart failure and the
+  underlying mechanisms}'', \emph{\BIBforeignlanguage{en}{Front Cardiovasc
+  Med}}, sv.~9, str. 933215, rujan 2022.
+
 \bibitem{Bera2014}
 \BIBentryALTinterwordspacing
 \BIBentryALTinterwordspacing

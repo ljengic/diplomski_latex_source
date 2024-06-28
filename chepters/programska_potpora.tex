@@ -208,22 +208,37 @@ Točan format slanja podataka bit će opisan u daljenjem tekstu.
 
 - neki diagram toka bi bio bas zgodan tu!
 
-\section{Opis upravljačkog programa za ISM330DHCX}
-
 \section{Bluetooth low energy komunikacija}
 
 Bluetooth Low Energy (BLE) je bežični komunikacijski protokol koji se često koristi u 
 nosivim biomedicinskim uređajima zbog svoje energetske učinkovitosti i sposobnosti za prijenos podataka s malom potrošnjom energije.
 Mala potrošnja od velike je važnosti kod nosivih uređaja jer time mogu imati manju bateriju i biti lakši te raditi dulje vremensko razdoblje 
-bez punjenja ili zamjene baterije.
+bez punjenja ili zamjene baterije. 
 
-- neka slikica
+U BLE komunikaciji uređaji mogu preuzeti jednu od dvije glavne uloge:
+centralni uređaj (engl. \textit{Central}) ili periferni uređaj (engl. \textit{Peripheral}). 
+Centralni uređaj inicira vezu i može komunicirati s jednim ili više perifernih uređaja. 
+Obično su to uređaji s većom procesorskom snagom i resursima, poput pametnih telefona, tableta ili računala. 
+S druge strane, periferni uređaj reklamira svoju prisutnost i čeka da ga centralni uređaj 
+pronađe i poveže se s njim. Ovi uređaji su obično s ograničenim resursima, 
+poput senzora, pametnih satova ili drugih nosivih uređaja.
 
-BLE komunikacija odvija se s pomoću servisa i karakteristika. Servisi u BLE protokolu predstavljaju skupine funkcionalnosti koje 
-uređaj može pružiti ili koristiti. Svaki servis ima jednu ili više karakteristika koje predstavljaju konkretne podatke ili operacije koje 
-se mogu izvršiti.
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/ble_role.png} 
+    \caption{Uloge uređaja u BLE komunikaciji}
+    \label{slk:max_30009_clock}
+\end{figure}
 
-Razvijeni nosivi sustav konfiguriran je kao Generic ATTribute Profile (GATT) server te pruža jedan servis imena \texttt{BodyFluidMonitoring}. 
+Podaci se u BLE komunikaciji organiziraju u servise (engl. \textit{Service}) i karakteristike (engl. \textit{Characteristics}).
+Servisi su skupine logički povezanih karakteristika koji definiraju određenu funkcionalnost. 
+Karakteristike su najmanje jedinice podataka u BLE komunikaciji. 
+Svaka karakteristika ima vrijednost koja se može čitati, pisati ili oboje, ovisno o postavkama. 
+Servise i karakteristike prepoznaje se pomoću njihovih UUID (engl. \textit{Universally Unique Identifier}) vrijednosti. 
+UUID može biti 16-bitni, 32-bitni ili 128-bitni broj.
+
+Razvijeni nosivi sustav periferni je BLE uređaj konfiguriran kao GATT (engl. \textit{Generic ATTribute Profile}) server 
+te pruža jedan servis imena \texttt{BodyFluidMonitoring}. 
 Servis \texttt{BodyFluidMonitoring} sastoji se od dvije karakteristike, \texttt{ReceiveCommand} za primanje naredbi i 
 \texttt{SendData} za slanje izmjerenih podataka ispitnom okruženju.
 
@@ -263,16 +278,35 @@ Izvršavanjem navedene funkcije ažurira se vrijednost karakteristike \texttt{Se
 
 -slikica ovog
 
-Poruke se šalju u obliku niza znakova u formatu \texttt{vrijeme;senzor;podatci}. Format podataka ovisi o senzoru čiji se podatci šalju te je zbog toga uveden dodatan sloj 
+Poruke se šalju u obliku niza znakova čiji format ovisi o senzoru čiji se podatci šalju te je zbog toga uveden dodatan sloj 
 apstrakcije između aplikacije i BLE komunikacijskog sučelja.
 \begin{lstlisting}[label={lst:ble_send_sensor_data},style=CStyle,caption={Funkcija za slanje rezultata mjerenja sa pojedinog senzora},captionpos=b]
 void ble_api_send_sensor_data(void *data_structure, sensor_t sensor);
 \end{lstlisting} 
 Pri pozivu funkcije za slanje podataka (\ref{lst:ble_send_sensor_data}) kao parametri se zadaju 
-pokazivač na podatke senzora i enumeracijski tip \texttt{sensor\_t} koji određuje o kojem senzoru je riječ.
-Funkcija dalje u ovisnosti o senzoru priprema niz znakova za slanje te poziva ranije opisane funckije BLE komunikacijskog sučelja 
-(\ref{lst:ble_api}).
+pokazivač na podatke senzora i enumeracijski tip \texttt{sensor\_t} koji određuje o kojem senzoru je riječ. 
 
--primjer poruke? yes, no, maybe, I don't know.. can you repeat the question
+\begin{lstlisting}[label={lst:sensor_type},style=CStyle,caption={Enumeriacijski tip podataka za odabir senzora},captionpos=b]
+typedef enum{
+    SENSOR_BIOZ,
+    SENSOR_TEMP,
+    SENSOR_ACCEL,
+
+    SENSOR_CNT
+} sensor_t;
+\end{lstlisting} 
+
+Ovaj pristup omogućava generičko korištenje samo jedne funkcije za slanje poruka BLE protokolom, 
+neovisno o senzoru čiji podatci se šalju, što u konačnici pojednostavljuje aplikacijski kod. 
+Nadalje, u ovinosti o senzoru, primprema se niz znakova u ranije opisanom formatu. 
+Zadnji korak u slanju poruke BLE komunikacijskim protokolom je pozivanje ranije opisanih funkcija (\ref{lst:ble_api}) sa 
+generiranim nizom znakova.  
+
+Format u kojem se poruke šalju je \texttt{vrijeme;senzor;podatci}. Pri tome je \texttt{vrijeme} vrijeme proteklo 
+od početka mjerenja izraženo u milisekundama, a \texttt{senzor} cijeli broj u rasponu vrijednosti od 0 do 2 koji 
+određuje podatci s kojeg senzora se šalju. Broj 0 označava bioimpedanciju, 1 temperaturu te 2 akceleraciju.  
+Podatci koji se šalju su decimalni brojevi, ali njihov broj ovisi o senzoru. Temperaturni senzor mjeri samo jednu vrijednost, 
+s akcelerometra se dobivaju 3 vrijednosti, a bioimpedancija izražena je s dvije vrijednosti, realinim i imaginarnim dijelom. 
+Decimalni brojevi su zaokruženi na dvije decimale i međusobno su odvojeni točkom sa zarezom. 
 
 \end{document}
