@@ -121,16 +121,34 @@ Kada su svi podatci ispravni, otvara se prozor (ref) kojim se pokreče mjerenje 
 se mogu u stvarnom vremenu pratiti rezultati mjerenja. 
 Mjerenje se pokreče pritiskom na tipku \texttt{Start} čime se razvijenom sustavu šalje naredba \texttt{BLE\_CMD\_START}. 
 Sustav tada kontinuirano šalje podatke o izmjerenoj bioimpedanciji ispitnom okruženju. 
-Ispitno okruženje iz primjenih podataka izračunava volumene tijelesnih tekućina i u stvarnom vremenu ih osvježava na grafu. 
+Ispitno okruženje iz primljenih podataka izračunava volumene tjelesnih tekućina i u stvarnom vremenu ih osvježava na grafu. 
+Kako podatci pristižu, graf se automatski skalira tako da su vrijednost y osi uvijek postavljenje na ±10 \% 
+od minimalne i maksimalne vrijednosti veličina prikazanih na grafu.   
 Mjerenje se prekida pritiskom na tipku \texttt{Stop}.
 
 - zaslon za mjerenje gdje se live plota graf
 
+Kako bi se osigurala anonimnost, pacijenati su razlikovani prema identifikacijskim brojevima, bez pohrane osobnih podataka. 
+Za svakog pacijenta stvoren je folder u kojemu se nalazi .csv datoteka sa njegovim podatcima kao i poseban folder za 
+svako provedeno mjerenje.
+
+- kak se spremaju podatci mjerenja napisi
+
 \section{Prikaz rezultata}
 
-gledamo mi rezultate..
+Sustav pamti rezultate svih prijašnjih mjerenja te je u ispitno okruženje uključena podrška za prikaz prijašnjih mjerenja. 
+Pritiskom na karticu izbornika \texttt{Results} otvara se skočni prozor prikazan na slici \ref{slk:select_patient} kojim korinisk odabire pacijenata 
+čije rezultate mjerenje želi pogledati. Nakon izbora pacijenta otvara se zaslon prikazan na slici \ref{}. 
+Na zaslonu su prikazani svi ranije opisani podatci o pacijentu te popis svih njegovih mjerenja. 
+klikom na konkretno mjerenje i zatim na tipku \texttt{Show results} prikazuje se zaslon koji prikazuje 
+graf konkretnog mjerenja, prikazan na slici \ref{}. 
 
-- skocni prozor za odabir pacijenta
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Figures/select_patient.png} 
+    \caption{Skočni prozor za izbor pacijenta}
+    \label{slk:select_patient}
+\end{figure}
 
 - izbor mjernja prozor
 

@@ -74,6 +74,29 @@ Također, olakšana je migracija projekata na različite platforme jer se konfig
 prilagoditi putem DTS datoteka bez potrebe za izmjenom izvornog koda aplikacije.
 Primjer konfiguracije senzora MAX30009 u DTS prikazan je u nastavku teksta, u odsječku koda \ref{lst:dts_max30009}. 
 
+Takt sustava također se konfigurira u DTS datoteci. Svaki izvor signala takta kao i 
+RCC (engl. \textit{Reset and Clock Control}) sklop opisani su zasebnim čvorovima. 
+RCC sklop služi za upravljanje taktom. Pomoću njega se odabire izvor takta sustava i podešavaju se 
+taktovi perifernih sabirnica. 
+U razvijenom sustavu kao izvor signala glavnog takta postavljen je takt sa vanjskog visokofrekvencijskog 
+oscilatora (engl. \textit{HSE, High-Speed External}) frekvencije 32 MHz. Sve konstante RCC sklopa postavljenje su na 1 
+čime je takt svih periferija izjednačen s glavnim taktom sustava.   
+\begin{lstlisting}[label={lst:takt},style=CStyle,caption={Konfiguracijska takta sustava},captionpos=b]
+    &clk_hse {
+        status = "okay";
+    };
+
+    &rcc {
+        clocks = <&clk_hse>;
+        clock-frequency = <DT_FREQ_M(32)>;
+        cpu1-prescaler = <1>;
+        cpu2-prescaler = <1>;
+        ahb4-prescaler = <1>;
+        apb1-prescaler = <1>;
+        apb2-prescaler = <1>;
+    };
+\end{lstlisting} 
+
 U \texttt{.conf} datoteci specificiraju se 
 konfiguracijske konstante i uključuju se upravljački programi za periferne uređaje. 
 Sve naredbe u \texttt{.conf} datoteci započinju prefiksom \texttt{CONFIG}. 
@@ -90,7 +113,16 @@ CONFIG_GPIO=y
 CONFIG_SPI=y
 CONFIG_LOG=y
 CONFIG_FPU=y
+
+CONFIG_SENSOR=y
+CONFIG_ISM330DHCX=y
+CONFIG_BME280=y
 \end{lstlisting} 
+
+Upravljački programi za senzore BME280 i ISM330DHCX sastavni su dio Zephyr sustava i potrebno ih je uključiti 
+pomoću konfiguracijske datoteke. 
+Dohvaćanje izmjerenih vrijednosti s tih senzora vrši se generičkim funkcijama za dohvaćanje vrijednosti sa senozra koje 
+su također uključene u operacijski sustav Zephyr. 
 
 \section{Opis upravljačkog programa za MAX30009}
 

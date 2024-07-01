@@ -11,34 +11,34 @@
 \contentsline {section}{\numberline {3.2.}Pregled metoda mjerenja bioimpedancije}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3.}Komercijalno dostupni uređaji za mjerenje bioimpedancije}{14}{section.3.3}%
 \contentsline {chapter}{\numberline {4.}Razvijeni nosivi sustav za praćenje tjelesnih tekućina}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1.}STM32WB5MMG bežični modul}{16}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1.}STM32WB55VGY mikrokontroler}{17}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.1.}STM32WB5MMG bežični modul}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1.}STM32WB55VGY mikrokontroler}{18}{subsection.4.1.1}%
 \contentsline {section}{\numberline {4.2.}Senzorski sustavi}{18}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1.}MAX30009 integrirano sučelje za mjerenje bioimpedancije}{19}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2.}Senzor inercije}{21}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5.}Programska podrška za razvijeni sustav}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1.}Programiranje mrežnog procesora ARM Cortex-M0+}{23}{section.5.1}%
-\contentsline {section}{\numberline {5.2.}Operacijski sustav za rad u stvarnom vremenu Zephyr}{24}{section.5.2}%
-\contentsline {section}{\numberline {5.3.}Opis upravljačkog programa za MAX30009}{26}{section.5.3}%
-\contentsline {section}{\numberline {5.4.}Bluetooth low energy komunikacija}{30}{section.5.4}%
-\contentsline {chapter}{\numberline {6.}Razvijeno ispitno okruženje}{34}{chapter.6}%
-\contentsline {section}{\numberline {6.1.}Povezivanje s razvijenim uređajem}{35}{section.6.1}%
-\contentsline {section}{\numberline {6.2.}Postupak mjerenja}{37}{section.6.2}%
-\contentsline {section}{\numberline {6.3.}Prikaz rezultata}{38}{section.6.3}%
-\contentsline {chapter}{\numberline {7.}Laboratorijska mjerenja}{39}{chapter.7}%
-\contentsline {section}{\numberline {7.1.}Mjerni sustav}{39}{section.7.1}%
-\contentsline {section}{\numberline {7.2.}Protokol mjerenja}{39}{section.7.2}%
-\contentsline {section}{\numberline {7.3.}Analiza podataka}{39}{section.7.3}%
-\contentsline {chapter}{\numberline {8.}Rezultati i diskusija}{40}{chapter.8}%
-\contentsline {chapter}{\numberline {9.}Zaključak}{41}{chapter.9}%
-\contentsline {chapter}{Literatura}{42}{chapter*.28}%
+\contentsline {subsection}{\numberline {4.2.2.}Temperaturni senzor}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3.}Senzor inercije}{23}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5.}Programska podrška za razvijeni sustav}{24}{chapter.5}%
+\contentsline {section}{\numberline {5.1.}Programiranje mrežnog procesora ARM Cortex-M0+}{24}{section.5.1}%
+\contentsline {section}{\numberline {5.2.}Operacijski sustav za rad u stvarnom vremenu Zephyr}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3.}Opis upravljačkog programa za MAX30009}{28}{section.5.3}%
+\contentsline {section}{\numberline {5.4.}Bluetooth low energy komunikacija}{32}{section.5.4}%
+\contentsline {chapter}{\numberline {6.}Razvijeno ispitno okruženje}{36}{chapter.6}%
+\contentsline {section}{\numberline {6.1.}Povezivanje s razvijenim uređajem}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2.}Postupak mjerenja}{39}{section.6.2}%
+\contentsline {section}{\numberline {6.3.}Prikaz rezultata}{41}{section.6.3}%
+\contentsline {chapter}{\numberline {7.}Laboratorijska mjerenja}{42}{chapter.7}%
+\contentsline {section}{\numberline {7.1.}Mjerni sustav}{42}{section.7.1}%
+\contentsline {section}{\numberline {7.2.}Protokol mjerenja}{42}{section.7.2}%
+\contentsline {section}{\numberline {7.3.}Analiza podataka}{42}{section.7.3}%
+\contentsline {chapter}{\numberline {8.}Rezultati i diskusija}{43}{chapter.8}%
+\contentsline {chapter}{\numberline {9.}Zaključak}{44}{chapter.9}%
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{Sa\v {z}etak}{45}{chapter*.29}%
+\contentsline {chapter}{Sa\v {z}etak}{45}{chapter*.31}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{46}{chapter*.30}%
+\contentsline {chapter}{Abstract}{46}{chapter*.32}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {croatian}{}\relax 

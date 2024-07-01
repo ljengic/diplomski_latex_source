@@ -6,7 +6,22 @@
 
 \justifying
 
-shema sustava i za sto je
+Ovaj rad opisuje razvoj bežičnog nosivog sustava za praćenje distribucije tekućina u tijelu pomoću mjerenja bioimpedancije. 
+Blok shema sustava prikazana je na slici \ref{slk:blok_shema}.
+Sustav se temelji na upotrebi STM32WB5MMG modula koji omogućava Bluetooth Low Energy (BLE) komunikaciju. 
+Ključne komponente sustava uključuju MAX30009 senzor za mjerenje bioimpedancije, 
+BME280 senzor za mjerenje temperature i ISM330DHCX senzor za mjerenje ubrzanja. 
+Izmjereni podaci se putem BLE veze šalju ispitnom okruženju, omogućujući kontinuirano praćenje i analizu 
+fizioloških parametara korisnika. 
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=1\textwidth]{Figures/shema_sustava.png} 
+    \caption{Block shema razvijenog sustava}
+    \label{slk:blok_shema}
+\end{figure}
+
+U tekstu koji slijedi opisani su svi korišteni elementi sustava.
 
 \section{STM32WB5MMG bežični modul}
 
@@ -145,7 +160,35 @@ Sustav je moguće konfigurirati na način da generira prekid mikrokontroleru kad
 Broj uzoraka kod kojeg će se prekid generirati određuje se konfiguracijskim konstantama. Na osnovu nastalog prekida 
 mikrokontroler tada čita dostupne podatke iz FIFO spremnika čime se spremnik automatski prazni.  
 
+\subsection{Temperaturni senzor}
+
+BME280 senzor je visokoprecizni, višenamjenski senzor koji omogućava mjerenje temperature, 
+relativne vlažnosti i atmosferskog tlaka. 
+Ovaj senzor, razvijen od strane kompanije Bosch Sensortec, poznat je po svojoj visokoj točnosti i 
+niskoj potrošnji energije, što ga čini idealnim za primjenu u nosivim uređajima i IoT rješenjima.
+
+BME280 omogućuje precizna očitanja s minimalnim odstupanjima. 
+Senzor može mjeriti temperaturu u rasponu od -40°C do 85°C s točnošću od ±0.5°C, 
+relativnu vlažnost u rasponu od 0\% do 100\% s točnošću od ±3\%, te atmosferski tlak u 
+rasponu od 300 hPa do 1100 hPa s točnošću od ±1 hPa \cite{bme280_datasheet}.
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=1\textwidth]{Figures/bme280.png} 
+    \caption{Blok shema senzora BME280\cite{bme280_datasheet}}
+    \label{slk:shema_bme280}
+\end{figure}
+
+- jedna pametna o tome sta ce to u ovom sustavu
+
+%Integracija BME280 senzora u sustav omogućava kontinuirano praćenje okolišnih uvjeta, 
+%što je ključno za točne i pouzdane rezultate mjerenja bioimpedancije. 
+%Na primjer, promjene u temperaturi i vlažnosti mogu utjecati na bioelektrična svojstva kože, 
+%te stoga uzimanje tih parametara u obzir omogućava bolju kalibraciju i interpretaciju podataka.
+
 \subsection{Senzor inercije}
+
+- promjeni tu senzor na ISM330DHCX
 
 Senzor ICM-20948 koristi se za mjerenje inercije te pruža precizno praćenje kretanja i orijentacije u prostoru.
 Unutar jednog čipa ima integriran akcelerometar, žiroskop i magnetometar što pruža sveobuhvatnu sliku o kretanju 
