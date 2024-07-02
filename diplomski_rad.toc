@@ -5,7 +5,6 @@
 \contentsline {chapter}{\numberline {2.}Analiza sastava ljudskog tijela}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1.}Sastav ljudskog tijela}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2.}Praćenje distribucije tekućine u nogama}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3.}Određivanje mase listova}{8}{section.2.3}%
 \contentsline {chapter}{\numberline {3.}Metode mjerenja bioimpedancije}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1.}Bioimpedancija}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2.}Pregled metoda mjerenja bioimpedancije}{12}{section.3.2}%
@@ -30,15 +29,15 @@
 \contentsline {section}{\numberline {7.1.}Mjerni sustav}{42}{section.7.1}%
 \contentsline {section}{\numberline {7.2.}Protokol mjerenja}{42}{section.7.2}%
 \contentsline {section}{\numberline {7.3.}Analiza podataka}{42}{section.7.3}%
-\contentsline {chapter}{\numberline {8.}Rezultati i diskusija}{43}{chapter.8}%
-\contentsline {chapter}{\numberline {9.}Zaključak}{44}{chapter.9}%
+\contentsline {chapter}{\numberline {8.}Zaključak}{43}{chapter.8}%
+\contentsline {chapter}{Literatura}{44}{chapter*.31}%
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{Sa\v {z}etak}{45}{chapter*.31}%
+\contentsline {chapter}{Sa\v {z}etak}{47}{chapter*.32}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{46}{chapter*.32}%
+\contentsline {chapter}{Abstract}{48}{chapter*.33}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {croatian}{}\relax 

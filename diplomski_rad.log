@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  1 JUL 2024 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  1 JUL 2024 23:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,22 +689,118 @@ LaTeX Font Info:    Trying to load font information for T1+stix2 on input line
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
-)) (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count330
-\float@exts=\toks33
-\float@box=\box57
-\@float@everytoks=\toks34
-\@floatcapt=\box58
-)
-\@float@every@table=\toks35
+))
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.st
+y (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count331
-\l__pdf_internal_box=\box59
+\l__color_backend_stack_int=\count330
+\l__pdf_internal_box=\box57
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count331
+\l__tblr_c_int=\count332
+\l__tblr_r_int=\count333
+\l__tblr_d_dim=\dimen197
+\l__tblr_h_dim=\dimen198
+\l__tblr_o_dim=\dimen199
+\l__tblr_p_dim=\dimen256
+\l__tblr_q_dim=\dimen257
+\l__tblr_r_dim=\dimen258
+\l__tblr_s_dim=\dimen259
+\l__tblr_t_dim=\dimen260
+\l__tblr_v_dim=\dimen261
+\l__tblr_w_dim=\dimen262
+\l__tblr_a_box=\box58
+\l__tblr_b_box=\box59
+\l__tblr_c_box=\box60
+\l__tblr_d_box=\box61
+\g__tblr_table_count_int=\count334
+\c@rownum=\count335
+\c@colnum=\count336
+\c@rowcount=\count337
+\c@colcount=\count338
+\abovesep=\dimen263
+\belowsep=\dimen264
+\leftsep=\dimen265
+\rightsep=\dimen266
+\g_tblr_level_int=\count339
+\g__tblr_data_row_key_count_int=\count340
+\g__tblr_data_column_key_count_int=\count341
+\g__tblr_data_cell_key_count_int=\count342
+\g__tblr_array_int=\count343
+\l__tblr_key_count_int=\count344
+\l__tblr_key_quotient_int=\count345
+\l__tblr_key_quotient_two_int=\count346
+\l__tblr_key_remainder_int=\count347
+\g__tblr_data_str_value_count_int=\count348
+\rulewidth=\dimen267
+\l__tblr_strut_dp_dim=\dimen268
+\l__tblr_strut_ht_dim=\dimen269
+\g__tblr_cell_wd_dim=\dimen270
+\g__tblr_cell_ht_dim=\dimen271
+\g__tblr_cell_head_dim=\dimen272
+\g__tblr_cell_foot_dim=\dimen273
+\l__column_target_dim=\dimen274
+\l__tblr_caption_box=\box62
+\l__tblr_caption_left_box=\box63
+\l__tblr_row_head_box=\box64
+\l__tblr_row_foot_box=\box65
+\l__tblr_row_head_foot_dim=\dimen275
+\tablewidth=\dimen276
+\l__tblr_table_firsthead_box=\box66
+\l__tblr_table_middlehead_box=\box67
+\l__tblr_table_lasthead_box=\box68
+\l__tblr_table_firstfoot_box=\box69
+\l__tblr_table_middlefoot_box=\box70
+\l__tblr_table_lastfoot_box=\box71
+\l__tblr_remain_height_dim=\dimen277
+\l__tblr_long_from_int=\count349
+\l__tblr_long_to_int=\count350
+\l__tblr_curr_i_int=\count351
+\l__tblr_prev_i_int=\count352
+\l__tblr_table_page_int=\count353
+\l__tblr_table_head_box=\box72
+\l__tblr_table_foot_box=\box73
+\l__tblr_table_head_foot_dim=\dimen278
+\l__tblr_table_head_body_foot_dim=\dimen279
+\l__tblr_table_box=\box74
+\l__tblr_table_hlines_box=\box75
+\l__tblr_hline_box=\box76
+\l__tblr_row_box=\box77
+\l__tblr_col_o_wd_dim=\dimen280
+\l__tblr_col_b_wd_dim=\dimen281
+\l__tblr_hline_leftskip_dim=\dimen282
+\l__tblr_hline_rightskip_dim=\dimen283
+\l__tblr_row_ht_dim=\dimen284
+\l__tblr_row_dp_dim=\dimen285
+\l__tblr_row_abovesep_dim=\dimen286
+\l__tblr_row_belowsep_dim=\dimen287
+\l__tblr_row_vlines_box=\box78
+\l__tblr_vline_box=\box79
+\l__tblr_cell_box=\box80
+\l__row_upper_dim=\dimen288
+\l__row_lower_dim=\dimen289
+\l__row_vpace_dim=\dimen290
+\l__tblr_vline_aboveskip_dim=\dimen291
+\l__tblr_vline_belowskip_dim=\dimen292
+\l__tblr_cell_wd_dim=\dimen293
+\l__tblr_cell_ht_dim=\dimen294
+\l__tblr_diag_box=\box81
 )
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count354
+\float@exts=\toks33
+\float@box=\box82
+\@float@everytoks=\toks34
+\@floatcapt=\box83
+)
+\@float@every@table=\toks35
+
 
 LaTeX Warning: Unused global option(s):
     [numeric,times].
@@ -749,42 +845,42 @@ LaTeX Warning: Label `slk:max_30009_clock' multiply defined.
 )
 \openout1 = `diplomski_rad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line
- 89.
+ 90.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2.fd
 File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 90.
 LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line
- 89.
+ 90.
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2.fd
 File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-\c@lstlisting=\count332
-\c@mv@tabular=\count333
-\c@mv@boldtabular=\count334
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+\c@lstlisting=\count355
+\c@mv@tabular=\count356
+\c@mv@boldtabular=\count357
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -823,16 +919,16 @@ LaTeX Font Info:    ... okay on input line 89.
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count335
-\scratchdimen=\dimen197
-\scratchbox=\box60
-\nofMPsegments=\count336
-\nofMParguments=\count337
+\scratchcounter=\count358
+\scratchdimen=\dimen295
+\scratchbox=\box84
+\nofMPsegments=\count359
+\nofMParguments=\count360
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count338
-\MPscratchDim=\dimen198
-\MPnumerator=\count339
-\makeMPintoPDFobject=\count340
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen296
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks37
 )
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -862,45 +958,54 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Command `\dddot' is already robust on input line 89.
-LaTeX Info: Command `\ddddot' is already robust on input line 89.
-Package hyperref Info: Link coloring OFF on input line 89.
+LaTeX Info: Command `\dddot' is already robust on input line 90.
+LaTeX Info: Command `\ddddot' is already robust on input line 90.
+Package hyperref Info: Link coloring OFF on input line 90.
 
 (diplomski_rad.out) (diplomski_rad.out)
 \@outlinefile=\write3
 \openout3 = `diplomski_rad.out'.
 
+
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.st
+y
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+
+(C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse
+.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+))
 LaTeX Font Info:    Trying to load font information for T1+opensans-TLF on inpu
-t line 92.
+t line 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/opensans\t1opensans-tlf.
 fd
 File: T1opensans-TLF.fd 2019/06/24 Font definitions for T1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 92.
+(Font)              scaled to size 14.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <14> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
-e 92.
+e 93.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 14.0pt on input line 92.
+(Font)              scaled to size 14.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <20> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
-e 92.
+e 93.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 20.0pt on input line 92.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 92.
+(Font)              scaled to size 20.0pt on input line 93.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 93.
 LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input l
-ine 92.
+ine 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2scr.
 fd
 File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input li
-ne 92.
+ne 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2ex.f
 d
@@ -908,7 +1013,7 @@ File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitio
 ns
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input 
-line 92.
+line 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2frak
 .fd
@@ -916,7 +1021,7 @@ File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definition
 s
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input li
-ne 92.
+ne 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2bb.f
 d
@@ -924,7 +1029,7 @@ File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitio
 ns
 )
 LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input l
-ine 92.
+ine 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2cal.
 fd
@@ -932,7 +1037,7 @@ File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font defini
 tions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input li
-ne 92.
+ne 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls1stix2sf.f
 d
@@ -940,19 +1045,19 @@ File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitio
 ns
 )
 LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input li
-ne 92.
+ne 93.
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ls2stix2tt.f
 d
 File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitio
 ns
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
 
  (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
 
 
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -965,11 +1070,11 @@ AppData/Local/Programs/MiKTeX/fonts/enc/dvips/opensans/a_jg4h6q.enc}]
 
 pdfTeX warning: pdflatex (file ./Luka Jengić - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Luka Jengić - tekst zadatka.pdf, id=141, 597.55246pt x 845.07718pt>
+<Luka Jengić - tekst zadatka.pdf, id=137, 597.55246pt x 845.07718pt>
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf>
-Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 9
-9.
+Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 1
+00.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -977,8 +1082,8 @@ pdfTeX warning: pdflatex (file ./Luka Jengić - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf>
-Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 9
-9.
+Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf  used on input line 1
+00.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
@@ -988,37 +1093,37 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./Luka Jengić - tekst zadatka.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<Luka Jengić - tekst zadatka.pdf, id=144, page=1, 597.55246pt x 845.07718pt>
+<Luka Jengić - tekst zadatka.pdf, id=140, page=1, 597.55246pt x 845.07718pt>
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 99.
+ line 100.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 99.
+ line 100.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 99.
+ line 100.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 99.
+ line 100.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: Luka Jengić - tekst zadatka.pdf Graphic file (type pdf)
 <use Luka Jengić - tekst zadatka.pdf, page 1>
 Package pdftex.def Info: Luka Jengić - tekst zadatka.pdf , page1 used on input
- line 99.
+ line 100.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [2
 
  <./Luka Jengić - tekst zadatka.pdf>]
 LaTeX Font Info:    Font shape `T1/stix2/m/sl' in size <12> not available
-(Font)              Font shape `T1/stix2/m/it' tried instead on input line 104.
+(Font)              Font shape `T1/stix2/m/it' tried instead on input line 105.
 
  [3
 
@@ -1027,15 +1132,15 @@ t1.enc}]
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <18> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
-e 115.
+e 116.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 18.0pt on input line 115.
+(Font)              scaled to size 18.0pt on input line 116.
  (diplomski_rad.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ... {6.2.}Postupak mjerenja}{39}{section.6.2}
+l.27 ...e {6.3.}Prikaz rezultata}{41}{section.6.3}
                                                   % [1
 
 
@@ -1048,20 +1153,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \chapter
+l.120 \chapter
               {Uvod} [2]
 Poglavlje 1..
 (chepters/uvod.tex
-
-LaTeX Warning: Citation `Chen2023' on page 3 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Chen2023' on page 3 undefined on input line 26.
-
-
-LaTeX Warning: Citation `Abassi2022' on page 3 undefined on input line 31.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1072,157 +1167,109 @@ l.40
 ]) [4]
 Poglavlje 2..
 (chepters/bioimpedancija.tex
-
-LaTeX Warning: Citation `Abassi2022' on page 5 undefined on input line 19.
-
 LaTeX Font Info:    Font shape `T1/opensans-TLF/bx/n' in size <16> not availabl
 e
 (Font)              Font shape `T1/opensans-TLF/b/n' tried instead on input lin
 e 21.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
 (Font)              scaled to size 16.0pt on input line 21.
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 30.
-
-<Figures/sastav_tijela_2.png, id=226, 493.24275pt x 486.618pt>
+<Figures/sastav_tijela_2.png, id=228, 493.24275pt x 486.618pt>
 File: Figures/sastav_tijela_2.png Graphic file (type png)
 <use Figures/sastav_tijela_2.png>
 Package pdftex.def Info: Figures/sastav_tijela_2.png  used on input line 34.
 (pdftex.def)             Requested size: 220.50887pt x 217.54301pt.
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 35.
-
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 35.
-
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 45.
-
-
-LaTeX Warning: Citation `Bera2014' on page 5 undefined on input line 49.
-
-[5
+ [5
 
 ]
-
-LaTeX Warning: Citation `Bera2014' on page 6 undefined on input line 54.
-
-
-LaTeX Warning: Citation `Bera2014' on page 6 undefined on input line 59.
-
-
-LaTeX Warning: Citation `Bera2014' on page 6 undefined on input line 63.
-
-<Figures/sastav_tijela.png, id=234, 681.747pt x 470.9595pt>
+<Figures/sastav_tijela.png, id=244, 681.747pt x 470.9595pt>
 File: Figures/sastav_tijela.png Graphic file (type png)
 <use Figures/sastav_tijela.png>
 Package pdftex.def Info: Figures/sastav_tijela.png  used on input line 67.
 (pdftex.def)             Requested size: 374.86775pt x 258.97102pt.
-
-LaTeX Warning: Citation `Bera2014' on page 6 undefined on input line 68.
-
-
-LaTeX Warning: Citation `Bera2014' on page 6 undefined on input line 68.
-
-[6 <./Figures/sastav_tijela_2.png>] [7{C:/Users/Luka/AppData/Local/Programs/MiK
-TeX/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{C:/Users/Luka/AppData/Local/P
-rograms/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathit.enc} <./Figures/sastav_
-tijela.png>]
-
-LaTeX Warning: Citation `Delano2022' on page 8 undefined on input line 95.
-
-) [8{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/st
-ix2-mathex.enc}]
+ [6 <./Figures/sastav_tijela_2.png>] [7{C:/Users/Luka/AppData/Local/Programs/Mi
+KTeX/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{C:/Users/Luka/AppData/Local/
+Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathit.enc} <./Figures/sastav
+_tijela.png>]) [8{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/s
+tix2-type1/stix2-mathex.enc}]
 Poglavlje 3..
 
-Underfull \hbox (badness 1990) in paragraph at lines 131--131
+Underfull \hbox (badness 1990) in paragraph at lines 132--132
 []\T1/opensans-TLF/b/n/18 Metode mje-re-nja bi-oim-pe-dan-
  []
 
 (chepters/mjerenje_bioimpedancije.tex
-<Figures/stanica.png, id=259, 525.162pt x 395.67825pt>
+<Figures/stanica.png, id=273, 525.162pt x 395.67825pt>
 File: Figures/stanica.png Graphic file (type png)
 <use Figures/stanica.png>
 Package pdftex.def Info: Figures/stanica.png  used on input line 29.
 (pdftex.def)             Requested size: 264.61333pt x 199.36613pt.
-
-
-LaTeX Warning: Citation `Lukaski2013' on page 9 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Lukaski2013' on page 9 undefined on input line 30.
-
-
-LaTeX Warning: Citation `Lukaski2013' on page 9 undefined on input line 34.
-
-[9
+ [9
 
  <./Figures/stanica.png>]
-
-LaTeX Warning: Citation `Freeborn2021' on page 10 undefined on input line 47.
-
-<Figures/cole_model.png, id=270, 1590.94376pt x 1154.3125pt>
+<Figures/cole_model.png, id=289, 1590.94376pt x 1154.3125pt>
 File: Figures/cole_model.png Graphic file (type png)
 <use Figures/cole_model.png>
 Package pdftex.def Info: Figures/cole_model.png  used on input line 50.
 (pdftex.def)             Requested size: 264.61333pt x 191.9857pt.
-
-LaTeX Warning: Citation `Freeborn2021' on page 10 undefined on input line 64.
-
-[10 <./Figures/cole_model.png>]
-<Figures/cole_plot.png, id=281, 433.62pt x 268.00125pt>
+ [10 <./Figures/cole_model.png>]
+<Figures/cole_plot.png, id=302, 433.62pt x 268.00125pt>
 File: Figures/cole_plot.png Graphic file (type png)
 <use Figures/cole_plot.png>
 Package pdftex.def Info: Figures/cole_plot.png  used on input line 85.
 (pdftex.def)             Requested size: 308.71106pt x 190.80974pt.
-
-
-LaTeX Warning: Citation `Yang_2013' on page 11 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Yang_2013' on page 11 undefined on input line 86.
-
-
-LaTeX Warning: Citation `Yang_2013' on page 11 undefined on input line 89.
-
-[11 <./Figures/cole_plot.png (PNG copy)>] [12]
-
-LaTeX Warning: Citation `Abasi2022' on page 13 undefined on input line 138.
-
-<Figures/dvo_vs_cetverozicno.png, id=295, 2986.15625pt x 1204.5pt>
+ [11 <./Figures/cole_plot.png (PNG copy)>] [12]
+<Figures/dvo_vs_cetverozicno.png, id=321, 2986.15625pt x 1204.5pt>
 File: Figures/dvo_vs_cetverozicno.png Graphic file (type png)
 <use Figures/dvo_vs_cetverozicno.png>
 Package pdftex.def Info: Figures/dvo_vs_cetverozicno.png  used on input line 14
 2.
 (pdftex.def)             Requested size: 352.81552pt x 142.30988pt.
-
-LaTeX Warning: Citation `Meding2021' on page 13 undefined on input line 153.
-
-<Figures/electrode.jpg, id=296, 480.79625pt x 351.3125pt>
+<Figures/electrode.jpg, id=323, 480.79625pt x 351.3125pt>
 File: Figures/electrode.jpg Graphic file (type jpg)
 <use Figures/electrode.jpg>
 Package pdftex.def Info: Figures/electrode.jpg  used on input line 157.
 (pdftex.def)             Requested size: 264.61333pt x 193.35112pt.
-[13 <./Figures/dvo_vs_cetverozicno.png>]
-<Figures/sfb7.jpg, id=304, 401.5pt x 401.5pt>
+ [13 <./Figures/dvo_vs_cetverozicno.png>]
+<Figures/sfb7.jpg, id=334, 401.5pt x 401.5pt>
 File: Figures/sfb7.jpg Graphic file (type jpg)
 <use Figures/sfb7.jpg>
 Package pdftex.def Info: Figures/sfb7.jpg  used on input line 176.
 (pdftex.def)             Requested size: 198.45662pt x 198.45822pt.
+ [14 <./Figures/electrode.jpg> <./Figures/sfb7.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\T1/stix2/m/n/12 tu je neki du-gacki
+ []
 
 
-LaTeX Warning: Citation `sfb7' on page 14 undefined on input line 177.
+Underfull \hbox (badness 2080) in paragraph at lines 194--194
+\T1/stix2/m/n/12 tekst smamo ya pro-
+ []
 
 
-LaTeX Warning: Citation `sfb7' on page 14 undefined on input line 177.
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/stix2/m/n/12 ,njkfbg kj-sadfg dsfg
+ []
 
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
 
-LaTeX Warning: Citation `sfb7' on page 14 undefined on input line 182.
+Package tabularray Warning: Table width is too small, need 150.52562pt more!
 
-[14 <./Figures/electrode.jpg> <./Figures/sfb7.jpg>]) [15]
+> Step: build the whole table.
+
+Overfull \hbox (150.52562pt too wide) in paragraph at lines 230--231
+ [][] 
+ []
+
+) [15]
 Poglavlje 4..
 (chepters/razvijeni_sustav.tex
-<Figures/shema_sustava.png, id=316, 3919.64375pt x 2263.45625pt>
+<Figures/shema_sustava.png, id=351, 3919.64375pt x 2263.45625pt>
 File: Figures/shema_sustava.png Graphic file (type png)
 <use Figures/shema_sustava.png>
 Package pdftex.def Info: Figures/shema_sustava.png  used on input line 19.
@@ -1230,149 +1277,70 @@ Package pdftex.def Info: Figures/shema_sustava.png  used on input line 19.
  [16
 
  <./Figures/shema_sustava.png>]
-<Figures/stm32module.png, id=324, 752.21025pt x 376.40625pt>
+<Figures/stm32module.png, id=359, 752.21025pt x 376.40625pt>
 File: Figures/stm32module.png Graphic file (type png)
 <use Figures/stm32module.png>
 Package pdftex.def Info: Figures/stm32module.png  used on input line 34.
 (pdftex.def)             Requested size: 330.76329pt x 165.51587pt.
-
-
-LaTeX Warning: Citation `stm32module' on page 17 undefined on input line 35.
-
-
-LaTeX Warning: Citation `stm32module' on page 17 undefined on input line 35.
-
 LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line
  43.
+
 (C:\Users\Luka\AppData\Local\Programs\MiKTeX\tex/fonts/stix2-type1\ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 )
-<Figures/modul.png, id=327, 602.25pt x 437.635pt>
+<Figures/modul.png, id=364, 602.25pt x 437.635pt>
 File: Figures/modul.png Graphic file (type png)
 <use Figures/modul.png>
 Package pdftex.def Info: Figures/modul.png  used on input line 55.
 (pdftex.def)             Requested size: 330.76329pt x 240.3661pt.
-
-LaTeX Warning: Citation `modul_slika' on page 17 undefined on input line 56.
-
-
-LaTeX Warning: Citation `modul_slika' on page 17 undefined on input line 56.
-
 [17{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/sti
 x2-ts1.enc} <./Figures/stm32module.png>]
-<Figures/stm32mikro.png, id=336, 373.395pt x 517.33275pt>
+<Figures/stm32mikro.png, id=376, 373.395pt x 517.33275pt>
 File: Figures/stm32mikro.png Graphic file (type png)
 <use Figures/stm32mikro.png>
 Package pdftex.def Info: Figures/stm32mikro.png  used on input line 74.
 (pdftex.def)             Requested size: 264.61333pt x 366.62994pt.
-
-
-LaTeX Warning: Citation `stm32mikro' on page 18 undefined on input line 75.
-
-
-LaTeX Warning: Citation `stm32mikro' on page 18 undefined on input line 75.
-
-[18 <./Figures/modul.png>]
-
-LaTeX Warning: Citation `max30009' on page 19 undefined on input line 92.
-
-
-LaTeX Warning: Citation `max30009' on page 19 undefined on input line 96.
-
-[19 <./Figures/stm32mikro.png>]
-<Figures/max30009_bioz.png, id=350, 581.7735pt x 391.4625pt>
+ [18 <./Figures/modul.png>] [19 <./Figures/stm32mikro.png>]
+<Figures/max30009_bioz.png, id=397, 581.7735pt x 391.4625pt>
 File: Figures/max30009_bioz.png Graphic file (type png)
 <use Figures/max30009_bioz.png>
 Package pdftex.def Info: Figures/max30009_bioz.png  used on input line 105.
 (pdftex.def)             Requested size: 441.01773pt x 296.76195pt.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 106.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 106.
-
-<Figures/max30009_receive.png, id=353, 582.978pt x 208.3785pt>
+<Figures/max30009_receive.png, id=402, 582.978pt x 208.3785pt>
 File: Figures/max30009_receive.png Graphic file (type png)
 <use Figures/max30009_receive.png>
 Package pdftex.def Info: Figures/max30009_receive.png  used on input line 121.
 (pdftex.def)             Requested size: 441.01773pt x 157.63799pt.
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 122.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 20 undefined on input line
- 122.
-
-[20 <./Figures/max30009_bioz.png>]
-<Figures/max30009_demodulator.png, id=362, 584.78474pt x 134.30174pt>
+ [20 <./Figures/max30009_bioz.png>]
+<Figures/max30009_demodulator.png, id=414, 584.78474pt x 134.30174pt>
 File: Figures/max30009_demodulator.png Graphic file (type png)
 <use Figures/max30009_demodulator.png>
 Package pdftex.def Info: Figures/max30009_demodulator.png  used on input line 1
 47.
 (pdftex.def)             Requested size: 441.01773pt x 101.28345pt.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 21 undefined on input line
- 148.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 21 undefined on input line
- 148.
-
-[21 <./Figures/max30009_receive.png> <./Figures/max30009_demodulator.png>]
-
-LaTeX Warning: Citation `bme280_datasheet' on page 22 undefined on input line 1
-73.
-
-<Figures/bme280.png, id=371, 402.303pt x 213.79875pt>
+ [21 <./Figures/max30009_receive.png> <./Figures/max30009_demodulator.png>]
+<Figures/bme280.png, id=426, 402.303pt x 213.79875pt>
 File: Figures/bme280.png Graphic file (type png)
 <use Figures/bme280.png>
 Package pdftex.def Info: Figures/bme280.png  used on input line 177.
 (pdftex.def)             Requested size: 441.01773pt x 234.38333pt.
-
-LaTeX Warning: Citation `bme280_datasheet' on page 22 undefined on input line 1
-78.
-
-
-LaTeX Warning: Citation `bme280_datasheet' on page 22 undefined on input line 1
-78.
-
-[22 <./Figures/bme280.png>]
-<Figures/ICM-20948.jpg, id=379, 1084.05pt x 685.56125pt>
+ [22 <./Figures/bme280.png>]
+<Figures/ICM-20948.jpg, id=437, 1084.05pt x 685.56125pt>
 File: Figures/ICM-20948.jpg Graphic file (type jpg)
 <use Figures/ICM-20948.jpg>
 Package pdftex.def Info: Figures/ICM-20948.jpg  used on input line 201.
 (pdftex.def)             Requested size: 330.76329pt x 209.17433pt.
-
-
-LaTeX Warning: Citation `icm20948' on page 23 undefined on input line 202.
-
-
-LaTeX Warning: Citation `icm20948' on page 23 undefined on input line 202.
-
 ) [23 <./Figures/ICM-20948.jpg>]
 Poglavlje 5..
 
-Underfull \hbox (badness 2285) in paragraph at lines 142--142
+Underfull \hbox (badness 2285) in paragraph at lines 143--143
 []\T1/opensans-TLF/b/n/18 Programska po-dr-�ka za ra-zvi-
  []
 
 (chepters/programska_potpora.tex
-
-LaTeX Warning: Citation `stm32programator' on page 24 undefined on input line 1
-4.
-
-
 Underfull \hbox (badness 1642) in paragraph at lines 22--22
 []\T1/opensans-TLF/b/n/16 Programiranje mre�-nog pro-ce-sora ARM Cortex-
  []
-
-
-LaTeX Warning: Citation `kodovi_M0' on page 24 undefined on input line 24.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--31
@@ -1394,19 +1362,12 @@ ce-sor po-mo�u pro-grama
 [24
 
 ]
-<Figures/zephyr.png, id=389, 1155.31625pt x 1064.97874pt>
+<Figures/zephyr.png, id=454, 1155.31625pt x 1064.97874pt>
 File: Figures/zephyr.png Graphic file (type png)
 <use Figures/zephyr.png>
 Package pdftex.def Info: Figures/zephyr.png  used on input line 44.
 (pdftex.def)             Requested size: 330.76329pt x 304.88712pt.
-
-
-LaTeX Warning: Citation `zephyr' on page 25 undefined on input line 45.
-
-
-LaTeX Warning: Citation `zephyr' on page 25 undefined on input line 45.
-
-[25 <./Figures/zephyr.png>]
+ [25 <./Figures/zephyr.png>]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 61
 .
 
@@ -1424,31 +1385,18 @@ nput line 84.
 
 [26{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 [27] [28]
-<Figures/max30009_clock.png, id=454, 749.80125pt x 459.21562pt>
+<Figures/max30009_clock.png, id=522, 749.80125pt x 459.21562pt>
 File: Figures/max30009_clock.png Graphic file (type png)
 <use Figures/max30009_clock.png>
 Package pdftex.def Info: Figures/max30009_clock.png  used on input line 173.
 (pdftex.def)             Requested size: 441.01773pt x 270.10103pt.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 29 undefined on input line
- 174.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 29 undefined on input line
- 174.
-
-
-LaTeX Warning: Citation `max30009_datasheet' on page 29 undefined on input line
- 182.
-
-[29 <./Figures/max30009_clock.png>] [30] [31]
-<Figures/ble_role.png, id=504, 2112.89375pt x 707.64375pt>
+ [29 <./Figures/max30009_clock.png>] [30] [31]
+<Figures/ble_role.png, id=575, 2112.89375pt x 707.64375pt>
 File: Figures/ble_role.png Graphic file (type png)
 <use Figures/ble_role.png>
 Package pdftex.def Info: Figures/ble_role.png  used on input line 260.
 (pdftex.def)             Requested size: 330.76329pt x 110.77422pt.
-<Figures/ble_service.png, id=505, 2112.89375pt x 2213.26875pt>
+<Figures/ble_service.png, id=576, 2112.89375pt x 2213.26875pt>
 File: Figures/ble_service.png Graphic file (type png)
 <use Figures/ble_service.png>
 Package pdftex.def Info: Figures/ble_service.png  used on input line 279.
@@ -1486,54 +1434,45 @@ n/12 ko-joj se
 [34]) [35]
 Poglavlje 6..
 (chepters/ispitno_okruzenje.tex
-
-LaTeX Warning: Citation `ikone' on page 36 undefined on input line 15.
-
-<Figures/home.png, id=553, 996.72375pt x 666.23906pt>
+<Figures/home.png, id=625, 996.72375pt x 666.23906pt>
 File: Figures/home.png Graphic file (type png)
 <use Figures/home.png>
 Package pdftex.def Info: Figures/home.png  used on input line 19.
 (pdftex.def)             Requested size: 441.01773pt x 294.7828pt.
-[36
+ [36
 
  <./Figures/home.png>]
-<Figures/ble.png, id=562, 997.47656pt x 666.23906pt>
+<Figures/ble.png, id=635, 997.47656pt x 666.23906pt>
 File: Figures/ble.png Graphic file (type png)
 <use Figures/ble.png>
 Package pdftex.def Info: Figures/ble.png  used on input line 44.
 (pdftex.def)             Requested size: 441.01773pt x 294.55916pt.
-<Figures/ble_status_simboli.png, id=564, 1365.1pt x 602.25pt>
+<Figures/ble_status_simboli.png, id=637, 1365.1pt x 602.25pt>
 File: Figures/ble_status_simboli.png Graphic file (type png)
 <use Figures/ble_status_simboli.png>
 Package pdftex.def Info: Figures/ble_status_simboli.png  used on input line 54.
 
 (pdftex.def)             Requested size: 176.40439pt x 77.81738pt.
-
-
-LaTeX Warning: Citation `ikone' on page 37 undefined on input line 55.
-
-
-LaTeX Warning: Citation `ikone' on page 37 undefined on input line 55.
-
-[37 <./Figures/ble.png>]
-<Figures/ble_not_connected.png, id=573, 191.9672pt x 177.66376pt>
+ [37 <./Figures/ble.png>]
+<Figures/ble_not_connected.png, id=648, 191.9672pt x 177.66376pt>
 File: Figures/ble_not_connected.png Graphic file (type png)
 <use Figures/ble_not_connected.png>
 Package pdftex.def Info: Figures/ble_not_connected.png  used on input line 77.
 (pdftex.def)             Requested size: 176.40439pt x 163.271pt.
  [38 <./Figures/ble_status_simboli.png> <./Figures/ble_not_connected.png>]
-<Figures/cosak.png, id=582, 151.767pt x 89.73524pt>
+<Figures/cosak.png, id=657, 151.767pt x 89.73524pt>
 File: Figures/cosak.png Graphic file (type png)
 <use Figures/cosak.png>
 Package pdftex.def Info: Figures/cosak.png  used on input line 88.
 (pdftex.def)             Requested size: 176.40439pt x 104.30241pt.
-<Figures/patient.png, id=583, 996.72375pt x 666.99188pt>
+<Figures/patient.png, id=658, 996.72375pt x 666.99188pt>
 File: Figures/patient.png Graphic file (type png)
 <use Figures/patient.png>
 Package pdftex.def Info: Figures/patient.png  used on input line 100.
 (pdftex.def)             Requested size: 441.01773pt x 295.1159pt.
- [39 <./Figures/cosak.png> <./Figures/patient.png>]
-<Figures/invalid_data.png, id=593, 198.7425pt x 161.10187pt>
+
+[39 <./Figures/cosak.png> <./Figures/patient.png>]
+<Figures/invalid_data.png, id=668, 198.7425pt x 161.10187pt>
 File: Figures/invalid_data.png Graphic file (type png)
 <use Figures/invalid_data.png>
 Package pdftex.def Info: Figures/invalid_data.png  used on input line 115.
@@ -1546,7 +1485,7 @@ LaTeX Warning: Reference `' on page 40 undefined on input line 141.
 LaTeX Warning: Reference `' on page 40 undefined on input line 144.
 
 [40 <./Figures/invalid_data.png>]
-<Figures/select_patient.png, id=602, 171.64125pt x 214.401pt>
+<Figures/select_patient.png, id=677, 171.64125pt x 214.401pt>
 File: Figures/select_patient.png Graphic file (type png)
 <use Figures/select_patient.png>
 Package pdftex.def Info: Figures/select_patient.png  used on input line 148.
@@ -1557,21 +1496,27 @@ Poglavlje 7..
 
 ]
 Poglavlje 8..
-(chepters/rezultati.tex) [43
+(chepters/zakljucak.tex) (diplomski_rad.bbl [43
 
 ]
-Poglavlje 9..
-(chepters/zakljucak.tex) (diplomski_rad.bbl) [44
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+[44
 
-] [45
+] [45]) [46] [47
 
-] [46
+] [48
 
 ] (diplomski_rad.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
 
  *File List*
      fer.cls    2021/06/10 FER3
@@ -1667,8 +1612,10 @@ dvipsnam.def    2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 booktabs.sty    2020/01/12 v1.61803398 Publication quality tables
  fontenc.sty    2021/04/29 v2.0v Standard LaTeX package
  t1stix2.fd    2018/04/02 v2.0.0-latex stix2 T1 font definitions
-   float.sty    2001/11/08 v1.3d Float enhancements (AL)
+tabularray.sty    2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+   expl3.sty    2024-01-04 L3 programming layer (loader) 
 l3backend-pdftex.def    2024-01-04 L3 backend support: PDF output (pdfTeX)
+   float.sty    2001/11/08 v1.3d Float enhancements (AL)
 ls1stix2.fd    2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 ls2stix2.fd    2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 supp-pdf.mkii
@@ -1680,6 +1627,8 @@ pdflscape-nometadata.sty    2022-10-28 v0.13 Display of landscape pages in PDF
   lscape.sty    2020/05/28 v3.02 Landscape Pages (DPC)
 diplomski_rad.out
 diplomski_rad.out
+ninecolors.sty    2022-02-13 v2022D Select colors with proper color contrast
+  xparse.sty    2023-10-10 L3 Experimental document command parser
 t1opensans-tlf.fd
 ls1stix2scr.fd    2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
 ls2stix2ex.fd    2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitions
@@ -1735,7 +1684,6 @@ Figures/patient.png
 Figures/invalid_data.png
 Figures/select_patient.png
 chepters/laboratorijska_mjerenja.tex
-chepters/rezultati.tex
 chepters/zakljucak.tex
 diplomski_rad.bbl
  ***********
@@ -1747,16 +1695,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomski_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 09AE37116A8E9E3A067720E44ABEF9C6;6399.
+(rerunfilecheck)             Checksum: 41FD4CA5EBD9CE0A28EC136670F7CFBE;6156.
  ) 
 Here is how much of TeX's memory you used:
- 20930 strings out of 474485
- 331882 string characters out of 5744206
+ 23446 strings out of 474485
+ 396256 string characters out of 5744206
  2015542 words of memory out of 5000000
- 42573 multiletter control sequences out of 15000+600000
- 653093 words of font info for 142 fonts, out of 8000000 for 9000
+ 45053 multiletter control sequences out of 15000+600000
+ 654658 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,17n,131p,530b,2325s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,17n,131p,530b,2327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/ascender/opensans/Op
 enSans-Bold.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/ascend
 er/opensans/OpenSans-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/f
@@ -1766,9 +1714,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><
 C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX
 2Text-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 courier/ucrr8a.pfb>
-Output written on diplomski_rad.pdf (49 pages, 3043223 bytes).
+Output written on diplomski_rad.pdf (51 pages, 3067247 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
- 430 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 836 PDF objects out of 1000 (max. 8388607)
+ 249 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
 

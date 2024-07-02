@@ -37,7 +37,7 @@ U nastavku će detaljno biti opisani implementacija i korištenje razvijenog isp
 
 Ispitno okruženje konfigurirano je kao BLE klijent te se jednostavno spaja na razvijeni nosivi uređaj. 
 Pritiskom na karticu izbornika \texttt{BLE Connection} otvara se zaslon prikazan na slici \ref{slk:ble} 
-koji korisniku pruža mogućnost upravljanja BLE vezom.
+koji korisniku pruža mogućnost upravljanja BLE konekcijom.
 
 \begin{figure}[htb]
     \centering
@@ -46,13 +46,13 @@ koji korisniku pruža mogućnost upravljanja BLE vezom.
     \label{slk:ble}
 \end{figure}
 
-Status veze lako je vidljiv pomoću simbola BLE veze prikazanih na slici \ref{slk:ble_status_simboli}.  
-Ako je simbol zelen, razvijeni sustav povezan je s ispitnim okruženjem dok u slučaju crvenog simbola veza nije uspostavljena.
+Status konekcije lako je vidljiv pomoću simbola BLE konekcije prikazanih na slici \ref{slk:ble_status_simboli}.  
+Ako je simbol zelen, razvijeni sustav povezan je s ispitnim okruženjem dok u slučaju crvenog simbola konekcija nije uspostavljena.
 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.4\textwidth]{Figures/ble_status_simboli.png} 
-    \caption{Simboli oznake statusa BLE veze \cite{ikone}}
+    \caption{Simboli oznake statusa BLE konekcije \cite{ikone}}
     \label{slk:ble_status_simboli}
 \end{figure}
 
@@ -62,13 +62,13 @@ Nakon što se skeniranje dovrši, korisniku se prikazuje popis dostupnih uređaj
 
 Korisnik zatim ima mogućnost odabira željenog uređaja. Nakon što je uređaj odabran, pritiskom na tipku \texttt{Connect} 
 pokreće se postupak povezivanja uređaja. 
-Aplikacija obaviještava korisnika o rezultatu pokušaja povezivanja te ako su uređaji uspješno povezani moguće je pokrenuti mjerenje.  
+Aplikacija obavještava korisnika o rezultatu pokušaja povezivanja te ako su uređaji uspješno povezani moguće je pokrenuti mjerenje.  
 Za vrijeme dok su uređaji povezani na \texttt{BLE Connection} zaslonu prikazane su informacije o povezanom uređaju 
-i tipka \texttt{Disconnect} kojom se korisniku daje mogućnost prekida BLE veze.
+i tipka \texttt{Disconnect} kojom se korisniku daje mogućnost prekida BLE konekcije.
 
 Za pokretanje mjerenja i prikupljanje mjernih podataka nužno je da aplikacija bude povezana sa razvijenim nosivim sustavom. 
-Zbog toga se prije početka mjerenja vrši provjera je li aplikacija ostvarila BLE vezu sa razvijenim sustavom. 
-Ako BLE veza nije ostvarena, aplikacija ne dozvoljava pokretanje mjerenja te korisnika o tome obaviještava 
+Zbog toga se prije početka mjerenja vrši provjera je li aplikacija ostvarila BLE konekciju sa razvijenim sustavom. 
+Ako BLE konekcija nije ostvarena, aplikacija ne dozvoljava pokretanje mjerenja te korisnika o tome obaviještava 
 skočnim prozorom prikazanim na slici \ref{slk:ble_not_connected}. Tipka \texttt{Connect} na skočnom prozoru korisnika 
 vodi na karticu \texttt{BLE Connection}.
 
@@ -79,14 +79,14 @@ vodi na karticu \texttt{BLE Connection}.
     \label{slk:ble_not_connected}
 \end{figure}
 
-Radi lakše kontrole BLE veze na statusnu traku u gornji desni dio zaslona dodan je bluetooth simbol, 
+Radi lakše kontrole BLE konekcijskog statusa na statusnu traku u gornji desni dio zaslona dodan je bluetooth simbol, 
 što je prikazano na slici \ref{slk:ble_status}.  
-Ovim pristupom korisniku se omogućava da u svakom trenutku korištenja aplikacije jednostavno može provjeriti status BLE veze. 
+Ovim pristupom korisniku se omogućava da u svakom trenutku korištenja aplikacije jednostavno može provjeriti status BLE konekcije. 
 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.4\textwidth]{Figures/cosak.png} 
-    \caption{Simbol u gorenjem desnom uglu koji opisuju status BLE veze}
+    \caption{Simbol u gorenjem desnom uglu koji opisuju status BLE konekcije}
     \label{slk:ble_status}
 \end{figure}
 
@@ -119,7 +119,7 @@ koje korisnik po potrebi može promjeniti.
 
 Kada su svi podatci ispravni, otvara se prozor (ref) kojim se pokreče mjerenje i na kojem 
 se mogu u stvarnom vremenu pratiti rezultati mjerenja. 
-Mjerenje se pokreče pritiskom na tipku \texttt{Start} čime se razvijenom sustavu šalje naredba \texttt{BLE\_CMD\_START}. 
+Mjerenje se pokreće pritiskom na tipku \texttt{Start} čime se razvijenom sustavu šalje naredba \texttt{BLE\_CMD\_START}. 
 Sustav tada kontinuirano šalje podatke o izmjerenoj bioimpedanciji ispitnom okruženju. 
 Ispitno okruženje iz primljenih podataka izračunava volumene tjelesnih tekućina i u stvarnom vremenu ih osvježava na grafu. 
 Kako podatci pristižu, graf se automatski skalira tako da su vrijednost y osi uvijek postavljenje na ±10 \% 
