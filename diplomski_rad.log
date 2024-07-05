@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  5 JUL 2024 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  5 JUL 2024 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1315,13 +1315,7 @@ File: Figures/bme280.png Graphic file (type png)
 <use Figures/bme280.png>
 Package pdftex.def Info: Figures/bme280.png  used on input line 176.
 (pdftex.def)             Requested size: 441.01773pt x 234.38333pt.
- [24 <./Figures/bme280.png>]
-<Figures/ICM-20948.jpg, id=461, 1084.05pt x 685.56125pt>
-File: Figures/ICM-20948.jpg Graphic file (type jpg)
-<use Figures/ICM-20948.jpg>
-Package pdftex.def Info: Figures/ICM-20948.jpg  used on input line 200.
-(pdftex.def)             Requested size: 330.76329pt x 209.17433pt.
-) [25 <./Figures/ICM-20948.jpg>]
+ [24 <./Figures/bme280.png>]) [25]
 Poglavlje 5..
 
 Underfull \hbox (badness 2285) in paragraph at lines 143--143
@@ -1342,7 +1336,7 @@ m sus-ta-vom Zep-hyr je
 [26
 
 ]
-<Figures/zephyr.png, id=478, 1155.31625pt x 1064.97874pt>
+<Figures/zephyr.png, id=475, 1155.31625pt x 1064.97874pt>
 File: Figures/zephyr.png Graphic file (type png)
 <use Figures/zephyr.png>
 Package pdftex.def Info: Figures/zephyr.png  used on input line 42.
@@ -1365,18 +1359,18 @@ nput line 82.
 
 [28{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 [29] [30]
-<Figures/max30009_clock.png, id=546, 749.80125pt x 459.21562pt>
+<Figures/max30009_clock.png, id=543, 749.80125pt x 459.21562pt>
 File: Figures/max30009_clock.png Graphic file (type png)
 <use Figures/max30009_clock.png>
 Package pdftex.def Info: Figures/max30009_clock.png  used on input line 171.
 (pdftex.def)             Requested size: 441.01773pt x 270.10103pt.
  [31 <./Figures/max30009_clock.png>] [32] [33]
-<Figures/ble_role.png, id=599, 2112.89375pt x 707.64375pt>
+<Figures/ble_role.png, id=596, 2112.89375pt x 707.64375pt>
 File: Figures/ble_role.png Graphic file (type png)
 <use Figures/ble_role.png>
 Package pdftex.def Info: Figures/ble_role.png  used on input line 258.
 (pdftex.def)             Requested size: 330.76329pt x 110.77422pt.
-<Figures/ble_service.png, id=600, 2112.89375pt x 2213.26875pt>
+<Figures/ble_service.png, id=597, 2112.89375pt x 2213.26875pt>
 File: Figures/ble_service.png Graphic file (type png)
 <use Figures/ble_service.png>
 Package pdftex.def Info: Figures/ble_service.png  used on input line 277.
@@ -1414,7 +1408,7 @@ n/12 ko-joj se
 [36]) [37]
 Poglavlje 6..
 (chepters/ispitno_okruzenje.tex
-<Figures/home.png, id=649, 996.72375pt x 666.23906pt>
+<Figures/home.png, id=646, 996.72375pt x 666.23906pt>
 File: Figures/home.png Graphic file (type png)
 <use Figures/home.png>
 Package pdftex.def Info: Figures/home.png  used on input line 19.
@@ -1422,58 +1416,58 @@ Package pdftex.def Info: Figures/home.png  used on input line 19.
  [38
 
  <./Figures/home.png>]
-<Figures/ble.png, id=659, 997.47656pt x 666.23906pt>
+<Figures/ble.png, id=656, 997.47656pt x 666.23906pt>
 File: Figures/ble.png Graphic file (type png)
 <use Figures/ble.png>
 Package pdftex.def Info: Figures/ble.png  used on input line 44.
 (pdftex.def)             Requested size: 374.86775pt x 250.37782pt.
-<Figures/ble_status_simboli.png, id=661, 1365.1pt x 602.25pt>
+<Figures/ble_status_simboli.png, id=658, 1365.1pt x 602.25pt>
 File: Figures/ble_status_simboli.png Graphic file (type png)
 <use Figures/ble_status_simboli.png>
 Package pdftex.def Info: Figures/ble_status_simboli.png  used on input line 54.
 
 (pdftex.def)             Requested size: 176.40439pt x 77.81738pt.
  [39 <./Figures/ble.png>]
-<Figures/ble_not_connected.png, id=672, 191.9672pt x 177.66376pt>
+<Figures/ble_not_connected.png, id=669, 191.9672pt x 177.66376pt>
 File: Figures/ble_not_connected.png Graphic file (type png)
 <use Figures/ble_not_connected.png>
 Package pdftex.def Info: Figures/ble_not_connected.png  used on input line 77.
 (pdftex.def)             Requested size: 176.40439pt x 163.271pt.
-<Figures/cosak.png, id=674, 151.767pt x 89.73524pt>
+<Figures/cosak.png, id=671, 151.767pt x 89.73524pt>
 File: Figures/cosak.png Graphic file (type png)
 <use Figures/cosak.png>
 Package pdftex.def Info: Figures/cosak.png  used on input line 88.
 (pdftex.def)             Requested size: 176.40439pt x 104.30241pt.
-<Figures/patient.png, id=675, 996.72375pt x 666.99188pt>
+<Figures/patient.png, id=672, 996.72375pt x 666.99188pt>
 File: Figures/patient.png Graphic file (type png)
 <use Figures/patient.png>
 Package pdftex.def Info: Figures/patient.png  used on input line 100.
 (pdftex.def)             Requested size: 374.86775pt x 250.85411pt.
  [40 <./Figures/ble_status_simboli.png> <./Figures/ble_not_connected.png>]
-<Figures/invalid_data.png, id=686, 198.7425pt x 161.10187pt>
+<Figures/invalid_data.png, id=683, 198.7425pt x 161.10187pt>
 File: Figures/invalid_data.png Graphic file (type png)
 <use Figures/invalid_data.png>
 Package pdftex.def Info: Figures/invalid_data.png  used on input line 115.
 (pdftex.def)             Requested size: 176.40439pt x 142.99918pt.
 
 [41 <./Figures/cosak.png> <./Figures/patient.png>]
-<Figures/measure.png, id=695, 1011.78pt x 544.434pt>
+<Figures/measure.png, id=692, 1011.78pt x 544.434pt>
 File: Figures/measure.png Graphic file (type png)
 <use Figures/measure.png>
 Package pdftex.def Info: Figures/measure.png  used on input line 131.
 (pdftex.def)             Requested size: 374.86775pt x 201.71986pt.
  [42 <./Figures/invalid_data.png> <./Figures/measure.png>]
-<Figures/select_patient.png, id=705, 171.64125pt x 214.401pt>
+<Figures/select_patient.png, id=702, 171.64125pt x 214.401pt>
 File: Figures/select_patient.png Graphic file (type png)
 <use Figures/select_patient.png>
 Package pdftex.def Info: Figures/select_patient.png  used on input line 149.
 (pdftex.def)             Requested size: 132.30666pt x 165.26593pt.
-<Figures/results_p.png, id=707, 798.5835pt x 533.5935pt>
+<Figures/results_p.png, id=704, 798.5835pt x 533.5935pt>
 File: Figures/results_p.png Graphic file (type png)
 <use Figures/results_p.png>
 Package pdftex.def Info: Figures/results_p.png  used on input line 159.
 (pdftex.def)             Requested size: 374.86775pt x 250.47958pt.
-<Figures/results_g.png, id=709, 797.379pt x 532.99126pt>
+<Figures/results_g.png, id=706, 797.379pt x 532.99126pt>
 File: Figures/results_g.png Graphic file (type png)
 <use Figures/results_g.png>
 Package pdftex.def Info: Figures/results_g.png  used on input line 169.
@@ -1671,7 +1665,6 @@ Figures/max30009_bioz.png
 Figures/max30009_receive.png
 Figures/max30009_demodulator.png
 Figures/bme280.png
-Figures/ICM-20948.jpg
 chepters/programska_potpora.tex
 Figures/zephyr.png
    t1pcr.fd    2001/06/04 font definitions for T1/pcr.
@@ -1701,13 +1694,13 @@ diplomski_rad.bbl
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomski_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 0E34B86E6618D487499B3517058893DE;6033.
+(rerunfilecheck)             Checksum: 5EAE6A43C113A8CE77BF801D728EBB4A;6033.
  ) 
 Here is how much of TeX's memory you used:
- 23547 strings out of 474485
- 399022 string characters out of 5744206
+ 23532 strings out of 474485
+ 398715 string characters out of 5744206
  2017542 words of memory out of 5000000
- 45137 multiletter control sequences out of 15000+600000
+ 45125 multiletter control sequences out of 15000+600000
  656814 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,17n,131p,530b,2327s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1720,9 +1713,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><
 C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX
 2Text-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 courier/ucrr8a.pfb>
-Output written on diplomski_rad.pdf (55 pages, 3508104 bytes).
+Output written on diplomski_rad.pdf (55 pages, 3418425 bytes).
 PDF statistics:
- 893 PDF objects out of 1000 (max. 8388607)
- 263 named destinations out of 1000 (max. 500000)
- 429 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 888 PDF objects out of 1000 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 424 words of extra memory for PDF output out of 10000 (max. 10000000)
 

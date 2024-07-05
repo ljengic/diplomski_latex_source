@@ -180,9 +180,8 @@ Y.~Lahav, N.~Goldstein, i Y.~Gepner, ``Comparison of body composition
 \bibitem{bme280_datasheet}
 \emph{BME280 - Data sheet}, Analog Devices, Inc., 4 2024., rev 1.24.
 
-\bibitem{icm20948}
-\emph{World’s Lowest Power 9-Axis MEMS MotionTracking™ Device}, InvenSense,
-  a TDK Group Company, 12 2024., version 1.6.
+\bibitem{ism330dhcx}
+\emph{ISM330DHCX}, STMicroelectronics, 11 2020., rev 7.
 
 \bibitem{stm32programator}
 \emph{ST-LINK/V2 in-circuit debugger/programmer for STM8 and STM32
@@ -215,16 +214,6 @@ T.~J. Freeborn, B.~Maundy, i A.~Elwakil, ``Numerical extraction of cole-cole
   impedance parameters from step response'', \emph{Nonlinear Theory and Its
   Applications, IEICE}, sv.~2, br.~4, str. 548--561, 2011.
   \url{https://doi.org/10.1587/nolta.2.548}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Talma2013}
-\BIBentryALTinterwordspacing
-H.~Talma, M.~Chin A~Paw, B.~Bakker, R.~Hirasing, C.~Terwee, i T.~Altenburg,
-  ``Bioelectrical impedance analysis to estimate body composition in children
-  and adolescents: A systematic review and evidence appraisal of validity,
-  responsiveness, reliability and measurement error'', \emph{Obesity reviews :
-  an official journal of the International Association for the Study of
-  Obesity}, sv.~14, 07 2013. \url{https://doi.org/10.1111/obr.12061}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
