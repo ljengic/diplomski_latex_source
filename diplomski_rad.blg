@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: diplomski_rad.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+The style file: fer_IEEEtran_HR.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: literatura.bib
+Warning--empty journal in Freeborn2021
+You've used 28 entries,
+            4225 wiz_defined-function locations,
+            1035 strings with 13623 characters,
+and the built_in function-call counts, 16018 in all, are:
+= -- 1366
+> -- 306
+< -- 68
++ -- 162
+- -- 61
+* -- 744
+:= -- 2682
+add.period$ -- 72
+call.type$ -- 28
+change.case$ -- 33
+chr.to.int$ -- 108
+cite$ -- 29
+duplicate$ -- 1240
+empty$ -- 1279
+format.name$ -- 75
+if$ -- 3745
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 241
+newline$ -- 161
+num.names$ -- 16
+pop$ -- 518
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1279
+stack$ -- 0
+substring$ -- 345
+swap$ -- 955
+text.length$ -- 32
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 1
+while$ -- 39
+width$ -- 30
+write$ -- 346
+(There was 1 warning)
