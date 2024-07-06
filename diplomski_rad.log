@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  5 JUL 2024 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  5 JUL 2024 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,9 +828,6 @@ LaTeX Warning: Label `jed:cole' multiply defined.
 LaTeX Warning: Label `slk:cole_model' multiply defined.
 
 
-LaTeX Warning: Label `slk:elektrode' multiply defined.
-
-
 LaTeX Warning: Label `jed:cpe' multiply defined.
 
 
@@ -841,9 +838,6 @@ LaTeX Warning: Label `slk:max_30009_clock' multiply defined.
 
 
 LaTeX Warning: Label `slk:max_30009_clock' multiply defined.
-
-
-LaTeX Warning: Label `tab:opci_podaci' multiply defined.
 
 )
 \openout1 = `diplomski_rad.aux'.
@@ -1484,6 +1478,23 @@ Poglavlje 7..
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
+<Figures/tekstilne_elektrode.jpg, id=727, 130.23656pt x 93.34875pt>
+File: Figures/tekstilne_elektrode.jpg Graphic file (type jpg)
+<use Figures/tekstilne_elektrode.jpg>
+Package pdftex.def Info: Figures/tekstilne_elektrode.jpg  used on input line 47
+.
+(pdftex.def)             Requested size: 198.45662pt x 142.24765pt.
+ [45
+
+]
+<Figures/plantarna_fleksija.jpg, id=743, 1332.98pt x 1332.98pt>
+File: Figures/plantarna_fleksija.jpg Graphic file (type jpg)
+<use Figures/plantarna_fleksija.jpg>
+Package pdftex.def Info: Figures/plantarna_fleksija.jpg  used on input line 70.
+
+(pdftex.def)             Requested size: 198.45662pt x 198.45358pt.
+ [46 <./Figures/tekstilne_elektrode.jpg>] [47 <./Figures/plantarna_fleksija.jpg
+>]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1492,11 +1503,9 @@ Poglavlje 7..
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) [45
-
-]
+) [48]
 Poglavlje 8..
-(chepters/zakljucak.tex) (diplomski_rad.bbl [46
+(chepters/zakljucak.tex) (diplomski_rad.bbl [49
 
 ]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
@@ -1505,11 +1514,25 @@ Poglavlje 8..
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-[47
+[50
 
-] [48] [49]) [50] [51
+] [51]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+[52]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+) [53] [54
 
-] [52
+] [55
 
 ] (diplomski_rad.aux)
  ***********
@@ -1686,6 +1709,8 @@ Figures/select_patient.png
 Figures/results_p.png
 Figures/results_g.png
 chepters/laboratorijska_mjerenja.tex
+Figures/tekstilne_elektrode.jpg
+Figures/plantarna_fleksija.jpg
 chepters/zakljucak.tex
 diplomski_rad.bbl
  ***********
@@ -1694,13 +1719,13 @@ diplomski_rad.bbl
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomski_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 5EAE6A43C113A8CE77BF801D728EBB4A;6033.
+(rerunfilecheck)             Checksum: 0823F7BE48E8FED3E2F7A3A394EB22EF;6033.
  ) 
 Here is how much of TeX's memory you used:
- 23532 strings out of 474485
- 398715 string characters out of 5744206
+ 23573 strings out of 474485
+ 399724 string characters out of 5744206
  2017542 words of memory out of 5000000
- 45125 multiletter control sequences out of 15000+600000
+ 45153 multiletter control sequences out of 15000+600000
  656814 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,17n,131p,530b,2327s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1713,9 +1738,9 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><
 C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX
 2Text-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 courier/ucrr8a.pfb>
-Output written on diplomski_rad.pdf (55 pages, 3418425 bytes).
+Output written on diplomski_rad.pdf (58 pages, 3619444 bytes).
 PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 261 named destinations out of 1000 (max. 500000)
- 424 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 935 PDF objects out of 1000 (max. 8388607)
+ 272 named destinations out of 1000 (max. 500000)
+ 434 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,45 +12,47 @@ Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: literatura.bib
 Warning--empty journal in Freeborn2021
-You've used 27 entries,
+Warning--empty journal in Piper2023
+Warning--empty journal in Bandur2023
+You've used 33 entries,
             4225 wiz_defined-function locations,
-            1025 strings with 13086 characters,
-and the built_in function-call counts, 15389 in all, are:
-= -- 1318
-> -- 281
-< -- 67
-+ -- 150
-- -- 55
-* -- 711
-:= -- 2575
-add.period$ -- 69
-call.type$ -- 27
-change.case$ -- 32
-chr.to.int$ -- 108
-cite$ -- 28
-duplicate$ -- 1192
-empty$ -- 1230
-format.name$ -- 68
-if$ -- 3602
+            1072 strings with 14878 characters,
+and the built_in function-call counts, 20197 in all, are:
+= -- 1715
+> -- 413
+< -- 101
++ -- 217
+- -- 81
+* -- 958
+:= -- 3315
+add.period$ -- 87
+call.type$ -- 33
+change.case$ -- 38
+chr.to.int$ -- 177
+cite$ -- 36
+duplicate$ -- 1535
+empty$ -- 1581
+format.name$ -- 99
+if$ -- 4735
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 230
-newline$ -- 156
-num.names$ -- 15
-pop$ -- 492
+int.to.str$ -- 33
+missing$ -- 291
+newline$ -- 184
+num.names$ -- 21
+pop$ -- 628
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1232
+skip$ -- 1598
 stack$ -- 0
-substring$ -- 344
-swap$ -- 919
-text.length$ -- 31
+substring$ -- 525
+swap$ -- 1215
+text.length$ -- 42
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 27
-warning$ -- 1
-while$ -- 38
-width$ -- 29
-write$ -- 334
-(There was 1 warning)
+type$ -- 33
+warning$ -- 3
+while$ -- 62
+width$ -- 35
+write$ -- 405
+(There were 3 warnings)
