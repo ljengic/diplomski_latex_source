@@ -332,11 +332,30 @@ Nadalje, u ovinosti o senzoru, primprema se niz znakova u ranije opisanom format
 Zadnji korak u slanju poruke BLE komunikacijskim protokolom je pozivanje ranije opisanih funkcija (\ref{lst:ble_api}) sa 
 generiranim nizom znakova.  
 
-Format u kojem se poruke šalju je \texttt{vrijeme;senzor;podatci}. Pri tome je \texttt{vrijeme} vrijeme proteklo 
-od početka mjerenja izraženo u milisekundama, a \texttt{senzor} cijeli broj u rasponu vrijednosti od 0 do 2 koji 
-određuje podatci s kojeg senzora se šalju. Broj 0 označava bioimpedanciju, 1 temperaturu te 2 akceleraciju.  
-Podatci koji se šalju su decimalni brojevi, ali njihov broj ovisi o senzoru. Temperaturni senzor mjeri samo jednu vrijednost, 
-s akcelerometra se dobivaju 3 vrijednosti, a bioimpedancija izražena je s dvije vrijednosti, realinim i imaginarnim dijelom. 
-Decimalni brojevi su zaokruženi na dvije decimale i međusobno su odvojeni točkom sa zarezom. 
+Format u kojem se poruke šalju je \texttt{vrijeme;senzor;podatci}. 
+Detaljni opis sadržaja poruke razvijenog komunikacijskog protokola prikazan je u tablici \ref{tab:BLE_protokol}. 
+
+\begin{table}[H]
+\centering
+\begin{tblr}{
+    width=1\linewidth,
+    cells={valign=m,halign=c},
+    row{1}={bg=lightgray,font=\bfseries,rowsep=8pt},
+    column{1}={3.5cm},
+    column{2}={5cm},
+    column{3}={5cm},
+    hlines,
+    vlines
+}
+    \hline
+    Varijabla & Opis & Vrijednost \\ [0.5ex] 
+    \hline\hline
+    Vrijeme & Vrijeme proteklo od početka mjerenja izraženo u milisekundama  & Decimalni broj zaokružen na dvije decimale  \\
+    Oznaka senzora & Identifikacijska oznaka senzora čiji podatci se šalju  & Cijeli broj u rasponu od 0 do 2, 0 označava bioimpedanciju, 1 temperaturu, a 2 akceleraciju  \\
+    Vrijednost & Podaci ovise o senzoru: temperaturni senzor mjeri jednu vrijednost, akcelerometar tri vrijednosti, dok se bioimpedancija izražava s dvije vrijednosti: realnim i imaginarnim dijelom.  & Decimalni brojevi zaokruženi na dvije decimale odvojeni točkom sa zarezom  \\
+    \hline
+\end{tblr}
+\caption{\label{tab:BLE_protokol}Opis dijelova poruke komunikacijskog protokola}
+\end{table}
 
 \end{document}

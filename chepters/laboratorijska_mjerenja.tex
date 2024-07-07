@@ -17,22 +17,22 @@ Također, uspoređeni su rezultati mjerenja dobiveni gel elektrodama s onima dob
 Mjerni sustav je prikazan slikom X, gdje su vidljivi svi prethodno opisani dijelovi mjernog sustava.
 
 \begin{table}[H]
-    \centering
-    \begin{tblr}{
-        width=1\linewidth,
-        cells={valign=m,halign=c},
-        row{1}={bg=lightgray,font=\bfseries,rowsep=8pt},
-        hlines,
-        vlines
-    }
-        \hline
-        Broj ispitanika & Dob (godina) & Visina (cm) & Težina (kg) & BMI \\ [0.5ex] 
-        \hline\hline
-        6 & 26±5.44  & 174.16±12.09 & 74±15.61 & 24.28±3.65 \\
-        \hline
-    \end{tblr}
-    \caption{\label{tab:opci_podaci}Demografski podaci}
-    \end{table}
+\centering
+\begin{tblr}{
+    width=1\linewidth,
+    cells={valign=m,halign=c},
+    row{1}={bg=lightgray,font=\bfseries,rowsep=8pt},
+    hlines,
+    vlines
+}
+    \hline
+    Broj ispitanika & Dob (godina) & Visina (cm) & Težina (kg) & BMI \\ [0.5ex] 
+    \hline\hline
+    6 & 26±5.44  & 174.16±12.09 & 74±15.61 & 24.28±3.65 \\
+    \hline
+\end{tblr}
+\caption{\label{tab:opci_podaci}Demografski podaci}
+\end{table}
     
 Zbog svoje praktičnosti, udobnosti i kompatibilnosti, tekstilne elektrode sve više se integriraju u pametna nosiva 
 rješenja kao preferirani izbor za praćenje zdravstvenih parametara, uključujući distribuciju tekućine. 
@@ -74,9 +74,15 @@ Stoga, praćenje plantarne fleksije može pružiti vrijedne podatke o dinamici t
 \end{figure}
 
 U radu je provedeno kontinuirano ponavljanje pokreta plantarne fleksije pet minuta prema slici A, 
-kako bi se odredilo učinkovita procjena promjene volumena tekućine u nogama.
+kako bi se odredilo učinkovita procjena promjene volumena tekućine u nogama. 
+Mjerenja su provedena prema protokolu prikazanom na slici \ref{slk:protokol}.
 
-- slika protokola
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/protokol.png} 
+    \caption{Protokol provedenih mjerenja}
+    \label{slk:protokol}
+\end{figure}
 
 Hipoteza je da bi kontinuirano ponavljanje pokreta tijekom 5 minuta bilo učinkovitije u promjeni volumena 
 tekućine u nogama u usporedbi s povremenim ponavljanjem pokreta s pauzama. 
@@ -94,6 +100,13 @@ vodljivi tekstil ne preklapa s gel elektrodom \cite{Piper2023}.
 Elektrode su postavljene s minimalnim razmakom od 2 cm između parova. 
 Također, za svakog ispitanika izmjeren je opseg oko koljena, gležnja i najšireg dijela lista, 
 kao i udaljenost između dviju senzorskih (V+ i V-) elektroda.
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/postavljanje_elektroda.png} 
+    \caption{Postavljanje elektroda na ispitanika \cite{Piper2023}}
+    \label{slk:postavljanje_elektroda}
+\end{figure}
 
 \section{Analiza podataka}
 
@@ -132,6 +145,56 @@ koji su korišteni u jednadžbama \cite{Sanchez2013}, \cite{Delano2022} za procj
     \hline
 \end{tblr}
 \caption{\label{tab:segmenti_tijela}Izmjereni segmenti tijela}
+\end{table}
+
+\section{Rezultat}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/otpor_i_reaktancija.jpeg} 
+    \caption{Ispitanik 1 - otpor i reaktancija tijekom provedenog mjerenja}
+    \label{slk:otpor_i_reaktancija}
+\end{figure}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/broj_fleksija.jpeg} 
+    \caption{Broj plantarnih fleksija tijekom 5 minuta za svakog ispitanika}
+    \label{slk:broj_fleksija}
+\end{figure}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/trend.jpeg} 
+    \caption{Ispitanik 5 - trendovi optora}
+    \label{slk:trend}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tblr}{
+    width=1\linewidth,
+    cells={valign=m,halign=c},
+    row{1}={bg=lightgray,font=\bfseries,rowsep=8pt},
+    column{1}={2.4cm},
+    column{2}={2.7cm},
+    column{3}={2.7cm},
+    column{4}={2.7cm},
+    column{5}={2.7cm},
+    hlines,
+    vlines
+}
+    \hline
+    Frekvencija (kHz) & Srednja vrijednost razlike otpora & Standardna devijacija razlike otpora & Srednja vrijednost razlike reaktancije & Standardna devijacija razlike reaktancije \\ [0.5ex] 
+    \hline\hline
+    5 & 0.5  & 0.1 & 0.4 & 0.05 \\
+    50 & 1.2  & 0.2 & 1.1 & 0.18 \\
+    100 & 0.8  & 0.15 & 0.75 & 0.12 \\
+    200 & 0.6  & 0.1 & 0.55 & 0.08 \\
+    500 & 1.1  & 0.25 & 1.0 & 0.2 \\
+    \hline
+\end{tblr}
+\caption{\label{tab:deskriptivna_statistika}Deskriptivna statistika}
 \end{table}
 
 \end{document}
