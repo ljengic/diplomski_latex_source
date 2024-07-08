@@ -217,9 +217,9 @@ void max30009_change_freq(max30009_freq_t freq)
 \end{lstlisting}
 
 Kalibracija sustava pokreće se na početku rada te traje nekoliko sekundi.
-Za kalibraciju sustava koristi se vanjski precizni otpornik (napisi tu tocne specifikacije). 
+Za kalibraciju sustava koristi se interni kalibracijski otpornik iznosa 600 $\Omega$. 
 Prije početka kalibracije sustav je potrebno konfigurirati tako da se na mjerni kanal povežu 
-vanjski kalibracijski pinovi na koji je spojen kalibracijski otpornik. 
+interni kalibracijski otpornici. 
 Kalibracija se provodi zasebno na svakoj frekvenciji rada sustava, te se kalibracijske konstante pohranjuju 
 u memoriju sustava i kasnije koriste za korekciju rezultata mjerenja. 
 

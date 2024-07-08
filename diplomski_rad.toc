@@ -28,7 +28,7 @@
 \contentsline {chapter}{\numberline {7.}Laboratorijska mjerenja}{44}{chapter.7}%
 \contentsline {section}{\numberline {7.1.}Protokol mjerenja}{45}{section.7.1}%
 \contentsline {section}{\numberline {7.2.}Analiza podataka}{46}{section.7.2}%
-\contentsline {section}{\numberline {7.3.}Rezultat}{48}{section.7.3}%
+\contentsline {section}{\numberline {7.3.}Rezultati}{48}{section.7.3}%
 \contentsline {chapter}{\numberline {8.}Zaključak}{52}{chapter.8}%
 \contentsline {chapter}{Literatura}{53}{chapter*.39}%
 \babel@toc {croatian}{}\relax 

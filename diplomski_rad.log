@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  8 JUL 2024 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.10)  8 JUL 2024 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1185,9 +1185,9 @@ Package pdftex.def Info: Figures/sastav_tijela.png  used on input line 67.
 (pdftex.def)             Requested size: 374.86775pt x 258.97102pt.
  [6 <./Figures/sastav_tijela_2.png>] [7{C:/Users/Luka/AppData/Local/Programs/Mi
 KTeX/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}{C:/Users/Luka/AppData/Local/
-Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathit.enc} <./Figures/sastav
-_tijela.png>]) [8{C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/s
-tix2-type1/stix2-mathex.enc}]
+Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}{C:/Users/Luka/App
+Data/Local/Programs/MiKTeX/fonts/enc/dvips/stix2-type1/stix2-mathex.enc} <./Fig
+ures/sastav_tijela.png>]) [8]
 Poglavlje 3..
 
 Underfull \hbox (badness 1990) in paragraph at lines 132--132
@@ -1485,7 +1485,7 @@ Poglavlje 7..
 <Figures/tekstilne_elektrode.jpg, id=727, 130.23656pt x 93.34875pt>
 File: Figures/tekstilne_elektrode.jpg Graphic file (type jpg)
 <use Figures/tekstilne_elektrode.jpg>
-Package pdftex.def Info: Figures/tekstilne_elektrode.jpg  used on input line 47
+Package pdftex.def Info: Figures/tekstilne_elektrode.jpg  used on input line 46
 .
 (pdftex.def)             Requested size: 198.45662pt x 142.24765pt.
  [44
@@ -1494,20 +1494,20 @@ Package pdftex.def Info: Figures/tekstilne_elektrode.jpg  used on input line 47
 <Figures/plantarna_fleksija.jpg, id=744, 1332.98pt x 1332.98pt>
 File: Figures/plantarna_fleksija.jpg Graphic file (type jpg)
 <use Figures/plantarna_fleksija.jpg>
-Package pdftex.def Info: Figures/plantarna_fleksija.jpg  used on input line 70.
+Package pdftex.def Info: Figures/plantarna_fleksija.jpg  used on input line 69.
 
 (pdftex.def)             Requested size: 198.45662pt x 198.45358pt.
 <Figures/protokol.png, id=746, 328.22626pt x 473.97075pt>
 File: Figures/protokol.png Graphic file (type png)
 <use Figures/protokol.png>
-Package pdftex.def Info: Figures/protokol.png  used on input line 81.
+Package pdftex.def Info: Figures/protokol.png  used on input line 80.
 (pdftex.def)             Requested size: 286.65883pt x 413.94954pt.
  [45 <./Figures/tekstilne_elektrode.jpg>]
 <Figures/postavljanje_elektroda.png, id=757, 2077.7625pt x 2429.075pt>
 File: Figures/postavljanje_elektroda.png Graphic file (type png)
 <use Figures/postavljanje_elektroda.png>
 Package pdftex.def Info: Figures/postavljanje_elektroda.png  used on input line
- 105.
+ 104.
 (pdftex.def)             Requested size: 286.65883pt x 335.10152pt.
  [46 <./Figures/plantarna_fleksija.jpg>]
 > Step: init table outer spec.
@@ -1523,19 +1523,19 @@ Package pdftex.def Info: Figures/postavljanje_elektroda.png  used on input line
 File: Figures/otpor_i_reaktancija.jpeg Graphic file (type jpg)
 <use Figures/otpor_i_reaktancija.jpeg>
 Package pdftex.def Info: Figures/otpor_i_reaktancija.jpeg  used on input line 1
-57.
+56.
 (pdftex.def)             Requested size: 286.65883pt x 203.80777pt.
 
 [48 <./Figures/postavljanje_elektroda.png>]
 <Figures/broj_fleksija.jpeg, id=785, 740.7675pt x 438.8897pt>
 File: Figures/broj_fleksija.jpeg Graphic file (type jpg)
 <use Figures/broj_fleksija.jpeg>
-Package pdftex.def Info: Figures/broj_fleksija.jpeg  used on input line 169.
+Package pdftex.def Info: Figures/broj_fleksija.jpeg  used on input line 168.
 (pdftex.def)             Requested size: 286.65883pt x 169.8403pt.
 <Figures/trend.jpeg, id=786, 1041.8925pt x 740.7675pt>
 File: Figures/trend.jpeg Graphic file (type jpg)
 <use Figures/trend.jpeg>
-Package pdftex.def Info: Figures/trend.jpeg  used on input line 184.
+Package pdftex.def Info: Figures/trend.jpeg  used on input line 183.
 (pdftex.def)             Requested size: 286.65883pt x 203.80777pt.
  [49 <./Figures/otpor_i_reaktancija.jpeg> <./Figures/broj_fleksija.jpeg>]
 > Step: init table outer spec.
@@ -1765,7 +1765,7 @@ diplomski_rad.bbl
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomski_rad.out' has not changed.
-(rerunfilecheck)             Checksum: 26F9CDD862C91FDC352D1581590D31ED;6128.
+(rerunfilecheck)             Checksum: CB0776FA465107AA7F45BBEDBD5A3964;6133.
  ) 
 Here is how much of TeX's memory you used:
  23660 strings out of 474485
@@ -1784,7 +1784,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb><
 C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/public/stix2-type1/STIX
 2Text-Regular.pfb><C:/Users/Luka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 courier/ucrr8a.pfb>
-Output written on diplomski_rad.pdf (61 pages, 5166293 bytes).
+Output written on diplomski_rad.pdf (61 pages, 5165998 bytes).
 PDF statistics:
  972 PDF objects out of 1000 (max. 8388607)
  282 named destinations out of 1000 (max. 500000)
