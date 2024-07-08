@@ -47,7 +47,7 @@ vidljivo je kako se modul sastoji od:
     \item Integrirane pasivne komponente (IPD) za uklanjanje harmonika i usklađivanje RF impedancije.     
   \end{itemize} 
 Zbog niske potrošnje, visokog stupnja integriranosti i malih dimenzija pogodan je za razvoj nosivih uređaja, 
-čija je glavna karakteristika da moraju biti bežično povezani sa drugim uređajima. 
+čija je glavna karakteristika da moraju biti bežično povezani s drugim uređajima. 
 
 \begin{figure}[htb]
     \centering
@@ -59,12 +59,12 @@ Zbog niske potrošnje, visokog stupnja integriranosti i malih dimenzija pogodan 
 \subsection{STM32WB55VGY mikrokontroler}
 
 STM32WB55VGY je dvojezgreni mikrokontroler s ugrađenom podrškom za bežičnu komunikaciju. 
-To je sistem na čipu koji unutar jednog čipa integrira mikrokontroler opće namjene i mrežnu funcionalnost. 
+To je sistem na čipu koji unutar jednog čipa integrira mikrokontroler opće namjene i mrežnu funkcionalnost. 
 Sastoji se od dvije jezgre, ARM Cortex-M4 te ARM Cortex-M0+.  
 ARM Cortex-M4 jezgra izvršava aplikacijski kod te radi na maksimalnoj frekvenciji od 64 MHz. 
 Mrežni procesor ARM Cortex-M0+ zadužen je za upravljanje bežičnim komunikacijskim protokolima 
 te potpuno neovisno od aplikacijske jezgre održava bežičnu vezu.
-Jezgre međusobno komuniciraju pomoću međuprocesorskog komunikacijskog kontrolera (engl. \textit{IPCC,  Inter Processor
+Jezgre međusobno komuniciraju s pomoću međuprocesorskog komunikacijskog kontrolera (engl. \textit{IPCC,  Inter Processor
 Communication Controller}). 
 Dijeljenje resursa među jezgrama kontrolirano je sklopovskim semaforima.
 
@@ -75,7 +75,7 @@ Dijeljenje resursa među jezgrama kontrolirano je sklopovskim semaforima.
     \label{slk:stm32mikro}
 \end{figure}
 
-Mikrokontroler ima 1MB flash memorije, 256kB SRAM memorije te sve uobičajne periferije za mikrokontrolere opće namjene. 
+Mikrokontroler ima 1 MB flash memorije, 256 kB SRAM memorije te sve uobičajene periferije za mikrokontrolere opće namjene. 
 Na slici \ref{slk:stm32mikro} prikazana je blok shema mikrokontrolera na kojoj su vidljive sve dostupne periferije.
 Razvoj programske potpore za korišteni mikrokontroler opisan je u poglavlju (\ref{chap:programska_podrska}).
 
@@ -92,7 +92,7 @@ Izrazito je male potrošnje (250 $\mu$W na napajanju od 1.8 V) \cite{max30009} i
 
 Senzor radi na principu puštanja sinusne struje kroz tijelo i mjerenjem nastalog pada napona kroz tijelo. 
 U sebi ima integrirani generator pobudne sinusne struje u širokom rasponu frekvencija i jakosti struja. 
-Raspon frekvencija je od 16 Hz do 500 kHz, a jakosti struja od 16nA\textsubscript{RMS} do 1.28mA\textsubscript{RMS} \cite{max30009}.
+Raspon frekvencija je od 16 Hz do 500 kHz, a jakosti struja od 16 nA\textsubscript{RMS} do 1.28 mA\textsubscript{RMS} \cite{max30009}.
 Uzbudna struja stvara se sklopom za direktnu digitalnu sintezu (engl. \textit{Direct Digital Synthesis, DSS}). 
 DDS sklop služi za generiranje preciznih sinusnih signala uz mogućnost brzog podešavanja frekvencije.  
 
@@ -108,7 +108,7 @@ između različitih setova elektroda. Također senzor podržava dvožično kao i
 
 Kako bi se iz izmjerenog napona dobila amplituda i faza bioimpedancije koristi se I/Q (engl. \textit{In-phase/Quadrature}) 
 demodulator prikazan na slici \ref{slk:max30009_receive}. 
-\textit{In-phase} grana dobiva se množenjem sinusnog napona sa pravokutnim signalom jednake faze i frekvencije kao pobudna struja.
+\textit{In-phase} grana dobiva se množenjem sinusnog napona s pravokutnim signalom jednake faze i frekvencije kao pobudna struja.
 U slušaju \textit{Quadrature} grane pravokutnom signalu se dodaje zakašnjenje u fazi od 90 stupnjeva.  
 Pravokutni signal može se prikazati Fourierovim redom, no kako je prikazano na slici \ref{slk:max30009_demodulator}, 
 nakon prolaska signala kroz niskopropusne filtre ostaje samo istosmjerna komponenta. 
@@ -123,7 +123,7 @@ konačni izlaz demodulatora.
 \end{figure}
 
 Poznavajući DC vrijednosti I i Q grana na izlazu demodulatora moguće je izračunati amplitudu i fazu mjerene impedancije.
-Ako sa $U_{I,DC}$ i $U_{Q,DC}$ označimo vrijednosti I i Q grane dobivene na izlazu demodulatora, 
+Ako s $U_{I,DC}$ i $U_{Q,DC}$ označimo vrijednosti I i Q grane dobivene na izlazu demodulatora, 
 sljedeće jednadžbe daju vrijednost amplitude i faze impedancije:
 \begin{equation}
     \label{jed:cpe}
@@ -133,7 +133,7 @@ sljedeće jednadžbe daju vrijednost amplitude i faze impedancije:
     \label{jed:cpe}
     Z = K\sqrt{U_{I,DC}^2+U_{Q,DC}^2}
 \end{equation} 
-Kako amplitude lokalnih pravokutnih oscilacija nisu poznate rezultat mjerenja potrebno je pomnožiti sa kalibracijskom 
+Kako amplitude lokalnih pravokutnih oscilacija nisu poznate rezultat mjerenja potrebno je pomnožiti s kalibracijskom 
 konstantom \textit{K}. Na početku rada sustava potrebno je izvršiti kalibraciju mjerenjem otpornika poznatog iznosa i 
 izračunavanjem korekcijske konstante. Postupak je potrebno provesti zasebno za svaku frekvenciju rada sustava.
 
@@ -148,14 +148,14 @@ Kalibracija je potrebna prilikom korištenja MAX30009 za bioimpedancijska mjeren
     \label{slk:max30009_demodulator}
 \end{figure}
 
-Sustav se konfigurira pomoću 8 bitnih softverskih registara, a izlazni podatci pohranjuju se u 
+Sustav se konfigurira s pomoću 8 bitnih softverskih registara, a izlazni podatci pohranjuju se u 
 FIFO (engl. \textit{First In First Out}) spremnik veličine 256 uzoraka.
-FIFO spremnik je struktura za pohranu podataka u kojoj se podatci čitaju onim redosljedom kojim su u strukturu i pisani. 
+FIFO spremnik je struktura za pohranu podataka u kojoj se podatci čitaju onim redoslijedom kojim su u strukturu i pisani. 
 Svaki očitani uzorak u FIFO spremnik pohranjuje se u 3 bajta i sastoji se od identifikacijske oznake veličine 4 bita te vrijednosti očitane s ADC 
 pretvornika veličine 20 bitova. 
 Oznaka razlikuje podatke očitane s I grane od onih očitanih s Q grane.
 Vrijednosti očitane s ADC pretvornika zapisane su u dvojnom komplementu. 
-Sustav je moguće konfigurirati na način da generira prekid mikrokontroleru kada se FIFO napuni s određenim brojem uzoraka. 
+Sustav je moguće konfigurirati tako da generira prekid mikrokontroleru kada se FIFO napuni s određenim brojem uzoraka. 
 Broj uzoraka kod kojeg će se prekid generirati određuje se konfiguracijskim konstantama. Na osnovu nastalog prekida 
 mikrokontroler tada čita dostupne podatke iz FIFO spremnika čime se spremnik automatski prazni.  
 
@@ -167,8 +167,8 @@ Ovaj senzor, razvijen od strane kompanije Bosch Sensortec, poznat je po svojoj v
 niskoj potrošnji energije, što ga čini idealnim za primjenu u nosivim uređajima i IoT rješenjima.
 
 BME280 omogućuje precizna očitanja s minimalnim odstupanjima. 
-Senzor može mjeriti temperaturu u rasponu od -40°C do 85°C s točnošću od ±0.5°C, 
-relativnu vlažnost u rasponu od 0\% do 100\% s točnošću od ±3\%, te atmosferski tlak u 
+Senzor može mjeriti temperaturu u rasponu od -40 °C do 85 °C s točnošću od ±0.5 °C, 
+relativnu vlažnost u rasponu od 0 \% do 100 \% s točnošću od ±3 \%, te atmosferski tlak u 
 rasponu od 300 hPa do 1100 hPa s točnošću od ±1 hPa \cite{bme280_datasheet}.
 
 \begin{figure}[htb]
@@ -187,10 +187,10 @@ te stoga uzimanje tih parametara u obzir omogućava bolju interpretaciju izmjere
 
 Senzor ISM330DHCX koristi se za mjerenje inercije te pruža precizno praćenje kretanja i orijentacije u prostoru.
 Unutar jednog čipa ima integriran akcelerometar i žiroskop što pruža sveobuhvatnu sliku o kretanju 
-i položaju objekta u trodiomenzionalnom prostoru. U sebi ima ugrađenu podršku za detekciju pokreta, brojanje koraka te 
+i položaju objekta u trodimenzionalnom  prostoru. U sebi ima ugrađenu podršku za detekciju pokreta, brojanje koraka te 
 FSM (engl. \textit{Finite State Machine}) za procesiranje izmjerenih podataka \cite{ism330dhcx}. 
 
-Senzor komunicira s ostatkom sustava pomoću I2C ili SPI komunikacije te na zahtjev šalje mikrokontroleru tražene podatke.
+Senzor komunicira s ostatkom sustava s pomoću I2C ili SPI komunikacije te na zahtjev šalje mikrokontroleru tražene podatke.
 Važno je naglasiti da je ISM330DHCX dizajniran s naglaskom na energetsku učinkovitost i malu potrošnju energije 
 što ga čini dobrim izborom za nosive uređaje.
 

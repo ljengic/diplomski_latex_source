@@ -35,7 +35,7 @@ Mjerni sustav je prikazan slikom X, gdje su vidljivi svi prethodno opisani dijel
 \end{table}
     
 Zbog svoje praktičnosti, udobnosti i kompatibilnosti, tekstilne elektrode sve više se integriraju u pametna nosiva 
-rješenja kao preferirani izbor za praćenje zdravstvenih parametara, uključujući distribuciju tekućine. 
+rješenja kao preferirani izbor za praćenje zdravstvenih parametara, uključujući distribuciju tekućine \cite{Meding2021}. 
 Tekstilne elektrode korištene u ovom radu nude neinvazivno i nosivo rješenje, omogućujući dugotrajno praćenje tekućine, 
 posebno kod osoba sa srčanim zatajenjem \cite{McDonald2010},\cite{Gudmundsson2016}. 
 Korištene su tekstilne elektrode razvijene unutar SleepdB istraživačke grupe \cite{Piper2023}. 
@@ -51,13 +51,13 @@ a koje su posebno dizajnirane za praćenje tekućine.
 
 \section{Protokol mjerenja}
 
-Razvijeni nosivi bežični sustav mjeri bioimpedanciju te BLE komunikacijskim protokolom šalje na udaljenu desktop aplikaciju. 
+Razvijeni nosivi bežični sustav mjeri bioimpedanciju te izmjerene podatke BLE komunikacijskim protokolom šalje na udaljenu desktop aplikaciju. 
 Aplikacija obavlja daljnje izračune volumena tekućine u tijelu i nogama. 
 Korištena su dobivena mjerenja impedancije tijela za izračun volumena tekućine u tijelu koristeći MF BIA funkcije opisane u \cite{Sanchez2013}. 
 Za izračun volumena tekućine u nozi, korištene su funkcije opisane u \cite{Delano2022}.
 
 Za validaciju ispravnosti rada mjernog sustava provedena je vježba plantarne fleksija, 
-prikazano na slici \ref{slk:plantarna_fleksija}, gdje je pozicija A neutralni položaj, 
+prikazana na slici \ref{slk:plantarna_fleksija}, gdje je pozicija A neutralni položaj, 
 gdje je stopalo ravno na tlu, a pozicija B je plantarna fleksija, gdje je stopalo usmjereno prema dolje. 
 Plantarna fleksija u ovom radu koristi se za validaciju promjene tekućine u nogama jer aktivira 
 mišiće gastrocnemius i soleus, što može potaknuti cirkulaciju krvi i limfne tekućine. 
@@ -73,9 +73,8 @@ Stoga, praćenje plantarne fleksije može pružiti vrijedne podatke o dinamici t
     \label{slk:plantarna_fleksija}
 \end{figure}
 
-U radu je provedeno kontinuirano ponavljanje pokreta plantarne fleksije pet minuta prema slici A, 
+U radu je provedeno kontinuirano ponavljanje pokreta plantarne fleksije pet minuta prema slici \ref{slk:protokol}, 
 kako bi se odredilo učinkovita procjena promjene volumena tekućine u nogama. 
-Mjerenja su provedena prema protokolu prikazanom na slici \ref{slk:protokol}.
 
 \begin{figure}[htb]
     \centering
@@ -149,12 +148,21 @@ koji su korišteni u jednadžbama \cite{Sanchez2013}, \cite{Delano2022} za procj
 
 \section{Rezultat}
 
+U ovom istraživanju analizirani su bioimpedancijski signali tijekom plantarnih fleksija za šest sudionika. 
+Mjerenja su provedena na pet različitih frekvencija (5kHz, 50kHz, 100kHz, 200kHz, i 500kHz). 
+Analizirani su otpor i reaktancija, a izračunata je i razlika između početne i završne vrijednosti za svaku frekvenciju.
+
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.65\textwidth]{Figures/otpor_i_reaktancija.jpeg} 
     \caption{Ispitanik 1 - otpor i reaktancija tijekom provedenog mjerenja}
     \label{slk:otpor_i_reaktancija}
 \end{figure}
+
+Procjena broja plantarnih fleksija izvršena je detekcijom vrhova u signalu otpora na frekvenciji od 50kHz. 
+Rezultati prikazani na stupčanom grafikonu (slika \ref{slk:broj_fleksija}) pokazuju broj plantarnih 
+fleksija za svakog sudionika tijekom 5 minuta. 
+Razlike u broju vrhova među sudionicima mogu biti povezane s individualnim razlikama u performansama i izdržljivosti.
 
 \begin{figure}[htb]
     \centering
@@ -163,12 +171,39 @@ koji su korišteni u jednadžbama \cite{Sanchez2013}, \cite{Delano2022} za procj
     \label{slk:broj_fleksija}
 \end{figure}
 
+Otpor predstavlja sposobnost tkiva da se suprotstavi električnoj struji. 
+Tijekom vježbanja, otpor se može smanjivati zbog promjena u perfuziji mišića, 
+temperature i akumulacije metabolita. U našim mjerenjima, vidimo trend smanjenja otpora tijekom vremena. 
+To može biti indikacija povećane perfuzije mišića i bolju cirkulaciju krvi, 
+što omogućuje bolji prijenos kisika i hranjivih tvari te uklanjanje metabolita kao što je laktat. 
+Smanjenje otpora također može biti povezano s redistribucijom tekućine iz 
+međustaničnog u unutarstanični prostor zbog osmolarnosti i pritiska tijekom mišićne aktivnosti.
+
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.65\textwidth]{Figures/trend.jpeg} 
-    \caption{Ispitanik 5 - trendovi optora}
+    \caption{Ispitanik 5 - trendovi otpora}
     \label{slk:trend}
 \end{figure}
+
+Reaktancija odražava kapacitivni otpor tkiva, koji je povezan s promjenama u staničnoj membrani i strukturi tkiva. 
+Tijekom vježbanja, reaktancija može opadati zbog povećanja krvnog protoka i promjena u hidriranosti tkiva. 
+U našim mjerenjima, trend smanjenja reaktancije tijekom vremena može ukazivati na povećanje 
+vaskularnog volumena u mišićima zbog vazodilatacije i povećanog krvnog protoka. 
+Također, smanjenje reaktancije može biti povezano s promjenama u staničnoj membrani uslijed mišićne kontrakcije i opuštanja.
+
+Promjene u otporu i reaktanciji mogu pružiti važne informacije o 
+fiziološkim procesima koji se odvijaju tijekom vježbanja. 
+Smanjenje otpora može biti indikator povećane perfuzije i bolje cirkulacije, 
+što može biti korisno za praćenje performansi sportaša i planiranje oporavka. 
+Smanjenje reaktancije može ukazivati na poboljšanu perfuziju i hidriranost mišića, 
+što je važno za procjenu učinkovitosti treninga i oporavka.
+
+Deskriptivna statistika (srednja vrijednost ± standardna devijacija) 
+za razliku u otporu i reaktanciji prikazana je u tablici \ref{tab:deskriptivna_statistika}. 
+Rezultati pokazuju da postoji varijabilnost u promjenama otpora i reaktancije među različitim frekvencijama. 
+Veće promjene su primijećene na višim frekvencijama (50kHz i 500kHz), 
+što može ukazivati na veće promjene u bioelektričnoj aktivnosti mišića i tekućine tijekom vježbanja.
 
 \begin{table}[H]
 \centering
@@ -185,7 +220,7 @@ koji su korišteni u jednadžbama \cite{Sanchez2013}, \cite{Delano2022} za procj
     vlines
 }
     \hline
-    Frekvencija (kHz) & Srednja vrijednost razlike otpora & Standardna devijacija razlike otpora & Srednja vrijednost razlike reaktancije & Standardna devijacija razlike reaktancije \\ [0.5ex] 
+    Frekvencija (kHz) & Srednja vrijednost razlike otpora ($\Omega$) & Standardna devijacija razlike otpora ($\Omega$) & Srednja vrijednost razlike reaktancije ($\Omega$) & Standardna devijacija razlike reaktancije ($\Omega$) \\ [0.5ex] 
     \hline\hline
     5 & 0.5  & 0.1 & 0.4 & 0.05 \\
     50 & 1.2  & 0.2 & 1.1 & 0.18 \\

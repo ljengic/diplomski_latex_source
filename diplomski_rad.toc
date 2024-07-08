@@ -8,35 +8,36 @@
 \contentsline {chapter}{\numberline {3.}Metode mjerenja bioimpedancije}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1.}Bioimpedancija}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2.}Pregled metoda mjerenja bioimpedancije}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3.}Komercijalno dostupni uređaji za mjerenje bioimpedancije}{14}{section.3.3}%
-\contentsline {chapter}{\numberline {4.}Razvijeni nosivi sustav za praćenje tjelesnih tekućina}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1.}STM32WB5MMG bežični modul}{19}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1.}STM32WB55VGY mikrokontroler}{20}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2.}Senzorski sustavi}{20}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1.}MAX30009 integrirano sučelje za mjerenje bioimpedancije}{21}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2.}Temperaturni senzor}{24}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3.}Senzor inercije}{25}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5.}Programska podrška za razvijeni sustav}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1.}Programiranje mrežnog procesora ARM Cortex-M0+}{26}{section.5.1}%
-\contentsline {section}{\numberline {5.2.}Operacijski sustav za rad u stvarnom vremenu Zephyr}{27}{section.5.2}%
-\contentsline {section}{\numberline {5.3.}Opis upravljačkog programa za MAX30009}{30}{section.5.3}%
-\contentsline {section}{\numberline {5.4.}Bluetooth low energy komunikacija}{33}{section.5.4}%
-\contentsline {chapter}{\numberline {6.}Razvijeno ispitno okruženje}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1.}Povezivanje s razvijenim uređajem}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2.}Postupak mjerenja}{41}{section.6.2}%
-\contentsline {section}{\numberline {6.3.}Prikaz rezultata}{43}{section.6.3}%
-\contentsline {chapter}{\numberline {7.}Laboratorijska mjerenja}{45}{chapter.7}%
-\contentsline {section}{\numberline {7.1.}Protokol mjerenja}{46}{section.7.1}%
-\contentsline {section}{\numberline {7.2.}Analiza podataka}{47}{section.7.2}%
-\contentsline {section}{\numberline {7.3.}Rezultat}{51}{section.7.3}%
+\contentsline {section}{\numberline {3.3.}Komercijalno dostupni uređaji za mjerenje bioimpedancije}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4.}Razvijeni nosivi sustav za praćenje tjelesnih tekućina}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1.}STM32WB5MMG bežični modul}{18}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1.}STM32WB55VGY mikrokontroler}{19}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2.}Senzorski sustavi}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1.}MAX30009 integrirano sučelje za mjerenje bioimpedancije}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2.}Temperaturni senzor}{23}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3.}Senzor inercije}{24}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5.}Programska podrška za razvijeni sustav}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1.}Programiranje mrežnog procesora ARM Cortex-M0+}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2.}Operacijski sustav za rad u stvarnom vremenu Zephyr}{26}{section.5.2}%
+\contentsline {section}{\numberline {5.3.}Opis upravljačkog programa za MAX30009}{29}{section.5.3}%
+\contentsline {section}{\numberline {5.4.}Bluetooth low energy komunikacija}{32}{section.5.4}%
+\contentsline {chapter}{\numberline {6.}Razvijeno ispitno okruženje}{37}{chapter.6}%
+\contentsline {section}{\numberline {6.1.}Povezivanje s razvijenim uređajem}{38}{section.6.1}%
+\contentsline {section}{\numberline {6.2.}Postupak mjerenja}{40}{section.6.2}%
+\contentsline {section}{\numberline {6.3.}Prikaz rezultata}{42}{section.6.3}%
+\contentsline {chapter}{\numberline {7.}Laboratorijska mjerenja}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1.}Protokol mjerenja}{45}{section.7.1}%
+\contentsline {section}{\numberline {7.2.}Analiza podataka}{46}{section.7.2}%
+\contentsline {section}{\numberline {7.3.}Rezultat}{48}{section.7.3}%
 \contentsline {chapter}{\numberline {8.}Zaključak}{52}{chapter.8}%
+\contentsline {chapter}{Literatura}{53}{chapter*.39}%
 \babel@toc {croatian}{}\relax 
-\contentsline {chapter}{Sa\v {z}etak}{53}{chapter*.40}%
+\contentsline {chapter}{Sa\v {z}etak}{57}{chapter*.40}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{54}{chapter*.41}%
+\contentsline {chapter}{Abstract}{58}{chapter*.41}%
 \babel@toc {croatian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {croatian}{}\relax 

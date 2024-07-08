@@ -33,17 +33,15 @@ gdje je
 Za razumijevanje protoka električne struje kroz ljudsko tijelo, potrebno je detaljno prikazati električni model stanice.
 Ljudska stanica može se modelirati ekvivalentnom električnom RC mrežom \cite{Lukaski2013}, 
 kao što je prikazano na slici \ref{slk:stanica}. 
-$R_{e}$ prestavlja otpor ekstracelularne tekučine dok $R_{i}$ prestavlja otpor intracelularne tekućine.
+$R_{e}$ predstavlja otpor ekstracelularne tekućine dok $R_{i}$ predstavlja otpor intracelularne tekućine.
 Stanična membrana zbog svojih kapacitivnih svojstava, prikazanih kapacitetom $C_{m}$, 
 propušta struju visokih frekvencija, dok struje niskih frekvencija blokira. 
 Zbog toga postoji razlika u mjerenoj impedanciji u ovisnosti o frekvenciji uzbudne struje. 
 Na niskim frekvencijama struja samo vidi otpor $R_{e}$ ekstracelularne tekućine, dok se na visokim frekvencijama dodaje i otpor 
 $R_{i}$ intracelularne tekućine čime ukupna impedancija pada.
 
--treba li dodavat ona 4 podrucja frekvencija ako se to kasnije nece koristit/spominjat?
-
 Matematički model kojim se najčešće modelira bioimpedancija ljudskog tijela naziva se Cole model. 
-Razvio ga je britanski fizičar Kenneth Cole 1940-tih godina. 
+Razvio ga je britanski fizičar Kenneth Cole 1940-ih godina. 
 Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog čega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}.
 \begin{figure}[htb]
     \centering
@@ -51,7 +49,7 @@ Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog čega ga kor
     \caption{Cole model bioimpedancije}
     \label{slk:cole_model}
 \end{figure}
-$R_{\infty}$ prestavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ prestavlja otpor na nultoj frekvenciji. 
+$R_{\infty}$ predstavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ predstavlja otpor na nultoj frekvenciji. 
 Razlika otpora $R_{0}-R_{\infty}$ predstavlja dodatan otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
 $C_{CPE}$ je element s konstantnom fazom koji modelira kapacitivnost stanične membrane 
 te predstavlja neidealan kondenzator. Njegova impedancija iznosi: 
@@ -67,7 +65,7 @@ Ako uvedemo karakterističnu vremensku konstantu $\tau$ kao
     \label{jed:time_const}
     \tau = [(R_{0}-R_{\infty})C]^{1/\alpha}
 \end{equation}
-dobivamo orginalnu jednadžbu Cole modela: 
+dobivamo originalnu jednadžbu Cole modela: 
 \begin{equation}
     \label{jed:cole}
     Z(\omega) = R_{\infty}+\frac{R_{0}-R_{\infty}}{1+(j\omega\tau)^{\alpha}} 
@@ -76,7 +74,7 @@ Iz jednadžbe \ref{jed:cole} vidljivo je kako su parametri Cole modela bioimpeda
 $R_{\infty}$, $R_{0}$, $\alpha$ i $\tau$. 
 Svojstva tkiva opisuju se pomoću navedenih parametra, a postupak kojim se do njih dolazi opisan je u daljnjem tekstu.
 
-Rezultati mjerenja bioimpedancije na razilčitim frekvencijama mogu se aproksimirati polukružnicom,  
+Rezultati mjerenja bioimpedancije na različitim frekvencijama mogu se aproksimirati polukružnicom,  
 što je prikazano na slici \ref{slk:cole_graf}. 
 Graf prikazuje omjer negativne reaktancije i otpora tkiva na svim frekvencijama, 
 od $f=0$ do $f=\infty$. Frekvencija raste s desna na lijevo. 
@@ -142,21 +140,6 @@ Zbog toga dolazi do greške u mjerenju napona uzrokovane padom napona na elektro
     \includegraphics[width=0.8\textwidth]{Figures/dvo_vs_cetverozicno.png} 
     \caption{Dvožično (a) i četverožično (b) mjerenje bioimpedancije}
     \label{slk:cole_model}
-\end{figure}
-
-Važan dio mjernog sustava su i elektrode, koje kroz sučelje koža-elektroda omogućavaju protjecanje struje od mjernog sustava do tkiva. 
-U ovom radu usporedit će se rezultati dobiveni s dvjema različitim vrstama elektroda: tradicionalnim metalnim elektrodama i tekstilnim elektrodama. 
-Tekstilne elektrode izrađene su od tkanina impregniranih provodnim materijalima, najčešće srebrom. 
-Njihova najveća prednost je udobnost i fleksibilnost te mogućnost integracije u odjeću.
-Time ih pacijenti neometano mogu nositi tijekom svakodnevnih aktivnosti i dužeg perioda. 
-Međutim, metalne elektrode su manje osjetljive na vanjske parametre kao što su temperatura i znojenje kože što daje pouzdanije rezultate mjerenja. 
-\cite{Meding2021}
-
-\begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.6\textwidth]{Figures/electrode.jpg} 
-    \caption{Tu će bit neka lijepa slika elektroda}
-    \label{slk:elektrode}
 \end{figure}
 
 Sve opisane metode predstavljaju jednostavan i neinvazivan postupak mjerenja bioimpedancije. 

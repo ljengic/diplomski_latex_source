@@ -12,7 +12,7 @@ Programska potpora za korišteni mikrokontroler STM32WB55VGY razvijena je pomoć
 za ugradbena računala Zephyr.
 
 Za učitavanje programske potpore na razvijenu pločicu i testiranje sustava korišten je ST-LINK/V2 programator \cite{stm32programator}. 
-Progamator se na mikrokontroler spaja putem SWD sučelja (engl. \textit{Serial Wire Debug}). 
+Programator se na mikrokontroler spaja putem SWD sučelja (engl. \textit{Serial Wire Debug}). 
 Kao razvojno okruženje korišten je Visual Studio Code, a kontrola verzija praćena je sustavom git.
 
 Ovaj integrirani pristup omogućio je efikasno razvijanje i upravljanje programskom podrškom za STM32 mikrokontroler. 
@@ -25,7 +25,7 @@ STMicroelectronics pruža već gotove binarne datoteke \cite{kodovi_M0} koje sad
 Postoje različite verzije komunikacijskog stoga s obzirom na primjenu te je potrebno pronaći odgovarajuću 
 binarnu datoteku i učitati ju na jezgru ARM Cortex-M0+.
 
-Binarna datoteka koja je kompatibilna sa operacijskim sustavom Zephyr je \textit{stm32wb5x\_BLE\_HCILayer\_extended\_fw.bin}.
+Binarna datoteka koja je kompatibilna s operacijskim sustavom Zephyr je \textit{stm32wb5x\_BLE\_HCILayer\_extended\_fw.bin}.
 Datoteka je učitana na procesor pomoću programa STM32CubeProgrammer v2.15.0 
 koji u sebi ima ugrađenu podršku za ažuriranje koda komunikacijskog stoga. 
 
@@ -76,7 +76,7 @@ Takt sustava također se konfigurira u DTS datoteci. Svaki izvor signala takta k
 RCC (engl. \textit{Reset and Clock Control}) sklop opisani su zasebnim čvorovima. 
 RCC sklop služi za upravljanje taktom. Pomoću njega se odabire izvor takta sustava i podešavaju se 
 taktovi perifernih sabirnica. 
-U razvijenom sustavu kao izvor signala glavnog takta postavljen je takt sa vanjskog visokofrekvencijskog 
+U razvijenom sustavu kao izvor signala glavnog takta postavljen je takt s vanjskog visokofrekvencijskog 
 oscilatora (engl. \textit{HSE, High-Speed External}) frekvencije 32 MHz. Sve konstante RCC sklopa postavljenje su na 1 
 čime je takt svih periferija izjednačen s glavnim taktom sustava.   
 \begin{lstlisting}[label={lst:takt},style=CStyle,caption={Konfiguracijska takta sustava},captionpos=b]
@@ -119,7 +119,7 @@ CONFIG_BME280=y
 
 Upravljački programi za senzore BME280 i ISM330DHCX sastavni su dio Zephyr sustava i potrebno ih je uključiti 
 pomoću konfiguracijske datoteke. 
-Dohvaćanje izmjerenih vrijednosti s tih senzora vrši se generičkim funkcijama za dohvaćanje vrijednosti sa senozra koje 
+Dohvaćanje izmjerenih vrijednosti s tih senzora vrši se generičkim funkcijama za dohvaćanje vrijednosti sa senzora koje 
 su također uključene u operacijski sustav Zephyr. 
 
 \section{Opis upravljačkog programa za MAX30009}
@@ -127,7 +127,7 @@ su također uključene u operacijski sustav Zephyr.
 Integrirano sučelje za mjerenje bioimpedancije MAX30009 s mikrokontrolerom komunicira SPI 
 (engl. \textit{Serial Peripheral Interface, SPI}) protokolom. 
 SPI protokol je sinkroni serijski komunikacijski protokol koji omogućava brzu razmjernu podataka između 
-mikrokonrolera i perifernih uređaja poput senzora i memorija. 
+mikrokontrolera i perifernih uređaja poput senzora i memorija. 
 Podržava istovremeno primanje i slanje podataka uz veliku 
 brzinu komunikacije koja doseže nekoliko megabitova u sekundi.
 Prvi korak pisanja upravljačkog programa uključivanje je SPI periferije u DTS datoteci:  
@@ -149,7 +149,7 @@ Prvi korak pisanja upravljačkog programa uključivanje je SPI periferije u DTS 
 
 Radi lakšeg pisanja upravljačkog programa te njegove portabilnosti na druge sustave za sve SPI funkcije 
 napisane su funkcije omotača (engl. \textit{wrapper function}). 
-Funckije omotača su funkcije koje služe kao dodatan sloj apstrakcije između aplikacijskog koda i nižih slojeva koda. 
+Funkcije omotača su funkcije koje služe kao dodatan sloj apstrakcije između aplikacijskog koda i nižih slojeva koda. 
 Njihovim korištenjem postignuta je neovisnost aplikacijskog koda o konkretnom sučelju 
 SPI funkcija. 
 Nalaze se u datoteci \texttt{max30009\_spi\_api.c} te sadrže 
@@ -163,7 +163,7 @@ int max30009_spi_change_reg(uint8_t reg, uint8_t val, uint8_t first_bit, uint8_t
 
 Na početku rada inicijalizira se SPI periferija te se sustav resetira postavljanjem svih registara na tvornički definirano početno stanje. 
 Zatim se odabire izvor takta i način rada. Kao način rada odabrana je uzbuda sinusnom strujom 
-čija je efektivna vrijednost postaljena je na 64  $\mu$A. 
+čija je efektivna vrijednost postavljena je na 64  $\mu$A. 
 Zadnji korak inicijalizacije sustava je uključivanje mjernog kanala za mjerenje bioimpedancije.
 
 \begin{figure}[htb]
@@ -173,15 +173,15 @@ Zadnji korak inicijalizacije sustava je uključivanje mjernog kanala za mjerenje
     \label{slk:max_30009_clock}
 \end{figure}
 
-Na slici \ref{slk:max_30009_clock} prikazan je vremenski podsustav MAX30009 integriranog sučelja za mjerenje bioimppedancije.
-Kao početni takt sustava odabran je interni oscilator frekvencije 32.768 kHz. Taj se takt dalje vodi na umnoživač frekvencije 
+Na slici \ref{slk:max_30009_clock} prikazan je vremenski podsustav MAX30009 integriranog sučelja za mjerenje bioimpedancije.
+Kao početni takt sustava odabran je interni oscilator frekvencije 32.768 kHz. Taj se takt dalje vodi na umnožavač frekvencije 
 (engl. \textit{PLL, phase-lock loop}) iz kojeg se dobivaju frekvencije između 14 i 28 MHz, u ovisnosti o konstanti \textit{MDIV}. 
 Nakon toga se konstantama \textit{KDIV}, \textit{NDIV}, 
 \textit{BIOZ\_ADC\_OSR} i \textit{BIOZ\_DAC\_OSR} postavljaju frekvencija uzbudne struje i frekvencija uzorkovanja \cite{max30009_datasheet}.   
 
 Pošto je glavna karakteristika sustava mjerenje bioimpedancije na različitim frekvencijama, upravljački program mora 
-omogućavati brzu i laganu promjenu frekvencije uzbudne struje. Zbog toga je stvoren enumeracijki tip podataka koji 
-sadrži popis svih korištenih frekvenija i omogućava pisanje generičkih funckija neovisnih o konkretnoj frekvenciji: 
+omogućavati brzu i laganu promjenu frekvencije uzbudne struje. Zbog toga je stvoren enumeracijski tip podataka koji 
+sadrži popis svih korištenih frekvencija i omogućava pisanje generičkih funkcija neovisnih o konkretnoj frekvenciji: 
 \begin{lstlisting}[label={lst:enumeracija_frekvencija},style=CStyle,caption={Enumeracijski tip podataka za odabir frekvencije rada},captionpos=b]
 typedef enum
 {
@@ -194,8 +194,8 @@ typedef enum
 } max30009_freq_t;
 \end{lstlisting} 
 
-Kako bi se promjenila frekvencija sustava potrebno je podesiti ranije spomenute konstante. 
-Konstante su upisane u flash memoriju sustava u obliku polja vrijednosti točnim redosljedom kao 
+Kako bi se promijenila frekvencija sustava potrebno je podesiti ranije spomenute konstante. 
+Konstante su upisane u flash memoriju sustava u obliku polja vrijednosti točnim redoslijedom kao 
 u enumeracijskom tipu podataka za popis korištenih frekvencija što omogućava jednostavnu funkciju 
 za promjenu frekvencije prikazanu u odsječku koda \ref{lst:promjena_frekvencije}. 
 
@@ -218,25 +218,23 @@ void max30009_change_freq(max30009_freq_t freq)
 
 Kalibracija sustava pokreće se na početku rada te traje nekoliko sekundi.
 Za kalibraciju sustava koristi se vanjski precizni otpornik (napisi tu tocne specifikacije). 
-Prije početka kalibracije sustav je potrebno konfigurirati na način da se na mjerni kanal povežu 
+Prije početka kalibracije sustav je potrebno konfigurirati tako da se na mjerni kanal povežu 
 vanjski kalibracijski pinovi na koji je spojen kalibracijski otpornik. 
 Kalibracija se provodi zasebno na svakoj frekvenciji rada sustava, te se kalibracijske konstante pohranjuju 
 u memoriju sustava i kasnije koriste za korekciju rezultata mjerenja. 
 
 Za kontrolu MAX30009 senzora stvorena je zasebna dretva. Na početku rada sustava vrši se početna inicijalizacija te 
 kalibracija sustava. Nakon toga sustav je spreman za kontinuirano mjerenje. Mjerenje se pokreće i zaustavlja iz 
-glavnog programa dvjema funkcijama koje prekidaju i ponovno pokreču dretvu:
+glavnog programa dvjema funkcijama koje prekidaju i ponovno pokreću dretvu:
 \begin{lstlisting}[label={lst:max30009_kontrola},style=CStyle,caption={Funkcije za početak i prekid mjerenja},captionpos=b]
 void max30009_start_measuring();
 void max30009_stop_measuring();
 \end{lstlisting}
 U normalnom radu sustava dretva prolazi po svim frekvencijama navedenim u ranije opisanom enumeracijskom tipu podataka. 
-Za svaku frekvenciju sustav je potrebno nanovo konfigurirati te pričekati da se sustav utitra na novoj frekvenciji rada. 
+Za svaku frekvenciju sustav je potrebno nanovo konfigurirati te pričekati da se sustav ustitra na novoj frekvenciji rada. 
 Radi toga nakon svake promjene frekvencije prva 3 očitanja su ignorirana i kao rezultat mjerenja uzima se četvrto očitanje. 
-Izmjerni podatak ispravlja se u ovisnosti o kalibracijskim konstantama te se nakon toga šalje ispitnom okruženju BLE protokolom. 
-Točan format slanja podataka bit će opisan u daljenjem tekstu.
-
-- neki diagram toka bi bio bas zgodan tu!
+Izmjereni podatak ispravlja se u ovisnosti o kalibracijskim konstantama te se nakon toga šalje ispitnom okruženju BLE protokolom. 
+Točan format slanja podataka bit će opisan u daljnjem tekstu.
 
 \section{Bluetooth low energy komunikacija}
 
@@ -316,7 +314,7 @@ void ble_api_send_sensor_data(void *data_structure, sensor_t sensor);
 Pri pozivu funkcije za slanje podataka (\ref{lst:ble_send_sensor_data}) kao parametri se zadaju 
 pokazivač na podatke senzora i enumeracijski tip \texttt{sensor\_t} koji određuje o kojem senzoru je riječ. 
 
-\begin{lstlisting}[label={lst:sensor_type},style=CStyle,caption={Enumeriacijski tip podataka za odabir senzora},captionpos=b]
+\begin{lstlisting}[label={lst:sensor_type},style=CStyle,caption={Enumeracijski tip podataka za odabir senzora},captionpos=b]
 typedef enum{
     SENSOR_BIOZ,
     SENSOR_TEMP,
@@ -328,8 +326,8 @@ typedef enum{
 
 Ovaj pristup omogućava generičko korištenje samo jedne funkcije za slanje poruka BLE protokolom, 
 neovisno o senzoru čiji podatci se šalju, što u konačnici pojednostavljuje aplikacijski kod. 
-Nadalje, u ovinosti o senzoru, primprema se niz znakova u ranije opisanom formatu. 
-Zadnji korak u slanju poruke BLE komunikacijskim protokolom je pozivanje ranije opisanih funkcija (\ref{lst:ble_api}) sa 
+Nadalje, u ovisnosti o senzoru, priprema se niz znakova u ranije opisanom formatu. 
+Zadnji korak u slanju poruke BLE komunikacijskim protokolom je pozivanje ranije opisanih funkcija (\ref{lst:ble_api}) s 
 generiranim nizom znakova.  
 
 Format u kojem se poruke šalju je \texttt{vrijeme;senzor;podatci}. 
