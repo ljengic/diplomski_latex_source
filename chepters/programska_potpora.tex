@@ -304,8 +304,6 @@ Razvijeni sustav podatke ispitnom okruženju šalje funkcijom \texttt{ble\_send\
 kojoj se prosljeđuje pokazivač na podatke koji se šalju i duljinu podataka za slanje. 
 Izvršavanjem navedene funkcije ažurira se vrijednost karakteristike \texttt{SendData}.
 
--slikica ovog
-
 Poruke se šalju u obliku niza znakova čiji format ovisi o senzoru čiji se podatci šalju te je zbog toga uveden dodatan sloj 
 apstrakcije između aplikacije i BLE komunikacijskog sučelja.
 \begin{lstlisting}[label={lst:ble_send_sensor_data},style=CStyle,caption={Funkcija za slanje rezultata mjerenja sa pojedinog senzora},captionpos=b]

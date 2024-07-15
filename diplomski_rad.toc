@@ -8,7 +8,7 @@
 \contentsline {chapter}{\numberline {3.}Metode mjerenja bioimpedancije}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1.}Bioimpedancija}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2.}Pregled metoda mjerenja bioimpedancije}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3.}Komercijalno dostupni uređaji za mjerenje bioimpedancije}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.3.}Komercijalno dostupni uređaji za mjerenje bioimpedancije}{14}{section.3.3}%
 \contentsline {chapter}{\numberline {4.}Razvijeni nosivi sustav za praćenje tjelesnih tekućina}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1.}STM32WB5MMG bežični modul}{18}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1.}STM32WB55VGY mikrokontroler}{19}{subsection.4.1.1}%
