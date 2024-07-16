@@ -58,7 +58,7 @@ Ako je simbol zelen, razvijeni sustav povezan je s ispitnim okruženjem dok u sl
 
 Pritiskom na tipku \texttt{Scan}  ispitno okruženje započinje skeniranje dostupnih uređaja 
 u blizini putem BLE protokola. 
-Nakon što se skeniranje dovrši, korisniku se prikazuje popis dostupnih uređaja na sučelju aplikacije.
+Nakon što se skeniranje završi, korisniku se prikazuje popis dostupnih uređaja na sučelju aplikacije.
 
 Korisnik zatim ima mogućnost odabira željenog uređaja. Nakon što je uređaj odabran, pritiskom na tipku \texttt{Connect} 
 pokreće se postupak povezivanja uređaja. 
@@ -67,7 +67,7 @@ Za vrijeme dok su uređaji povezani na \texttt{BLE Connection} zaslonu prikazane
 i tipka \texttt{Disconnect} kojom se korisniku daje mogućnost prekida BLE konekcije.
 
 Za pokretanje mjerenja i prikupljanje mjernih podataka nužno je da aplikacija bude povezana s razvijenim nosivim sustavom. 
-Zbog toga se prije početka mjerenja vrši provjera je li aplikacija ostvarila BLE konekciju s razvijenim sustavom. 
+Zbog toga se prije početka mjerenja obavlja provjera je li aplikacija ostvarila BLE konekciju s razvijenim sustavom. 
 Ako BLE konekcija nije ostvarena, aplikacija ne dozvoljava pokretanje mjerenja te korisnika o tome obavještava 
 skočnim prozorom prikazanim na slici \ref{slk:ble_not_connected}. Tipka \texttt{Connect} na skočnom prozoru korisnika 
 vodi na karticu \texttt{BLE Connection}.
@@ -86,7 +86,7 @@ Ovim pristupom korisniku se omogućava da u svakom trenutku korištenja aplikaci
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.4\textwidth]{Figures/cosak.png} 
-    \caption{Simbol u gorenjem desnom uglu koji opisuju status BLE konekcije}
+    \caption{Simbol u gornjem desnom uglu koji opisuju status BLE konekcije}
     \label{slk:ble_status}
 \end{figure}
 
@@ -107,7 +107,7 @@ Podatci koji su potrebni za daljnju analizu su dob, spol, težina, visina, obujm
 Nakon što korisnik popuni podatke pritiskom na tipku \texttt{Complete} pokreće se provjera ispravnosti unesenih podataka. 
 Ukoliko neki od podataka nedostaju ili su u nepravilnom formatu, aplikacija obavještava korisnika skočnim prozorom s 
 porukom koji točno podataka nije ispravan. 
-Ako mjerenje vršimo za pacijenta čiji su podatci od ranije u bazi podataka otvara se isti zaslon ali s popunjenim podatcima 
+Ako mjerenje obavljamo za pacijenta čiji su podatci od ranije u bazi podataka otvara se isti zaslon ali s popunjenim podatcima 
 koje korisnik po potrebi može promijeniti.  
 
 \begin{figure}[htb]

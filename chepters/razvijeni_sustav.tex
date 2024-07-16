@@ -16,7 +16,7 @@ fizioloških parametara korisnika.
 \begin{figure}[htb]
     \centering
     \includegraphics[width=1\textwidth]{Figures/shema_sustava.png} 
-    \caption{Block shema razvijenog sustava}
+    \caption{Blok shema razvijenog sustava}
     \label{slk:blok_shema}
 \end{figure}
 
@@ -29,7 +29,7 @@ U modul je integrirana antena i kvarcni oscilatori što znatno olakšava i ubrza
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.6\textwidth]{Figures/stm32module.png} 
-    \caption{Block shema STM32WB5MMG modula \cite{stm32module}}
+    \caption{Blok shema STM32WB5MMG modula \cite{stm32module}}
     \label{slk:stm32module}
 \end{figure}
 
@@ -39,12 +39,12 @@ vidljivo je kako se modul sastoji od:
 \begin{itemize}
     \item STM32WB55VGY mikrokontrolera,
     \item antene,
-    \item niskofrekvencijskog kvarcnog oscilatora frekvencije 32.768 kHz,
+    \item niskofrekvencijskog kvarcnog oscilatora frekvencije 32,768 kHz,
     \item visokofrekvencijskog kvarcnog oscilatora frekvencije 32 MHz,
     \item pasivne komponente za SMPS (engl. \textit{switched-mode power supply}), 
     \item integrirane pasivne komponente (IPD) za uklanjanje harmonika i usklađivanje RF impedancije.     
   \end{itemize} 
-Zbog niske potrošnje, visokog stupnja integriranosti i malih dimenzija pogodan je za razvoj nosivih uređaja, 
+Zbog niske potrošnje, visokog stupnja integracije i malenih dimenzija pogodan je za razvoj nosivih uređaja, 
 čija je glavna karakteristika da moraju biti bežično povezani s drugim uređajima. 
 
 \begin{figure}[htb]
@@ -57,9 +57,9 @@ Zbog niske potrošnje, visokog stupnja integriranosti i malih dimenzija pogodan 
 \subsection{STM32WB55VGY mikrokontroler}
 
 STM32WB55VGY je dvojezgreni mikrokontroler s ugrađenom podrškom za bežičnu komunikaciju. 
-To je sistem na čipu koji unutar jednog čipa integrira mikrokontroler opće namjene i mrežnu funkcionalnost. 
+To je sustav na čipu koji unutar jednog sklopa integrira mikrokontroler opće namjene i mrežnu funkcionalnost. 
 Sastoji se od dvije jezgre, ARM Cortex-M4 te ARM Cortex-M0+.  
-ARM Cortex-M4 jezgra izvršava aplikacijski kod te radi na maksimalnoj frekvenciji od 64 MHz. 
+ARM Cortex-M4 jezgra izvršava aplikacijski k\^{o}d te radi na maksimalnoj frekvenciji od 64 MHz. 
 Mrežni procesor ARM Cortex-M0+ zadužen je za upravljanje bežičnim komunikacijskim protokolima 
 te potpuno neovisno od aplikacijske jezgre održava bežičnu vezu.
 Jezgre međusobno komuniciraju s pomoću međuprocesorskog komunikacijskog kontrolera (engl. \textit{IPCC,  Inter Processor
@@ -85,13 +85,13 @@ U daljnjem tekstu dan je detaljan pregled svih korištenih senzora razvijenog su
 
 \subsection{MAX30009 integrirano sučelje za mjerenje bioimpedancije}
 
-MAX30009 je integrirano sučelje za mjerenje bioimpedancije dizajnirano za primjene u nosivim tehnologijama. 
+MAX30009 je integrirano sučelje za mjerenje bioimpedancije projektirano za primjene u nosivim tehnologijama. 
 Izrazito je male potrošnje (250 $\mu$W na napajanju od 1.8 V) \cite{max30009} i malih dimenzija (2.03x2.03 mm) što ga čini idealnim izborom za bežični nosivi uređaj.  
 
 Senzor radi na principu puštanja sinusne struje kroz tijelo i mjerenjem nastalog pada napona kroz tijelo. 
 U sebi ima integrirani generator pobudne sinusne struje u širokom rasponu frekvencija i jakosti struja. 
 Raspon frekvencija je od 16 Hz do 500 kHz, a jakosti struja od 16 nA\textsubscript{RMS} do 1.28 mA\textsubscript{RMS} \cite{max30009}.
-Uzbudna struja stvara se sklopom za direktnu digitalnu sintezu (engl. \textit{Direct Digital Synthesis, DSS}). 
+Uzbudna struja stvara se sklopom za izravnu digitalnu sintezu (engl. \textit{Direct Digital Synthesis, DSS}). 
 DDS sklop služi za generiranje preciznih sinusnih signala uz mogućnost brzog podešavanja frekvencije.  
 
 Ulazni priključci elektroda spojeni su na multipleksore čime se dobiva mogućnost izbora 
@@ -107,7 +107,7 @@ između različitih setova elektroda. Također senzor podržava dvožično kao i
 Kako bi se iz izmjerenog napona dobila amplituda i faza bioimpedancije koristi se I/Q (engl. \textit{In-phase/Quadrature}) 
 demodulator prikazan na slici \ref{slk:max30009_receive}. 
 \textit{In-phase} grana dobiva se množenjem sinusnog napona s pravokutnim signalom jednake faze i frekvencije kao pobudna struja.
-U slušaju \textit{Quadrature} grane pravokutnom signalu se dodaje zakašnjenje u fazi od 90 stupnjeva.  
+U slučaju \textit{Quadrature} grane pravokutnom signalu se dodaje zakašnjenje u fazi od 90 stupnjeva.  
 Pravokutni signal može se prikazati Fourierovim redom, no kako je prikazano na slici \ref{slk:max30009_demodulator}, 
 nakon prolaska signala kroz niskopropusne filtre ostaje samo istosmjerna komponenta. 
 Na ovaj način početni sinusni signal je rastavljen na zbroj sinusa i kosinusa iste frekvencije, ali različitih amplituda koje su 
@@ -131,7 +131,7 @@ sljedeće jednadžbe daju vrijednost amplitude i faze impedancije:
     \label{jed:cpe}
     Z = K\sqrt{U_{I,DC}^2+U_{Q,DC}^2}
 \end{equation} 
-Kako amplitude lokalnih pravokutnih oscilacija nisu poznate rezultat mjerenja potrebno je pomnožiti s kalibracijskom 
+Kako amplitude lokalnih pravokutnih oscilacija nisu poznate, rezultat mjerenja potrebno je pomnožiti s kalibracijskom 
 konstantom \textit{K}. Na početku rada sustava potrebno je izvršiti kalibraciju mjerenjem otpornika poznatog iznosa i 
 izračunavanjem korekcijske konstante. Postupak je potrebno provesti zasebno za svaku frekvenciju rada sustava.
 
@@ -165,7 +165,7 @@ Ovaj senzor, razvijen od strane kompanije Bosch Sensortec, poznat je po svojoj v
 niskoj potrošnji energije, što ga čini idealnim za primjenu u nosivim uređajima i IoT rješenjima.
 
 BME280 omogućuje precizna očitanja s minimalnim odstupanjima. 
-Senzor može mjeriti temperaturu u rasponu od -40 °C do 85 °C s točnošću od ±0.5 °C, 
+Senzor može mjeriti temperaturu u rasponu od -40 °C do 85 °C s točnošću od ±0,5 °C, 
 relativnu vlažnost u rasponu od 0 \% do 100 \% s točnošću od ±3 \%, te atmosferski tlak u 
 rasponu od 300 hPa do 1100 hPa s točnošću od ±1 hPa \cite{bme280_datasheet}.
 
@@ -181,15 +181,15 @@ Integracija BME280 senzora u sustav omogućava kontinuirano praćenje okolišnih
 Na primjer, promjene u temperaturi i vlažnosti mogu utjecati na bioelektrična svojstva kože, 
 te stoga uzimanje tih parametara u obzir omogućava bolju interpretaciju izmjerenih podataka.
 
-\subsection{Senzor inercije}
+\subsection{Inercijski senzor}
 
-Senzor ISM330DHCX koristi se za mjerenje inercije te pruža precizno praćenje kretanja i orijentacije u prostoru.
-Unutar jednog čipa ima integriran akcelerometar i žiroskop što pruža sveobuhvatnu sliku o kretanju 
+Inercijski senzor ISM330DHCX omogućuje precizno praćenje kretanja i orijentacije u prostoru.
+Unutar jednog integriranog sklopa ima integriran akcelerometar i žiroskop što pruža sveobuhvatnu sliku o kretanju 
 i položaju objekta u trodimenzionalnom  prostoru. U sebi ima ugrađenu podršku za detekciju pokreta, brojanje koraka te 
 FSM (engl. \textit{Finite State Machine}) za procesiranje izmjerenih podataka \cite{ism330dhcx}. 
 
 Senzor komunicira s ostatkom sustava s pomoću I2C ili SPI komunikacije te na zahtjev šalje mikrokontroleru tražene podatke.
-Važno je naglasiti da je ISM330DHCX dizajniran s naglaskom na energetsku učinkovitost i malu potrošnju energije 
+Važno je naglasiti da je ISM330DHCX projektiran s naglaskom na energetsku učinkovitost i malu potrošnju energije 
 što ga čini dobrim izborom za nosive uređaje.
 
 Senzori inercije mogu detektirati tjelesnu aktivnost korisnika, što je korisno za kontekstualizaciju bioimpedancijskih podataka. 

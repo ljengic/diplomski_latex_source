@@ -8,7 +8,7 @@
 
 \section{Bioimpedancija}
 
-Bioimpedancija predstavlja električni otpor koji se javlja kada kroz biološka tkiva teče električna struja \cite{Bera2014}.
+Bioimpedancija predstavlja impedanciju koji se javlja kada kroz biološka tkiva teče električna struja \cite{Bera2014}.
 Ovisna je o frekvenciji te se može prikazati formulom:
 \begin{equation}
     \label{jed:cpe}
@@ -40,17 +40,16 @@ Zbog toga postoji razlika u mjerenoj impedanciji u ovisnosti o frekvenciji uzbud
 Na niskim frekvencijama struja samo vidi otpor $R_{e}$ ekstracelularne tekućine, dok se na visokim frekvencijama dodaje i otpor 
 $R_{i}$ intracelularne tekućine čime ukupna impedancija pada \cite{Bera2014}.
 
-Matematički model kojim se najčešće modelira bioimpedancija ljudskog tijela naziva se Cole model. 
-Razvio ga je britanski fizičar Kenneth Cole 1940-ih godina. 
-Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog čega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}.
+Matematički model kojim se najčešće modelira bioimpedancija ljudskog tijela naziva se Cole-Cole model.  
+Cole-Cole model opisuje impedanciju tijela kao funkciju frekvencije zbog čega ga koristimo pri analizi sastava ljudskog tijela \cite{Freeborn2021}.
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.6\textwidth]{Figures/cole_model.png} 
-    \caption{Cole model bioimpedancije}
+    \caption{Cole-Cole model bioimpedancije}
     \label{slk:cole_model}
 \end{figure}
 $R_{\infty}$ predstavlja otpor tkiva na beskonačnoj frekvenciji dok $R_{0}$ predstavlja otpor na nultoj frekvenciji. 
-Razlika otpora $R_{0}-R_{\infty}$ predstavlja dodatan otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
+Razlika otpora $R_{0}-R_{\infty}$ predstavlja dodatni otpor struji na niskim frekvencijama zbog nepropusnosti stanične membrane. 
 $C_{CPE}$ je element s konstantnom fazom koji modelira kapacitivnost stanične membrane 
 te predstavlja neidealan kondenzator. Njegova impedancija iznosi: 
 \begin{equation}
@@ -65,12 +64,12 @@ Ako uvedemo karakterističnu vremensku konstantu $\tau$ kao
     \label{jed:time_const}
     \tau = [(R_{0}-R_{\infty})C]^{1/\alpha}
 \end{equation}
-dobivamo originalnu jednadžbu Cole modela: 
+dobivamo originalnu jednadžbu Cole-Cole modela: 
 \begin{equation}
     \label{jed:cole}
     Z(\omega) = R_{\infty}+\frac{R_{0}-R_{\infty}}{1+(j\omega\tau)^{\alpha}} 
 \end{equation} 
-Iz jednadžbe \ref{jed:cole} vidljivo je kako su parametri Cole modela bioimpedancije 
+Iz jednadžbe \ref{jed:cole} vidljivo je kako su parametri Cole-Cole modela bioimpedancije 
 $R_{\infty}$, $R_{0}$, $\alpha$ i $\tau$. 
 Svojstva tkiva opisuju se pomoću navedenih parametra, a postupak kojim se do njih dolazi opisan je u daljnjem tekstu.
 
@@ -81,10 +80,10 @@ od $f=0$ do $f=\infty$. Frekvencija raste s desna na lijevo.
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.7\textwidth]{Figures/cole_plot.png} 
-    \caption{Graf bioimpedancije Cole modela \cite{Yang_2013}}
+    \caption{Graf bioimpedancije Cole-Cole modela \cite{Yang_2013}}
     \label{slk:cole_graf}
 \end{figure}
-Iz opisanog grafa moguće je dobiti parametre Cole modela \cite{Yang_2013}.
+Iz opisanog grafa moguće je dobiti parametre Cole-Cole modela \cite{Yang_2013}.
 $R_{\infty}$ i $R_{0}$ jednostavno se iščitavaju kao presjecišta polukružnice i realne osi.
 Vremenska konstanta $\tau$ inverz je karakteristične kružne frekvencije $\omega_{C}$ na kojoj je reaktancija najveća.
 Relacija iz koje se izračunava $\tau$ je:
@@ -116,10 +115,10 @@ kao što su količine intracelularne i ekstracelularne vode. To je moguće jer s
 a propušta ju na višim. 
 
 Bioelektrička spektrografija najpreciznija je metoda mjerenja bioimpedancije. 
-Mjerenja se vrše na širokom rasponu frekvencija, od 1 kHz do 1 MHz.  
-Ovom metodom možemo procijeniti otpor na nultoj i beskonačnoj frekvenciji, parametre iz Cole modela bioimpedancije 
+Mjerenja se obavljaju na širokom rasponu frekvencija, od 1 kHz do 1 MHz.  
+Ovom metodom možemo procijeniti otpor na nultoj i beskonačnoj frekvenciji, parametre iz Cole-Cole modela bioimpedancije 
 opisane u prethodnom poglavlju. 
-Mjerenje BIS metodom zbog većeg broja frekvencija traje duže i matematički izračuni su kompliciraniji, 
+Mjerenje BIS metodom zbog većeg broja frekvencija traje duže i matematički izračuni su složeniji, 
 ali pruža  detaljniju i precizniju analizu sastava ljudskog tijela.
 
 Postupak mjerenja bioimpedancije svih ranije opisanih metoda je puštanje slabe, 
@@ -132,8 +131,8 @@ Zatim se impedancija izračunava prema:
 
 Pri mjerenju bioimpedancije razlikujemo dvožično i četverožično spajanje elektroda. 
 Kod dvožičnog mjerenja isti par elektroda služi za pobudnu struju i za mjerenje napona. 
-Zbog toga dolazi do greške u mjerenju napona uzrokovane padom napona na elektrodama. 
-Četverožično mjerenje je preciznije jer se pad napona mjeri direktno na koži i zbog toga će se koristiti u ovom radu \cite{Abasi2022}. 
+Zbog toga dolazi do pogreške u mjerenju napona uzrokovane padom napona na elektrodama. 
+Četverožično mjerenje je preciznije jer se pad napona mjeri izravno na koži i zbog toga će se koristiti u ovom radu \cite{Abasi2022}. 
 
 \begin{figure}[htb]
     \centering
@@ -143,7 +142,7 @@ Zbog toga dolazi do greške u mjerenju napona uzrokovane padom napona na elektro
 \end{figure}
 
 Sve opisane metode predstavljaju jednostavan i neinvazivan postupak mjerenja bioimpedancije. 
-Važno je napomenuti kako izmjerena impedancija ovisi o brojim faktorima kao što su položaj tijela, hidracija, temperatura tijela i drugi 
+Važno je napomenuti kako izmjerena impedancija ovisi o brojim faktorima, kao što su položaj tijela, hidracija, temperatura tijela i drugi 
 što treba uzeti u obzir pri obradi rezultata mjerenja.
 
 \newpage
@@ -169,13 +168,13 @@ Neki od komercijalnih uređaja za mjerenje bioimpedancije prikazani su u tablici
     \hline\hline
     BIA 101 (Akern) & Uređaj za bioimpedancijsku analizu, koristi se u sportskoj medicini, nutricionizmu i kliničkoj dijagnostici. & Więch, et al. (2022) \cite{Wiech2022} \\
     \hline
-    InBody 770 (InBody) & Napredni uređaj za mjerenje bioimpedancije, pruža detaljne analize tjelesne kompozicije. Koristi se u kliničkim ustanovama i istraživačkim laboratorijima. & Choi, et al. (2022) \cite{Choi2022}  \\ 
+    InBody 770 (InBody) & Napredni uređaj za mjerenje bioimpedancije, pruža detaljne analize tjelesnog sastava. Koristi se u kliničkim ustanovama i istraživačkim laboratorijima. & Choi, et al. (2022) \cite{Choi2022}  \\ 
     \hline
     Tanita MC-780U & Uređaj za višefrekvencijsku bioimpedancijsku analizu, koristi se u fitness centrima, bolnicama i za istraživačke svrhe. & Ślązak, et al. (2024) \cite{Slazak2024} \\
     \hline
-    ImpediMed SFB7 & Uređaj koji koristi višefrekvencijsku bioimpedancijsku spektroskopiju za procjenu tjelesne kompozicije, koristi se u kliničkim istraživanjima. & Freeborn, et al. (2018) \cite{Freeborn2018}  \\
+    ImpediMed SFB7 & Uređaj koji koristi višefrekvencijsku bioimpedancijsku spektroskopiju za procjenu tjelesnog sastava, koristi se u kliničkim istraživanjima. & Freeborn, et al. (2018) \cite{Freeborn2018}  \\
     \hline
-    SECA mBCA 515 & Medicinski uređaj za analizu tjelesne kompozicije, pruža podatke o masnoj masi, mišićnoj masi i hidrataciji tijela. & Lahav, et al. (2021) \cite{Lahav2021} \\
+    SECA mBCA 515 & Medicinski uređaj za analizu tjelesnog sastava, pruža podatke o masnoj masi, mišićnoj masi i hidrataciji tijela. & Lahav, et al. (2021) \cite{Lahav2021} \\
     \hline
 \end{tblr}
 \caption{\label{tab:komercijalni_uredaji}Komercijalni uređaji za mjerenje bioimpedancije.}
@@ -183,24 +182,24 @@ Neki od komercijalnih uređaja za mjerenje bioimpedancije prikazani su u tablici
 
 BIA 101 Anniversary Sport Edition (Akern) je uređaj za bioimpedancijsku analizu koji se koristi u različitim kliničkim 
 i istraživačkim okruženjima, posebno u sportskoj medicini, nutricionizmu i kliničkoj dijagnostici \cite{Wiech2022}.  
-InBody 770 je napredni uređaj za mjerenje bioimpedancije koji pruža detaljne analize tjelesne kompozicije, 
+InBody 770 je napredni uređaj za mjerenje bioimpedancije koji pruža detaljne analize tjelesnog sastava, 
 uključujući mišićnu masu, masno tkivo i tjelesnu vodu.  
 Koristi se u kliničkim ustanovama i istraživačkim laboratorijima \cite{Choi2022}. 
-Tanita MC-780U je uređaj za višefrekvencijsku bioimpedancijsku analizu koji omogućuje precizno mjerenje tjelesne kompozicije. 
+Tanita MC-780U je uređaj za višefrekvencijsku bioimpedancijsku analizu koji omogućuje precizno mjerenje tjelesnog sastava. 
 Ovaj uređaj se često koristi u fitness centrima, bolnicama i za istraživačke svrhe \cite{Slazak2024}. 
-ImpediMed SFB7 koristi višefrekvencijsku bioimpedancijsku spektroskopiju za procjenu tjelesne kompozicije, 
+ImpediMed SFB7 koristi višefrekvencijsku bioimpedancijsku spektroskopiju za procjenu tjelesnog sastava, 
 uključujući tjelesnu vodu, staničnu masu i masno tkivo, te se često koristi u kliničkim istraživanjima \cite{Freeborn2018}. 
-SECA mBCA 515 je medicinski uređaj za analizu tjelesne kompozicije koji koristi bioimpedancijsku analizu 
+SECA mBCA 515 je medicinski uređaj za analizu tjelesnog sastava koji koristi bioimpedancijsku analizu 
 kako bi pružio detaljne podatke o masnoj masi, mišićnoj masi i hidrataciji tijela \cite{Lahav2021}. 
 
 Iako su svi ovi uređaji vrlo precizni i korisni u određenim kontekstima, 
 njihova glavna ograničenja uključuju ograničenu frekvenciju mjerenja, 
-neprilagođenost za kontinuirano praćenje, i potrebu za specifičnim uvjetima i postavkama za točna mjerenja. 
+neprilagođenost za kontinuirano praćenje te potrebu za specifičnim uvjetima i postavkama za točna mjerenja. 
 Ovo ih čini nepraktičnima za pacijente koji trebaju kontinuirano praćenje, posebno kod srčanih bolesnika 
 gdje je kontinuirano mjerenje bitno za pravovremeno otkrivanje promjena u zdravstvenom stanju.
 
 Razvoj nosivog sustava za kontinuirano praćenje bioimpedancije 
-temeljenog na MAX30009 je od važnosti zbog ovih ograničenja. 
+temeljenog na MAX30009 je važno zbog ovih ograničenja. 
 Srčani bolesnici zahtijevaju stalno praćenje kako bi se na vrijeme otkrile promjene u volumenu tjelesne tekućine, 
 što je ključno za pravovremenu medicinsku intervenciju. Kontinuirano praćenje omogućava bolje 
 upravljanje stanjem pacijenta i prevenciju ozbiljnijih komplikacija. 
