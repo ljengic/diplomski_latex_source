@@ -5,7 +5,9 @@
 \sloppy
 
 \justifying
-U ovom radu razvijen je bežični nosivi sustav za praćenje distribucije tekućina u tijelu pomoću mjerenja bioimpedancije.
+U ovom radu razvijena je programska potpora za bežični nosivi sustav za praćenje distribucije tekućina u tijelu pomoću mjerenja bioimpedancije. 
+Sklpovlje sustava projektirano je u SleepdB laboratoriju (KITE Toronto Rehabilitation Institute, 
+University Health Network, Toronto, Kanada). 
 Blok shema sustava prikazana je na slici \ref{slk:blok_shema}.
 Sustav se temelji na upotrebi STM32WB5MMG modula koji omogućava Bluetooth Low Energy (BLE) komunikaciju. 
 Ključne komponente sustava uključuju MAX30009 senzor za mjerenje bioimpedancije, 
@@ -57,7 +59,7 @@ Zbog niske potrošnje, visokog stupnja integracije i malenih dimenzija pogodan j
 \subsection{STM32WB55VGY mikrokontroler}
 
 STM32WB55VGY je dvojezgreni mikrokontroler s ugrađenom podrškom za bežičnu komunikaciju. 
-To je sustav na čipu koji unutar jednog sklopa integrira mikrokontroler opće namjene i mrežnu funkcionalnost. 
+To je sustav na integriranom sklopu (engl. \textit{SoC, System on Chip}) koji unutar jednog sklopa integrira mikrokontroler opće namjene i mrežnu funkcionalnost. 
 Sastoji se od dvije jezgre, ARM Cortex-M4 te ARM Cortex-M0+.  
 ARM Cortex-M4 jezgra izvršava aplikacijski k\^{o}d te radi na maksimalnoj frekvenciji od 64 MHz. 
 Mrežni procesor ARM Cortex-M0+ zadužen je za upravljanje bežičnim komunikacijskim protokolima 
@@ -86,11 +88,11 @@ U daljnjem tekstu dan je detaljan pregled svih korištenih senzora razvijenog su
 \subsection{MAX30009 integrirano sučelje za mjerenje bioimpedancije}
 
 MAX30009 je integrirano sučelje za mjerenje bioimpedancije projektirano za primjene u nosivim tehnologijama. 
-Izrazito je male potrošnje (250 $\mu$W na napajanju od 1.8 V) \cite{max30009} i malih dimenzija (2.03x2.03 mm) što ga čini idealnim izborom za bežični nosivi uređaj.  
+Izrazito je male potrošnje (250 $\mu$W na napajanju od 1,8 V) \cite{max30009} i malih dimenzija (2,03x2,03 mm) što ga čini idealnim izborom za bežični nosivi uređaj.  
 
 Senzor radi na principu puštanja sinusne struje kroz tijelo i mjerenjem nastalog pada napona kroz tijelo. 
 U sebi ima integrirani generator pobudne sinusne struje u širokom rasponu frekvencija i jakosti struja. 
-Raspon frekvencija je od 16 Hz do 500 kHz, a jakosti struja od 16 nA\textsubscript{RMS} do 1.28 mA\textsubscript{RMS} \cite{max30009}.
+Raspon frekvencija je od 16 Hz do 500 kHz, a jakosti struja od 16 nA\textsubscript{RMS} do 1,28 mA\textsubscript{RMS} \cite{max30009}.
 Uzbudna struja stvara se sklopom za izravnu digitalnu sintezu (engl. \textit{Direct Digital Synthesis, DSS}). 
 DDS sklop služi za generiranje preciznih sinusnih signala uz mogućnost brzog podešavanja frekvencije.  
 

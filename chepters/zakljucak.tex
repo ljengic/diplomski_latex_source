@@ -6,19 +6,26 @@
 
 \justifying
 
-U ovom radu razvijen je i testiran bežični nosivi sustav za praćenje distribucije tjelesnih tekućina u donjim ekstremitetima
-ispitanika mjerenjem bioimpedancije. Sustav je prikladan za primjenu i nošenje na ispitaniku u svakodnevnom okruženju. Provedena su laboratorijska mjerenja na šest ispitanika kako bi se validirala funkcionalnost sustava. 
-Analizom izmjerenih podataka prikupljenih tijekom eksperimenata doneseni su sljedeći zaključci.
+U ovom radu razvijena je programska potpora za bežični nosivi sustav za praćenje distribucije tjelesnih tekućina u donjim ekstremitetima
+ispitanika mjerenjem bioimpedancije. 
+Sustav je namijenjen za kontinuirano praćenje stanja pacijenta koji boluju od zatajenja srca te je prikladan 
+za primjenu i nošenje na ispitaniku u svakodnevnom okruženju. 
+Sustav se temelji na STM32WB5MMG bežičnom modulu te MAX30009 integriranom sučelju za mjerenje bioimpedancije. 
+Programska potpora za razvijeni sustav pisana je s pomoću operacijskog sustava Zephyr.  
+Dodatno, razvijeno je ispitno okruženje
+za testiranje sustava u stvarnim uvjetima korištenja. 
+Ispitno okruženje razvijeno je u obliku desktop aplikacije u programskom jeziku Python.
+Velika važnost posvećena je korisničkom iskustvu, osiguravajući da je sustav intuitivan i 
+jednostavan za korištenje krajnjim korisnicima.
 
-Rezultati pružaju uvid u varijabilnost bioimpedancijskih mjerenja tijekom vježbanja i mogu se 
-koristiti za daljnja istraživanja biomehaničkih i fizioloških odgovora na tjelesnu aktivnost. 
-Bioimpedancija se pokazuje kao vrijedna metoda za praćenje fizioloških promjena u stvarnom vremenu, 
-pružajući kvantitativne podatke o stanju mišića i tekućine tijekom vježbanja.
-
-Metoda bioimpedancije može se koristiti za praćenje promjena tekućine tijekom vježbanja plantarnih fleksija. 
-Tijekom intenzivne aktivnosti, redistribucija tekućine iz vaskularnog prostora u intersticijalni prostor 
-može se detektirati kao promjene u otporu i reaktanciji. 
-Ova tehnika može pružiti uvid u hidriranost mišića i može biti korisna za procjenu stanja sportaša, 
-planiranje rehabilitacije i optimizaciju performansi.
+Provedena su laboratorijska mjerenja na šest ispitanika kako bi se validirala funkcionalnost sustava. 
+Analizom izmjerenih podataka prikupljenih tijekom eksperimenata vježbe plantarne fleksije doneseni su sljedeći zaključci: 
+\begin{itemize}
+    \item razvijeni sustav može se koristiti za kontinuirano praćenje promjena tekućine tijekom vježbanja plantarnih fleksija,  
+    \item tijekom intenzivne aktivnosti, redistribucija tekućine iz vaskularnog prostora u intersticijalni prostor 
+    može se detektirati kao promjene u otporu i reaktanciji,
+    \item ova tehnika može pružiti uvid u hidriranost mišića i može biti korisna za procjenu stanja sportaša, 
+    planiranje rehabilitacije i optimizaciju performansi. 
+\end{itemize} 
 
 \end{document}
